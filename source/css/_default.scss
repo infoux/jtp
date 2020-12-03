@@ -1,0 +1,128 @@
+
+/* basic */
+$min-width: 320px;
+$img-url: "../images";
+$screen-size-pc : 1200px;
+
+
+
+.pagenation {
+    display:inline-block;
+    text-align:center;
+    @include zero;
+    margin:20px 0 30px;
+    width: 100%;
+
+    a {
+        background: white;
+    }
+
+    a,
+    strong {
+        overflow:hidden;
+        display:inline-block;
+        vertical-align:top;
+        font-size:14px;
+        color: #555;
+        border: 1px solid #ccc;
+        width: 32px;
+        height: 32px;
+        margin: 0 2px;
+        padding:4px 0 0;
+        border-radius: 10px;
+
+        &.jump,
+        &.move {
+            @include zero;
+            background:#e4e4e4;
+
+            i {
+                font-size:20px;
+            }
+        }
+
+    }
+
+    .active,
+    strong {
+        background: $color-main;
+        color: white;
+        font-weight:normal;
+        border-color: transparent;
+    }
+}
+
+* {
+    @include box-sizing;
+}
+
+input[type="password"] {
+    font-family:sans-serif;
+
+    &::placeholder {
+        font-family: $myfont, "Malgun Gothic", "apple sd gothic neo", sans-serif;
+    }
+}
+
+.sr-only {
+    position: absolute !important;
+    overflow: hidden !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    clip: rect(0, 0, 0, 0) !important;
+    border: 0 !important;
+}
+
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+    position:static;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+}
+
+
+
+
+/* default input */
+input,
+select,
+textarea {
+    @include border-radius(0);
+    /*
+        @media all and (max-width: 1199px) {
+            appearance: none;
+            -moz-appearance: none;
+            -ms-appearance: none;
+            -webkit-appearance: none;
+
+            &::-ms-expand {
+                display: none;
+            }
+        }
+    */
+}
+
+
+
+
+a {
+    text-decoration: none;
+    color: $text-link-color;
+}
+
+button {
+    outline:none;
+    border-radius:0;
+}
+
+
+
+
+
+
+
+
