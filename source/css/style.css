@@ -2610,14 +2610,15 @@ body div#content section.board-list div.container fieldset.search {
 body div#content section.board-list div.container fieldset.search p.counter {
   display: inline-block;
   margin: 0;
-  width: 840px;
   line-height: 34px;
   font-size: 14px;
+  width: 80px;
 }
 
 @media (min-width: 1200px) {
   body div#content section.board-list div.container fieldset.search p.counter {
     line-height: 42px;
+    width: 840px;
   }
 }
 
@@ -2692,9 +2693,9 @@ body div#content section.board-list div.container fieldset.search span.select-ou
 }
 
 body div#content section.board-list div.container fieldset.search input[type="text"] {
-  width: calc(100% - 990px);
   vertical-align: top;
   border: 1px solid #ccc;
+  width: calc(100% - 200px);
   font-size: 14px;
   height: 34px;
   border-right: none;
@@ -2705,6 +2706,7 @@ body div#content section.board-list div.container fieldset.search input[type="te
 @media (min-width: 1200px) {
   body div#content section.board-list div.container fieldset.search input[type="text"] {
     height: 42px;
+    width: calc(100% - 990px);
   }
 }
 
