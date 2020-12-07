@@ -1,98 +1,90 @@
-
 /* basic */
 $min-width: 320px;
 $img-url: "../images";
-$screen-size-pc : 1200px;
-
-
+$screen-size-pc: 1200px;
 
 .pagenation {
-    display:inline-block;
-    text-align:center;
-    @include zero;
-    margin:20px 0 30px;
-    width: 100%;
+	display: inline-block;
+	text-align: center;
+	@include zero;
+	margin: 20px 0 30px;
+	width: 100%;
 
-    a {
-        background: white;
-    }
+	a {
+		background: white;
+	}
 
-    a,
-    strong {
-        overflow:hidden;
-        display:inline-block;
-        vertical-align:top;
-        font-size:14px;
-        color: #555;
-        border: 1px solid #ccc;
-        width: 32px;
-        height: 32px;
-        margin: 0 2px;
-        padding:4px 0 0;
-        border-radius: 10px;
+	a,
+	strong {
+		overflow: hidden;
+		display: inline-block;
+		vertical-align: top;
+		font-size: 14px;
+		color: #555;
+		border: 1px solid #ccc;
+		width: 32px;
+		height: 32px;
+		margin: 0 2px;
+		padding: 4px 0 0;
 
-        &.jump,
-        &.move {
-            @include zero;
-            background:#e4e4e4;
+		&.jump,
+		&.move {
+			@include zero;
 
-            i {
-                font-size:20px;
-            }
-        }
+			i {
+				color: #a5a5a5;
+				padding-top: 3px;
+				font-size: 18px;
+			}
+		}
+	}
 
-    }
-
-    .active,
-    strong {
-        background: $color-main;
-        color: white;
-        font-weight:normal;
-        border-color: transparent;
-    }
+	.active,
+	strong {
+		color: $color-main;
+		font-weight: normal;
+		border-color: $color-main;
+	}
 }
 
 * {
-    @include box-sizing;
+	@include box-sizing;
 }
 
 input[type="password"] {
-    font-family:sans-serif;
+	font-family: sans-serif;
 
-    &::placeholder {
-        font-family: $myfont, "Malgun Gothic", "apple sd gothic neo", sans-serif;
-    }
+	&::placeholder {
+		font-family: $myfont, "Malgun Gothic", "apple sd gothic neo", sans-serif;
+	}
 }
 
 .sr-only {
-    position: absolute !important;
-    overflow: hidden !important;
-    width: 1px !important;
-    height: 1px !important;
-    padding: 0 !important;
-    margin: -1px !important;
-    clip: rect(0, 0, 0, 0) !important;
-    border: 0 !important;
+	position: absolute !important;
+	overflow: hidden !important;
+	width: 1px !important;
+	height: 1px !important;
+	padding: 0 !important;
+	margin: -1px !important;
+	clip: rect(0, 0, 0, 0) !important;
+	border: 0 !important;
 }
 
 .sr-only-focusable:active,
 .sr-only-focusable:focus {
-    position:static;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    clip: auto;
+	position: static;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	clip: auto;
 }
-
-
-
 
 /* default input */
 input,
 select,
 textarea {
-    @include border-radius(0);
-    /*
+	@include border-radius(0);
+	/*
         @media all and (max-width: 1199px) {
             appearance: none;
             -moz-appearance: none;
@@ -106,23 +98,111 @@ textarea {
     */
 }
 
-
-
-
 a {
-    text-decoration: none;
-    color: $text-link-color;
+	text-decoration: none;
+	color: $text-link-color;
 }
 
 button {
-    outline:none;
-    border-radius:0;
+	outline: none;
+	border-radius: 0;
 }
 
+/* default btn */
+.btn {
+	display: inline-block;
+	vertical-align: baseline;
+	outline: none;
+	border: 1px solid #ccc;
+	background: #fff;
+	line-height: 34px;
+	padding: 0 20px;
+	margin: 0 2px;
+	font-size: 14px;
 
+	&.main {
+		background: $color-main;
+		color: #fff;
+		border-color: transparent;
+	}
 
+	&.sub {
+		background: $color-gray;
+		color: #fff;
+		border-color: transparent;
+	}
+	&.btn-ms {
+		line-height: 26px;
+		font-size: 13px;
+		padding: 0 15px;
+	}
 
+	&.btn-xs {
+		line-height: 20px;
+		font-size: 12px;
+		padding: 0 10px;
+	}
 
+	u {
+		display: inline-block;
+		text-decoration: none;
+		padding: 0 0 0 4px;
+		opacity: 0.8;
+		font-size: 0.8em;
+		font-weight: 200;
+	}
 
+	i {
+		position: relative;
+		top: 2px;
+		margin: 0 4px 0 0;
+		font-size: 16px;
+	}
+}
 
+.btn-set {
+	margin: 20px 0;
+	font-size: 0;
 
+	&.center {
+		text-align: center;
+	}
+
+	&.right {
+		text-align: right;
+	}
+
+	&.big {
+		.button {
+			height: 44px;
+			padding: 0 20px;
+			min-width: 160px;
+			font-size: 16px;
+		}
+	}
+
+	&.align {
+		div {
+			display: inline-block;
+			width: 100%;
+			vertical-align: top;
+			text-align: center;
+
+			@media (min-width: $screen-size-pc) {
+				width: 50%;
+			}
+
+			&.left {
+				@media (min-width: $screen-size-pc) {
+					text-align: left;
+				}
+			}
+
+			&.right {
+				@media (min-width: $screen-size-pc) {
+					text-align: right;
+				}
+			}
+		}
+	}
+}

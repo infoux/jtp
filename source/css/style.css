@@ -499,28 +499,27 @@ th {
   height: 32px;
   margin: 0 2px;
   padding: 4px 0 0;
-  border-radius: 10px;
 }
 
 .pagenation a.jump, .pagenation a.move,
 .pagenation strong.jump,
 .pagenation strong.move {
   font-size: 0;
-  background: #e4e4e4;
 }
 
 .pagenation a.jump i, .pagenation a.move i,
 .pagenation strong.jump i,
 .pagenation strong.move i {
-  font-size: 20px;
+  color: #a5a5a5;
+  padding-top: 3px;
+  font-size: 18px;
 }
 
 .pagenation .active,
 .pagenation strong {
-  background: #0075bc;
-  color: white;
+  color: #0075bc;
   font-weight: normal;
-  border-color: transparent;
+  border-color: #0075bc;
 }
 
 * {
@@ -598,6 +597,104 @@ button {
   border-radius: 0;
 }
 
+/* default btn */
+.btn {
+  display: inline-block;
+  vertical-align: baseline;
+  outline: none;
+  border: 1px solid #ccc;
+  background: #fff;
+  line-height: 34px;
+  padding: 0 20px;
+  margin: 0 2px;
+  font-size: 14px;
+}
+
+.btn.main {
+  background: #0075bc;
+  color: #fff;
+  border-color: transparent;
+}
+
+.btn.sub {
+  background: #1f222d;
+  color: #fff;
+  border-color: transparent;
+}
+
+.btn.btn-ms {
+  line-height: 26px;
+  font-size: 13px;
+  padding: 0 15px;
+}
+
+.btn.btn-xs {
+  line-height: 20px;
+  font-size: 12px;
+  padding: 0 10px;
+}
+
+.btn u {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0 0 0 4px;
+  opacity: 0.8;
+  font-size: 0.8em;
+  font-weight: 200;
+}
+
+.btn i {
+  position: relative;
+  top: 2px;
+  margin: 0 4px 0 0;
+  font-size: 16px;
+}
+
+.btn-set {
+  margin: 20px 0;
+  font-size: 0;
+}
+
+.btn-set.center {
+  text-align: center;
+}
+
+.btn-set.right {
+  text-align: right;
+}
+
+.btn-set.big .button {
+  height: 44px;
+  padding: 0 20px;
+  min-width: 160px;
+  font-size: 16px;
+}
+
+.btn-set.align div {
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .btn-set.align div {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .btn-set.align div.left {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .btn-set.align div.right {
+    text-align: right;
+  }
+}
+
 html {
   min-width: 320px;
   max-width: 100%;
@@ -618,7 +715,6 @@ body {
   color: #333;
   position: relative;
   height: 100vh;
-  text-align: center;
   /* header */
 }
 
@@ -649,6 +745,7 @@ body header {
   z-index: 100;
   background: #fff;
   height: 72px;
+  text-align: center;
   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
 }
@@ -666,7 +763,7 @@ body header {
     right: 0;
     top: 100px;
     height: 0;
-    border-top: 1px solid #AAAAAA;
+    border-top: 1px solid #aaaaaa;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
@@ -843,7 +940,7 @@ body header button.menu i.bar:last-of-type {
     position: relative;
     z-index: 10;
     list-style: none;
-    background: #3268B2;
+    background: #3268b2;
     margin: 0;
     padding: 50px 20px 15px;
     font-size: 0;
@@ -859,7 +956,7 @@ body header button.menu i.bar:last-of-type {
     font-size: 16px;
     line-height: 40px;
     border-radius: 4px;
-    color: #3268B2;
+    color: #3268b2;
     font-weight: 600;
   }
   body aside ul.tools li a::before {
@@ -902,7 +999,7 @@ body header button.menu i.bar:last-of-type {
     position: relative;
     line-height: 56px;
     padding: 0 20px;
-    border-bottom: 1px solid #CCCCCC;
+    border-bottom: 1px solid #cccccc;
     font-size: 18px;
   }
   body aside nav#main-menu ul.list li.depth1 h3 a::after, body aside nav#main-menu ul.list li.depth1 h3 a::before {
@@ -932,7 +1029,7 @@ body header button.menu i.bar:last-of-type {
   }
   body aside nav#main-menu ul.list li.depth1 h3 a:hover::after, body aside nav#main-menu ul.list li.depth1 h3 a:hover::before, body aside nav#main-menu ul.list li.depth1 h3 a.on::after, body aside nav#main-menu ul.list li.depth1 h3 a.on::before {
     top: 26px;
-    background: #3268B2;
+    background: #3268b2;
   }
   body aside nav#main-menu ul.list li.depth1 h3 a:hover::after, body aside nav#main-menu ul.list li.depth1 h3 a.on::after {
     -webkit-transform: rotate(45deg);
@@ -945,7 +1042,7 @@ body header button.menu i.bar:last-of-type {
   body aside nav#main-menu ul.list li.depth1 ul {
     margin: 0;
     padding: 0;
-    background: #F2F2F2;
+    background: #f2f2f2;
     list-style: none;
     max-height: 0;
     overflow: hidden;
@@ -1036,7 +1133,7 @@ body header button.menu i.bar:last-of-type {
     top: 2px;
     width: 1px;
     height: 13px;
-    background: #5A5A5A;
+    background: #5a5a5a;
   }
   body aside ul.tools li a.mypage::before {
     background: url("../images/icon-mypage-gray.svg") no-repeat center/88% auto;
@@ -1134,6 +1231,10 @@ body header button.menu i.bar:last-of-type {
   }
 }
 
+body div#content {
+  text-align: center;
+}
+
 body div#content section.main-issue {
   background: url("../images/main-bg.png") no-repeat center/cover;
   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
@@ -1171,7 +1272,7 @@ body div#content section.main-issue div.container h2 small {
   display: block;
   font-size: 16px;
   margin: 0 0 6px;
-  color: #CCD9E6;
+  color: #ccd9e6;
   font-weight: 400;
 }
 
@@ -1251,19 +1352,19 @@ body div#content section.main-issue div.container ul.main-links {
   }
 }
 
-body div#content section.main-issue div.container ul.main-links li:nth-child(-n+3) {
+body div#content section.main-issue div.container ul.main-links li:nth-child(-n + 3) {
   display: inline-block;
   width: calc(100% / 3);
-  background: #3268B2;
+  background: #3268b2;
 }
 
 @media (min-width: 1200px) {
-  body div#content section.main-issue div.container ul.main-links li:nth-child(-n+3) {
+  body div#content section.main-issue div.container ul.main-links li:nth-child(-n + 3) {
     width: calc(860px / 3);
   }
 }
 
-body div#content section.main-issue div.container ul.main-links li:nth-child(-n+3) a {
+body div#content section.main-issue div.container ul.main-links li:nth-child(-n + 3) a {
   display: inline-block;
   width: 100%;
   height: 100px;
@@ -1273,7 +1374,7 @@ body div#content section.main-issue div.container ul.main-links li:nth-child(-n+
 }
 
 @media (min-width: 1200px) {
-  body div#content section.main-issue div.container ul.main-links li:nth-child(-n+3) a {
+  body div#content section.main-issue div.container ul.main-links li:nth-child(-n + 3) a {
     text-align: left;
     position: relative;
     height: 140px;
@@ -1283,7 +1384,7 @@ body div#content section.main-issue div.container ul.main-links li:nth-child(-n+
   }
 }
 
-body div#content section.main-issue div.container ul.main-links li:nth-child(-n+3) a::before {
+body div#content section.main-issue div.container ul.main-links li:nth-child(-n + 3) a::before {
   content: "";
   display: block;
   margin: 10px auto 6px;
@@ -1292,7 +1393,7 @@ body div#content section.main-issue div.container ul.main-links li:nth-child(-n+
 }
 
 @media (min-width: 1200px) {
-  body div#content section.main-issue div.container ul.main-links li:nth-child(-n+3) a::before {
+  body div#content section.main-issue div.container ul.main-links li:nth-child(-n + 3) a::before {
     position: absolute;
     left: 38px;
     top: 26px;
@@ -1302,20 +1403,20 @@ body div#content section.main-issue div.container ul.main-links li:nth-child(-n+
   }
 }
 
-body div#content section.main-issue div.container ul.main-links li:nth-child(-n+3):nth-child(1) a::before {
+body div#content section.main-issue div.container ul.main-links li:nth-child(-n + 3):nth-child(1) a::before {
   background: url("../images/icon-main01.svg") no-repeat center/95% auto;
 }
 
-body div#content section.main-issue div.container ul.main-links li:nth-child(-n+3):nth-child(2) a::before {
+body div#content section.main-issue div.container ul.main-links li:nth-child(-n + 3):nth-child(2) a::before {
   background: url("../images/icon-main02.svg") no-repeat center/95% auto;
 }
 
-body div#content section.main-issue div.container ul.main-links li:nth-child(-n+3):nth-child(3) a::before {
+body div#content section.main-issue div.container ul.main-links li:nth-child(-n + 3):nth-child(3) a::before {
   background: url("../images/icon-main03.svg") no-repeat center/95% auto;
 }
 
-body div#content section.main-issue div.container ul.main-links li:nth-child(-n+2) {
-  border-right: 1px solid #608DC9;
+body div#content section.main-issue div.container ul.main-links li:nth-child(-n + 2) {
+  border-right: 1px solid #608dc9;
 }
 
 body div#content section.main-issue div.container ul.main-links li.zeus, body div#content section.main-issue div.container ul.main-links li.etube {
@@ -1347,7 +1448,7 @@ body div#content section.main-issue div.container ul.main-links li.zeus a, body 
 }
 
 body div#content section.main-issue div.container ul.main-links li.zeus {
-  background: #00B8CD;
+  background: #00b8cd;
 }
 
 body div#content section.main-issue div.container ul.main-links li.zeus strong {
@@ -1368,7 +1469,7 @@ body div#content section.main-issue div.container ul.main-links li.zeus strong {
 }
 
 body div#content section.main-issue div.container ul.main-links li.etube {
-  background: #51555B;
+  background: #51555b;
 }
 
 body div#content section.main-issue div.container ul.main-links li.etube strong {
@@ -1601,8 +1702,8 @@ body div#content section.main-status div.container ul.list li h3 span {
 body div#content section.main-status div.container ul.list li p {
   margin: 0;
   font-size: 13px;
-  font-family: 'IBMPlexSansKR-Bold';
-  color: #699B00;
+  font-family: "IBMPlexSansKR-Bold";
+  color: #699b00;
   word-break: keep-all;
 }
 
@@ -1724,12 +1825,12 @@ body div#content section.main-equipment div.container ul.list li:nth-child(odd) 
   }
 }
 
-body div#content section.main-equipment div.container ul.list li:nth-child(n+3) {
+body div#content section.main-equipment div.container ul.list li:nth-child(n + 3) {
   display: none;
 }
 
 @media (min-width: 1200px) {
-  body div#content section.main-equipment div.container ul.list li:nth-child(n+3) {
+  body div#content section.main-equipment div.container ul.list li:nth-child(n + 3) {
     display: inline-block;
   }
 }
@@ -1788,19 +1889,19 @@ body div#content section.main-equipment div.container ul.list li h3 small {
 }
 
 body div#content section.main-equipment div.container ul.list li h3.type01 small {
-  border-color: #D67622;
-  color: #D67622;
+  border-color: #d67622;
+  color: #d67622;
 }
 
 body div#content section.main-equipment div.container ul.list li h3.type02 small {
-  border-color: #3CA658;
-  color: #3CA658;
+  border-color: #3ca658;
+  color: #3ca658;
 }
 
 body div#content section.main-equipment div.container ul.list li p.site {
   margin: 0;
   font-size: 12px;
-  color: #1C7CC2;
+  color: #1c7cc2;
 }
 
 @media (min-width: 1200px) {
@@ -1810,7 +1911,7 @@ body div#content section.main-equipment div.container ul.list li p.site {
 }
 
 body div#content section.main-chart div.container {
-  background: #F2F2F2;
+  background: #f2f2f2;
   font-size: 0;
   border-radius: 5px;
   width: calc(100% - 20px);
@@ -1985,14 +2086,14 @@ body div#content section.main-notice div.container div.right ul.list {
   padding: 0;
 }
 
-body div#content section.main-notice div.container div.left ul.list li:nth-child(n+4),
-body div#content section.main-notice div.container div.right ul.list li:nth-child(n+4) {
+body div#content section.main-notice div.container div.left ul.list li:nth-child(n + 4),
+body div#content section.main-notice div.container div.right ul.list li:nth-child(n + 4) {
   display: none;
 }
 
 @media (min-width: 1200px) {
-  body div#content section.main-notice div.container div.left ul.list li:nth-child(n+4),
-  body div#content section.main-notice div.container div.right ul.list li:nth-child(n+4) {
+  body div#content section.main-notice div.container div.left ul.list li:nth-child(n + 4),
+  body div#content section.main-notice div.container div.right ul.list li:nth-child(n + 4) {
     display: block;
   }
 }
@@ -2081,14 +2182,14 @@ body div#content section.main-notice div.container div.right div.program p.term 
 }
 
 body div#content section.main-popupzone {
-  background: #2E3047;
+  background: #2e3047;
   position: relative;
 }
 
 @media (min-width: 1200px) {
   body div#content section.main-popupzone {
     display: block;
-    background: #EFEFEF;
+    background: #efefef;
     padding: 50px 0;
   }
 }
@@ -2107,7 +2208,7 @@ body div#content section.main-popupzone div.slider div.slide {
 @media (min-width: 1200px) {
   body div#content section.main-popupzone div.slider div.slide {
     padding: 0 20px;
-    opacity: .5;
+    opacity: 0.5;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
@@ -2248,7 +2349,7 @@ body div#content section.main-outsite {
     border: 1px solid #ccc;
     border-left: none;
     border-right: none;
-    background: #EFEFEF;
+    background: #efefef;
   }
   body div#content section.main-outsite div.container {
     overflow: hidden;
@@ -2277,6 +2378,21 @@ body div#content section.main-outsite {
   body div#content section.main-outsite div.container button.arrow.right {
     background: url("../images/icon-right.svg") no-repeat center/100% auto;
     right: 10px;
+  }
+}
+
+body div#content h3.subtitle {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  body div#content h3.subtitle {
+    font-family: "NanumSquare";
+    display: block;
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+    margin: 80px 0 60px;
   }
 }
 
@@ -2318,7 +2434,7 @@ body div#content section.sub-header {
 }
 
 body div#content section.sub-menu {
-  background: #1F222D;
+  background: #1f222d;
 }
 
 body div#content section.sub-menu div.container {
@@ -2468,13 +2584,747 @@ body div#content section.sub-menu div.container ul.submenu > li input:checked + 
 }
 
 body div#content section.sub-menu div.container ul.submenu > li input:checked + label + ul li a.on {
-  color: #3268B2;
+  color: #3268b2;
 }
 
 @media (min-width: 1200px) {
   body div#content section.sub-menu div.container ul.submenu > li input:checked + label + ul li a.on {
     color: #6ea4ee;
   }
+}
+
+body div#content section.board-list div.container fieldset.search {
+  vertical-align: top;
+  border: none;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 0;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-list div.container fieldset.search {
+    padding: 0 0 20px;
+  }
+}
+
+body div#content section.board-list div.container fieldset.search p.counter {
+  display: inline-block;
+  margin: 0;
+  width: 840px;
+  line-height: 34px;
+  font-size: 14px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-list div.container fieldset.search p.counter {
+    line-height: 42px;
+  }
+}
+
+body div#content section.board-list div.container fieldset.search p.counter strong {
+  font-weight: 800;
+  color: #1c7cc2;
+}
+
+body div#content section.board-list div.container fieldset.search span.select-outline {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  margin-right: 10px;
+}
+
+body div#content section.board-list div.container fieldset.search span.select-outline select {
+  appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -webkit-appearance: none;
+  height: 34px;
+  width: 80px;
+  font-size: 14px;
+  display: inline-block;
+  padding: 0 30px 0 10px;
+  border: 1px solid #cccccc;
+}
+
+body div#content section.board-list div.container fieldset.search span.select-outline select::-ms-expand {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-list div.container fieldset.search span.select-outline select {
+    width: 100px;
+    height: 42px;
+  }
+}
+
+body div#content section.board-list div.container fieldset.search span.select-outline::before, body div#content section.board-list div.container fieldset.search span.select-outline::after {
+  content: "";
+  position: absolute;
+  top: 19px;
+  display: block;
+  width: 8px;
+  height: 1px;
+  background: #999999;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+body div#content section.board-list div.container fieldset.search span.select-outline::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  right: 12px;
+}
+
+body div#content section.board-list div.container fieldset.search span.select-outline::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  right: 6px;
+}
+
+body div#content section.board-list div.container fieldset.search span.select-outline:focus-within::before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+body div#content section.board-list div.container fieldset.search span.select-outline:focus-within::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+body div#content section.board-list div.container fieldset.search input[type="text"] {
+  width: calc(100% - 990px);
+  vertical-align: top;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  height: 34px;
+  border-right: none;
+  outline: none;
+  padding: 0 10px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-list div.container fieldset.search input[type="text"] {
+    height: 42px;
+  }
+}
+
+body div#content section.board-list div.container fieldset.search button {
+  font-size: 0;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  width: 30px;
+  background: none;
+  border: 1px solid #ccc;
+  height: 34px;
+  border-left: none;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-list div.container fieldset.search button {
+    height: 42px;
+    width: 40px;
+  }
+}
+
+body div#content section.board-list div.container fieldset.search button i {
+  font-size: 16px;
+  color: #999999;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-list div.container fieldset.search button i {
+    font-size: 20px;
+  }
+}
+
+body div#content section.board-list div.container ul.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 2px solid #3d3d3d;
+  font-size: 0;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-list div.container ul.list::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 64px;
+    background: #fafafa;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+body div#content section.board-list div.container ul.list li a {
+  display: block;
+  position: relative;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-list div.container ul.list li a {
+    padding: 20px 0;
+  }
+}
+
+body div#content section.board-list div.container ul.list li a h4 {
+  font-size: 16px;
+  margin: 0;
+  font-weight: 400;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-list div.container ul.list li a h4 {
+    position: relative;
+    font-size: 18px;
+    width: 800px;
+    margin: 0 320px 0 80px;
+  }
+}
+
+body div#content section.board-list div.container ul.list li a h4 span {
+  display: none;
+}
+
+body div#content section.board-list div.container ul.list li a h4 i.bx-paperclip {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  color: #1c7cc2;
+  margin: 0 0 0 10px;
+}
+
+body div#content section.board-list div.container ul.list li a p {
+  margin: 0;
+  position: relative;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-list div.container ul.list li a p {
+    position: absolute;
+    font-size: 16px;
+    top: 20px;
+  }
+}
+
+body div#content section.board-list div.container ul.list li a p u {
+  font-size: 14px;
+  text-decoration: none;
+}
+
+body div#content section.board-list div.container ul.list li a p span {
+  display: none;
+}
+
+body div#content section.board-list div.container ul.list li a p.num {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-list div.container ul.list li a p.num {
+    display: block;
+    left: 0;
+    width: 80px;
+    text-align: center;
+  }
+}
+
+body div#content section.board-list div.container ul.list li a p.name {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-list div.container ul.list li a p.name {
+    display: block;
+    left: 900px;
+    width: 100px;
+    text-align: center;
+  }
+}
+
+body div#content section.board-list div.container ul.list li a p.date {
+  text-align: right;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-list div.container ul.list li a p.date {
+    display: block;
+    left: 1000px;
+    width: 100px;
+    text-align: center;
+  }
+}
+
+body div#content section.board-list div.container ul.list li a p.count {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-list div.container ul.list li a p.count {
+    display: block;
+    left: 1100px;
+    width: 100px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-list div.container ul.list li:first-child a h4 span,
+  body div#content section.board-list div.container ul.list li:first-child a p span {
+    display: block;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: -66px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+body div#content section.board-view h3.subtitle {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-view h3.subtitle {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-view div.board-box {
+    border-top: 2px solid #3d3d3d;
+  }
+}
+
+body div#content section.board-view div.board-box h4 {
+  font-size: 16px;
+  margin: 0;
+  padding: 14px 0;
+  border-bottom: 1px solid #dfdfdf;
+  word-break: keep-all;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-view div.board-box h4 {
+    padding: 0;
+    line-height: 60px;
+    font-size: 18px;
+  }
+  body div#content section.board-view div.board-box h4::before {
+    content: "제목";
+    display: inline-block;
+    width: 176px;
+    background: #fafafa;
+    font-size: 17px;
+    text-align: center;
+    border-right: 1px solid #dfdfdf;
+    margin-right: 20px;
+  }
+}
+
+body div#content section.board-view div.board-box ul.info {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  list-style: none;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+body div#content section.board-view div.board-box ul.info li {
+  display: inline-block;
+  padding: 14px 10px 14px 0;
+  font-size: 14px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-view div.board-box ul.info li {
+    font-size: 0;
+    padding: 0;
+    border-right: 1px solid #dfdfdf;
+  }
+  body div#content section.board-view div.board-box ul.info li:last-child {
+    border: none;
+  }
+  body div#content section.board-view div.board-box ul.info li:first-child {
+    width: 550px;
+  }
+}
+
+body div#content section.board-view div.board-box ul.info li.count {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-view div.board-box ul.info li.count {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-view div.board-box ul.info li span {
+    display: inline-block;
+    width: 176px;
+    background: #fafafa;
+    font-size: 17px;
+    text-align: center;
+    line-height: 60px;
+    font-weight: 600;
+  }
+}
+
+body div#content section.board-view div.board-box ul.info li u {
+  text-decoration: none;
+}
+
+body div#content section.board-view div.board-box ul.info li u::before {
+  content: ": ";
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-view div.board-box ul.info li u::before {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-view div.board-box ul.info li u {
+    display: inline-block;
+    border-left: 1px solid #dfdfdf;
+    font-size: 16px;
+    padding: 0 40px 0 20px;
+    line-height: 60px;
+    font-weight: 600;
+  }
+}
+
+body div#content section.board-view hr {
+  display: none;
+}
+
+body div#content section.board-view ul.file,
+body div#content section.board-view ul.link {
+  position: relative;
+  margin: 0;
+  padding: 14px 0;
+  list-style: none;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-view ul.file,
+  body div#content section.board-view ul.link {
+    padding: 20px 0 20px 196px;
+    font-size: 16px;
+  }
+  body div#content section.board-view ul.file::before,
+  body div#content section.board-view ul.link::before {
+    content: "첨부파일";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    font-weight: 600;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 176px;
+    background: #fafafa;
+    font-size: 17px;
+    border-right: 1px solid #dfdfdf;
+    margin-right: 20px;
+  }
+}
+
+body div#content section.board-view ul.file.link::before,
+body div#content section.board-view ul.link.link::before {
+  content: "링크";
+}
+
+body div#content section.board-view ul.file li a,
+body div#content section.board-view ul.link li a {
+  color: #1c7cc2;
+  text-decoration: underline;
+}
+
+body div#content section.board-view div.board-text {
+  padding: 20px 0;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-view div.board-text {
+    padding: 40px;
+  }
+}
+
+body div#content section.board-view div.board-text p {
+  margin: 0;
+}
+
+body div#content section.board-view div.board-text p.image {
+  text-align: center;
+}
+
+body div#content section.board-view div.board-text img {
+  max-width: 100%;
+}
+
+body div#content section.statute div.container {
+  padding-bottom: 30px;
+}
+
+body div#content section.statute div.container ul.link {
+  list-style: none;
+  margin: 40px 0 26px;
+  padding: 0;
+  font-size: 0;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.statute div.container ul.link {
+    text-align: center;
+    margin: 60px 0 34px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body div#content section.statute div.container ul.link li {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+body div#content section.statute div.container ul.link li a {
+  position: relative;
+  display: block;
+  border: 1px solid #ccc;
+  background: #f2f7fe;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.statute div.container ul.link li a {
+    width: 340px;
+    height: 140px;
+    margin: 0 25px 24px;
+    text-align: left;
+  }
+  body div#content section.statute div.container ul.link li a:hover {
+    border-color: #3268b2;
+    background: #f1f7ff;
+    -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+  }
+}
+
+body div#content section.statute div.container ul.link li a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  width: 30px;
+  height: 30px;
+  background: url("../images/icon-arrow-circle.svg") no-repeat center/100% auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.statute div.container ul.link li a::after {
+    width: 40px;
+    height: 40px;
+    top: 50px;
+  }
+}
+
+body div#content section.statute div.container ul.link li:first-child a {
+  padding: 38px 20px 20px 60px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.statute div.container ul.link li:first-child a {
+    padding: 60px 30px 30px 66px;
+    font-size: 26px;
+  }
+}
+
+body div#content section.statute div.container ul.link li:first-child a strong {
+  display: block;
+  position: absolute;
+  left: 20px;
+  top: 16px;
+  font-size: 0;
+  width: 154px;
+  height: 30px;
+  background: url("../images/logo-msit.svg") no-repeat center/auto 100%;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.statute div.container ul.link li:first-child a strong {
+    width: 191px;
+    height: 37px;
+    top: 32px;
+  }
+}
+
+body div#content section.statute div.container ul.link li:last-child a {
+  padding: 16px 20px 20px 60px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.statute div.container ul.link li:last-child a {
+    padding: 38px 30px 30px 64px;
+  }
+}
+
+body div#content section.statute div.container ul.link li:last-child a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 18px;
+  top: 16px;
+  width: 34px;
+  height: 34px;
+  background: url("../images/logo-law.png") no-repeat center/100% auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.statute div.container ul.link li:last-child a::before {
+    top: 38px;
+  }
+}
+
+body div#content section.statute div.container ul.link li:last-child a strong {
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  color: #0d3171;
+}
+
+body div#content section.statute div.container h4 {
+  font-size: 20px;
+  color: #333333;
+  line-height: 60px;
+  background: #f0f0f0;
+  padding: 0 10px;
+  margin: 30px 0 10px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.statute div.container h4 {
+    font-size: 22px;
+    line-height: 66px;
+    padding: 0 20px;
+  }
+}
+
+body div#content section.statute div.container p.info {
+  margin: 0;
+  text-align: right;
+  font-size: 15px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.statute div.container p.info {
+    font-size: 17px;
+  }
+}
+
+body div#content section.statute div.container h5 {
+  position: relative;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0 0 0 22px;
+  margin: 20px 0 10px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.statute div.container h5 {
+    font-size: 20px;
+    padding: 0 0 0 32px;
+    margin: 30px 0 20px;
+  }
+}
+
+body div#content section.statute div.container h5::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 18px;
+  height: 18px;
+  background: url("../images/bullet01.svg") no-repeat center/100% auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.statute div.container h5::before {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+body div#content section.statute div.container ul.text {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body div#content section.statute div.container ul.text > li {
+  position: relative;
+  padding: 0 0 8px 20px;
+  word-break: keep-all;
+  font-size: 15px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.statute div.container ul.text > li {
+    padding: 0 0 10px 24px;
+    font-size: 17px;
+  }
+}
+
+body div#content section.statute div.container ul.text > li strong {
+  position: absolute;
+  font-weight: 400;
+  left: 0;
+}
+
+body div#content section.statute div.container ul.text > li ul {
+  list-style: none;
+  margin: 10px 0;
+  padding: 0;
+}
+
+body div#content section.statute div.container ul.text > li ul > li {
+  position: relative;
+  padding: 0 0 8px 20px;
+  word-break: keep-all;
+  font-size: 15px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.statute div.container ul.text > li ul > li {
+    padding: 0 0 6px 24px;
+    font-size: 17px;
+  }
+}
+
+body div#content section.statute div.container ul.text > li ul > li strong {
+  position: absolute;
+  font-weight: 400;
+  left: 0;
 }
 
 body div#content section.sub-ready {
@@ -2485,7 +3335,8 @@ body div#content section.sub-ready {
 }
 
 body footer#footer {
-  background: #EFEFEF;
+  background: #efefef;
+  text-align: center;
 }
 
 body footer#footer div.container {
