@@ -2398,7 +2398,6 @@ body {
 
 				@media (min-width: $screen-size-pc) {
 					padding: 0;
-					line-height: 60px;
 					font-size: 18px;
 				}
 
@@ -2413,6 +2412,7 @@ body {
 						top: 0;
 						bottom: 0;
 						width: 176px;
+						padding: 20px 0;
 						background: #fafafa;
 						font-size: 17px;
 						text-align: center;
@@ -2424,7 +2424,7 @@ body {
 				textarea {
 					width: 100%;
 					min-height: 200px;
-					padding: 10px 0;
+					padding: 20px 0;
 					border: none;
 					outline: none;
 					font-size: 14px;
@@ -2433,7 +2433,6 @@ body {
 						width: calc(100% - 201px);
 						margin-left: 201px;
 						font-size: 16px;
-						padding: 0;
 					}
 				}
 			}
