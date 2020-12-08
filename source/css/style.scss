@@ -1633,13 +1633,18 @@ body {
 		h3.subtitle {
 			display: none;
 
+			text-align: center;
+			font-family: "NanumSquare";
+			font-weight: 800;
+			text-align: center;
+			font-size: 24px;
+			margin: 0;
+			padding: 30px 0;
+
 			@media (min-width: $screen-size-pc) {
-				font-family: "NanumSquare";
 				display: block;
 				font-size: 32px;
-				font-weight: 800;
-				text-align: center;
-				margin: 80px 0 60px;
+				padding: 80px 0 60px;
 			}
 		}
 
@@ -2099,6 +2104,49 @@ body {
 								}
 							}
 						}
+
+						&.notice {
+							background: #f3f3f3;
+
+							h4 {
+								padding-left: 65px;
+
+								@media (min-width: $screen-size-pc) {
+									padding-left: 0;
+								}
+							}
+
+							a {
+								p.num {
+									display: block;
+									text-align: center;
+									position: absolute;
+									left: 5px;
+									top: 10px;
+									padding: 2px 0;
+
+									@media (min-width: $screen-size-pc) {
+										display: inline-block;
+										left: 0;
+										top: 20px;
+									}
+
+									u {
+										display: block;
+										background: #699b00;
+										width: 50px;
+										border-radius: 30px;
+										color: #fff;
+
+										@media (min-width: $screen-size-pc) {
+											padding: 5px 0;
+											margin: -5px 15px 0;
+											top: 0;
+										}
+									}
+								}
+							}
+						}
 					}
 				}
 			}
@@ -2132,6 +2180,178 @@ body {
 
 						&::before {
 							content: "제목";
+							display: inline-block;
+							width: 176px;
+							background: #fafafa;
+							font-size: 17px;
+							text-align: center;
+							border-right: 1px solid #dfdfdf;
+							margin-right: 20px;
+						}
+					}
+				}
+
+				ul.info {
+					margin: 0;
+					padding: 0;
+					font-size: 0;
+					list-style: none;
+					border-bottom: 1px solid #dfdfdf;
+
+					li {
+						display: inline-block;
+						padding: 14px 10px 14px 0;
+						font-size: 14px;
+
+						@media (min-width: $screen-size-pc) {
+							font-size: 0;
+							padding: 0;
+							border-right: 1px solid #dfdfdf;
+
+							&:last-child {
+								border: none;
+							}
+
+							&:first-child {
+								width: 550px;
+							}
+						}
+
+						&.count {
+							display: none;
+
+							@media (min-width: $screen-size-pc) {
+								display: inline-block;
+							}
+						}
+
+						span {
+							@media (min-width: $screen-size-pc) {
+								display: inline-block;
+								width: 176px;
+								background: #fafafa;
+								font-size: 17px;
+								text-align: center;
+								line-height: 60px;
+								font-weight: 600;
+							}
+						}
+
+						u {
+							text-decoration: none;
+
+							&::before {
+								content: ": ";
+
+								@media (min-width: $screen-size-pc) {
+									display: none;
+								}
+							}
+
+							@media (min-width: $screen-size-pc) {
+								display: inline-block;
+								border-left: 1px solid #dfdfdf;
+								font-size: 16px;
+								padding: 0 40px 0 20px;
+								line-height: 60px;
+								font-weight: 600;
+							}
+						}
+					}
+				}
+			}
+
+			hr {
+				display: none;
+			}
+
+			ul.file,
+			ul.link {
+				position: relative;
+				margin: 0;
+				padding: 14px 0;
+				list-style: none;
+				border-bottom: 1px solid #dfdfdf;
+
+				@media (min-width: $screen-size-pc) {
+					padding: 20px 0 20px 196px;
+					font-size: 16px;
+
+					&::before {
+						content: "첨부파일";
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						position: absolute;
+						font-weight: 600;
+						left: 0;
+						top: 0;
+						bottom: 0;
+						width: 176px;
+						background: #fafafa;
+						font-size: 17px;
+						border-right: 1px solid #dfdfdf;
+						margin-right: 20px;
+					}
+				}
+
+				&.link {
+					&::before {
+						content: "링크";
+					}
+				}
+
+				li {
+					a {
+						color: #1c7cc2;
+						text-decoration: underline;
+					}
+				}
+			}
+
+			div.board-text {
+				padding: 20px 0;
+				border-bottom: 1px solid #dfdfdf;
+
+				@media (min-width: $screen-size-pc) {
+					padding: 40px;
+				}
+
+				p {
+					margin: 0;
+
+					&.image {
+						text-align: center;
+					}
+				}
+
+				img {
+					max-width: 100%;
+				}
+			}
+		}
+
+		section.board-write {
+			h3.subtitle {
+				display: block;
+			}
+
+			div.board-box {
+				border-top: 2px solid #3d3d3d;
+
+				div.line {
+					font-size: 16px;
+					margin: 0;
+					padding: 14px 0;
+					border-bottom: 1px solid #dfdfdf;
+					word-break: keep-all;
+
+					@media (min-width: $screen-size-pc) {
+						padding: 0;
+						line-height: 60px;
+						font-size: 18px;
+
+						label {
 							display: inline-block;
 							width: 176px;
 							background: #fafafa;

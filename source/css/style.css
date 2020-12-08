@@ -2383,16 +2383,20 @@ body div#content section.main-outsite {
 
 body div#content h3.subtitle {
   display: none;
+  text-align: center;
+  font-family: "NanumSquare";
+  font-weight: 800;
+  text-align: center;
+  font-size: 24px;
+  margin: 0;
+  padding: 30px 0;
 }
 
 @media (min-width: 1200px) {
   body div#content h3.subtitle {
-    font-family: "NanumSquare";
     display: block;
     font-size: 32px;
-    font-weight: 800;
-    text-align: center;
-    margin: 80px 0 60px;
+    padding: 80px 0 60px;
   }
 }
 
@@ -2885,6 +2889,53 @@ body div#content section.board-list div.container ul.list li a p.count {
   }
 }
 
+body div#content section.board-list div.container ul.list li.notice {
+  background: #f3f3f3;
+}
+
+body div#content section.board-list div.container ul.list li.notice h4 {
+  padding-left: 65px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-list div.container ul.list li.notice h4 {
+    padding-left: 0;
+  }
+}
+
+body div#content section.board-list div.container ul.list li.notice a p.num {
+  display: block;
+  text-align: center;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  padding: 2px 0;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-list div.container ul.list li.notice a p.num {
+    display: inline-block;
+    left: 0;
+    top: 20px;
+  }
+}
+
+body div#content section.board-list div.container ul.list li.notice a p.num u {
+  display: block;
+  background: #699b00;
+  width: 50px;
+  border-radius: 30px;
+  color: #fff;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-list div.container ul.list li.notice a p.num u {
+    padding: 5px 0;
+    margin: -5px 15px 0;
+    top: 0;
+  }
+}
+
 body div#content section.board-view h3.subtitle {
   display: none;
 }
@@ -3077,6 +3128,192 @@ body div#content section.board-view div.board-text p.image {
 }
 
 body div#content section.board-view div.board-text img {
+  max-width: 100%;
+}
+
+body div#content section.board-write h3.subtitle {
+  display: block;
+}
+
+body div#content section.board-write div.board-box {
+  border-top: 2px solid #3d3d3d;
+}
+
+body div#content section.board-write div.board-box div.line {
+  font-size: 16px;
+  margin: 0;
+  padding: 14px 0;
+  border-bottom: 1px solid #dfdfdf;
+  word-break: keep-all;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-write div.board-box div.line {
+    padding: 0;
+    line-height: 60px;
+    font-size: 18px;
+  }
+  body div#content section.board-write div.board-box div.line label {
+    display: inline-block;
+    width: 176px;
+    background: #fafafa;
+    font-size: 17px;
+    text-align: center;
+    border-right: 1px solid #dfdfdf;
+    margin-right: 20px;
+  }
+}
+
+body div#content section.board-write div.board-box ul.info {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  list-style: none;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+body div#content section.board-write div.board-box ul.info li {
+  display: inline-block;
+  padding: 14px 10px 14px 0;
+  font-size: 14px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-write div.board-box ul.info li {
+    font-size: 0;
+    padding: 0;
+    border-right: 1px solid #dfdfdf;
+  }
+  body div#content section.board-write div.board-box ul.info li:last-child {
+    border: none;
+  }
+  body div#content section.board-write div.board-box ul.info li:first-child {
+    width: 550px;
+  }
+}
+
+body div#content section.board-write div.board-box ul.info li.count {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-write div.board-box ul.info li.count {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-write div.board-box ul.info li span {
+    display: inline-block;
+    width: 176px;
+    background: #fafafa;
+    font-size: 17px;
+    text-align: center;
+    line-height: 60px;
+    font-weight: 600;
+  }
+}
+
+body div#content section.board-write div.board-box ul.info li u {
+  text-decoration: none;
+}
+
+body div#content section.board-write div.board-box ul.info li u::before {
+  content: ": ";
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-write div.board-box ul.info li u::before {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-write div.board-box ul.info li u {
+    display: inline-block;
+    border-left: 1px solid #dfdfdf;
+    font-size: 16px;
+    padding: 0 40px 0 20px;
+    line-height: 60px;
+    font-weight: 600;
+  }
+}
+
+body div#content section.board-write hr {
+  display: none;
+}
+
+body div#content section.board-write ul.file,
+body div#content section.board-write ul.link {
+  position: relative;
+  margin: 0;
+  padding: 14px 0;
+  list-style: none;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-write ul.file,
+  body div#content section.board-write ul.link {
+    padding: 20px 0 20px 196px;
+    font-size: 16px;
+  }
+  body div#content section.board-write ul.file::before,
+  body div#content section.board-write ul.link::before {
+    content: "첨부파일";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    font-weight: 600;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 176px;
+    background: #fafafa;
+    font-size: 17px;
+    border-right: 1px solid #dfdfdf;
+    margin-right: 20px;
+  }
+}
+
+body div#content section.board-write ul.file.link::before,
+body div#content section.board-write ul.link.link::before {
+  content: "링크";
+}
+
+body div#content section.board-write ul.file li a,
+body div#content section.board-write ul.link li a {
+  color: #1c7cc2;
+  text-decoration: underline;
+}
+
+body div#content section.board-write div.board-text {
+  padding: 20px 0;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-write div.board-text {
+    padding: 40px;
+  }
+}
+
+body div#content section.board-write div.board-text p {
+  margin: 0;
+}
+
+body div#content section.board-write div.board-text p.image {
+  text-align: center;
+}
+
+body div#content section.board-write div.board-text img {
   max-width: 100%;
 }
 
