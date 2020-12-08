@@ -663,7 +663,7 @@ button {
   text-align: right;
 }
 
-.btn-set.big .button {
+.btn-set.big .btn {
   height: 44px;
   padding: 0 20px;
   min-width: 160px;
@@ -3131,6 +3131,10 @@ body div#content section.board-view div.board-text img {
   max-width: 100%;
 }
 
+body div#content section.board-write {
+  padding-bottom: 40px;
+}
+
 body div#content section.board-write h3.subtitle {
   display: block;
 }
@@ -3142,7 +3146,7 @@ body div#content section.board-write div.board-box {
 body div#content section.board-write div.board-box div.line {
   font-size: 16px;
   margin: 0;
-  padding: 14px 0;
+  padding: 0;
   border-bottom: 1px solid #dfdfdf;
   word-break: keep-all;
 }
@@ -3153,8 +3157,73 @@ body div#content section.board-write div.board-box div.line {
     line-height: 60px;
     font-size: 18px;
   }
+}
+
+body div#content section.board-write div.board-box div.line label {
+  display: none;
+}
+
+@media (min-width: 1200px) {
   body div#content section.board-write div.board-box div.line label {
     display: inline-block;
+    width: 176px;
+    font-weight: 600;
+    background: #fafafa;
+    font-size: 17px;
+    text-align: center;
+    border-right: 1px solid #dfdfdf;
+    margin-right: 20px;
+  }
+}
+
+body div#content section.board-write div.board-box div.line input[type="text"] {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-write div.board-box div.line input[type="text"] {
+    width: calc(100% - 201px);
+    font-size: 16px;
+  }
+}
+
+body div#content section.board-write hr {
+  display: none;
+}
+
+body div#content section.board-write div.board-text {
+  position: relative;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #dfdfdf;
+  word-break: keep-all;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-write div.board-text {
+    padding: 0;
+    line-height: 60px;
+    font-size: 18px;
+  }
+}
+
+body div#content section.board-write div.board-text label {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-write div.board-text label {
+    display: inline-block;
+    position: absolute;
+    font-weight: 600;
+    left: 0;
+    top: 0;
+    bottom: 0;
     width: 176px;
     background: #fafafa;
     font-size: 17px;
@@ -3164,86 +3233,24 @@ body div#content section.board-write div.board-box div.line {
   }
 }
 
-body div#content section.board-write div.board-box ul.info {
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-  list-style: none;
-  border-bottom: 1px solid #dfdfdf;
-}
-
-body div#content section.board-write div.board-box ul.info li {
-  display: inline-block;
-  padding: 14px 10px 14px 0;
+body div#content section.board-write div.board-text textarea {
+  width: 100%;
+  min-height: 200px;
+  padding: 10px 0;
+  border: none;
+  outline: none;
   font-size: 14px;
 }
 
 @media (min-width: 1200px) {
-  body div#content section.board-write div.board-box ul.info li {
-    font-size: 0;
-    padding: 0;
-    border-right: 1px solid #dfdfdf;
-  }
-  body div#content section.board-write div.board-box ul.info li:last-child {
-    border: none;
-  }
-  body div#content section.board-write div.board-box ul.info li:first-child {
-    width: 550px;
-  }
-}
-
-body div#content section.board-write div.board-box ul.info li.count {
-  display: none;
-}
-
-@media (min-width: 1200px) {
-  body div#content section.board-write div.board-box ul.info li.count {
-    display: inline-block;
-  }
-}
-
-@media (min-width: 1200px) {
-  body div#content section.board-write div.board-box ul.info li span {
-    display: inline-block;
-    width: 176px;
-    background: #fafafa;
-    font-size: 17px;
-    text-align: center;
-    line-height: 60px;
-    font-weight: 600;
-  }
-}
-
-body div#content section.board-write div.board-box ul.info li u {
-  text-decoration: none;
-}
-
-body div#content section.board-write div.board-box ul.info li u::before {
-  content: ": ";
-}
-
-@media (min-width: 1200px) {
-  body div#content section.board-write div.board-box ul.info li u::before {
-    display: none;
-  }
-}
-
-@media (min-width: 1200px) {
-  body div#content section.board-write div.board-box ul.info li u {
-    display: inline-block;
-    border-left: 1px solid #dfdfdf;
+  body div#content section.board-write div.board-text textarea {
+    width: calc(100% - 201px);
+    margin-left: 201px;
     font-size: 16px;
-    padding: 0 40px 0 20px;
-    line-height: 60px;
-    font-weight: 600;
+    padding: 0;
   }
 }
 
-body div#content section.board-write hr {
-  display: none;
-}
-
-body div#content section.board-write ul.file,
 body div#content section.board-write ul.link {
   position: relative;
   margin: 0;
@@ -3253,14 +3260,19 @@ body div#content section.board-write ul.link {
 }
 
 @media (min-width: 1200px) {
-  body div#content section.board-write ul.file,
   body div#content section.board-write ul.link {
     padding: 20px 0 20px 196px;
     font-size: 16px;
   }
-  body div#content section.board-write ul.file::before,
+}
+
+body div#content section.board-write ul.link::before {
+  display: none;
+}
+
+@media (min-width: 1200px) {
   body div#content section.board-write ul.link::before {
-    content: "첨부파일";
+    content: "링크";
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3275,7 +3287,7 @@ body div#content section.board-write ul.link {
     left: 0;
     top: 0;
     bottom: 0;
-    width: 176px;
+    width: 175px;
     background: #fafafa;
     font-size: 17px;
     border-right: 1px solid #dfdfdf;
@@ -3283,38 +3295,63 @@ body div#content section.board-write ul.link {
   }
 }
 
-body div#content section.board-write ul.file.link::before,
-body div#content section.board-write ul.link.link::before {
-  content: "링크";
+body div#content section.board-write ul.link li {
+  font-size: 0;
+  margin-bottom: 6px;
 }
 
-body div#content section.board-write ul.file li a,
-body div#content section.board-write ul.link li a {
-  color: #1c7cc2;
-  text-decoration: underline;
+body div#content section.board-write ul.link li label {
+  display: inline-block;
+  width: 60px;
+  font-size: 14px;
+  height: 35px;
 }
 
-body div#content section.board-write div.board-text {
-  padding: 20px 0;
+body div#content section.board-write ul.link li input[type="text"] {
+  width: calc(100% - 60px);
+  height: 35px;
+  padding: 0 10px;
+  border: none;
+  background: #f5f5f5;
+}
+
+body div#content section.board-write div.file {
+  position: relative;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
   border-bottom: 1px solid #dfdfdf;
+  word-break: keep-all;
+  min-height: 60px;
 }
 
 @media (min-width: 1200px) {
-  body div#content section.board-write div.board-text {
-    padding: 40px;
+  body div#content section.board-write div.file {
+    padding: 0;
+    line-height: 60px;
+    font-size: 18px;
   }
 }
 
-body div#content section.board-write div.board-text p {
-  margin: 0;
+body div#content section.board-write div.file span {
+  display: none;
 }
 
-body div#content section.board-write div.board-text p.image {
-  text-align: center;
-}
-
-body div#content section.board-write div.board-text img {
-  max-width: 100%;
+@media (min-width: 1200px) {
+  body div#content section.board-write div.file span {
+    display: inline-block;
+    position: absolute;
+    font-weight: 600;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 176px;
+    background: #fafafa;
+    font-size: 17px;
+    text-align: center;
+    border-right: 1px solid #dfdfdf;
+    margin-right: 20px;
+  }
 }
 
 body div#content section.statute div.container {
