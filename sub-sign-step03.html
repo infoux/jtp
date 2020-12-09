@@ -130,16 +130,83 @@
             </button>
         </aside>
 
+
+
+
+
+
+
+
+
+
+<!--  Modal 아이디중복확인 -->
+    <div id="modal-id" class="modal">
+ 
+        <!-- Modal content -->
+        <div class="modal-content">
+                  <h2>아이디 중복확인 <button class="close">닫기</button></h2>
+                  <div class="inside">
+
+                    <div class="text-check">
+                        <input type="text">
+                        <span>사용가능한 아이디입니다.</span>
+                    </div>
+
+
+
+                  </div>
+                  <div class="btn-set center full">
+                    <button class="btn sub">사용</button>
+                </div>
+        </div>
+   
+      </div>
+ <!-- Modal-->
+
+
+
+
+<!--  Modal 사업자등록번호 조회 -->
+<div id="modal-co" class="modal">
+ 
+    <!-- Modal content -->
+    <div class="modal-content">
+              <h2>소속 기업/기관 찾기 <button class="close">닫기</button></h2>
+              <div class="inside">
+
+                <div class="num-check">
+                    <input type="text">
+                    <span>· 검색정보가 존재하지 않습니다.</span>
+                    <button>기업정보등록</button>
+                </div>
+
+
+
+              </div>
+              <div class="btn-set center full">
+                <button class="btn sub">확인</button>
+            </div>
+    </div>
+
+  </div>
+<!-- Modal-->
+
+
+
+
+
+
+
         <!-- S:mainContent -->
 
         <div id="content">
-<!-- 
-            <section class="sub-header sub01">
+
+            <!-- <section class="sub-header sub01">
 
 
                 <div class="container">
 
-                    <h2>플랫폼 소개</h2>
+                    <h2>회원가입</h2>
 
                 </div>
             </section> -->
@@ -172,41 +239,50 @@
                 </div>
             </section> -->
 
-            <section class="login">
+
+            <section class="signup">
                 <div class="container">
 
-                    <h3 class="subtitle">로그인</h3>
-                    <p class="info">
-                        JTP 제주연구장비정보포털에 오신 것을 환엽합니다.
-                        <strong>로그인을 하시면 다양한 서비스를 이용하실 수 있습니다.</strong>
-                    </p>
+                    <h3 class="subtitle">회원가입</h3>
 
-                    <fieldset>
-                        <legend class="sr-only">로그인폼</legend>
+                    <ul class="step">
+                        <li class="step01">
+                            <strong>STEP1</strong>
+                            약관동의
+                        </li>
+                        <li class="step02">
+                            <strong>STEP2</strong>
+                            개인정보 입력
+                        </li>
+                        <li class="step03 active">
+                            <strong>STEP3</strong>
+                            회원가입 완료
+                        </li>
+                    </ul>
 
-                        <div class="login-type">
-                            <input name="type" id="type01" type="radio"><label for="type01">개인회원</label>
-                            <input name="type" id="type02" type="radio"><label for="type02">기업회원</label>
-                            <input name="type" id="type03" type="radio"><label for="type03">기관회원</label>
+                    <div class="result">
+                        <h4><u>회원가입</u>이 완료되었습니다.</h4>
+
+                        <p>JTP 제주연구장비정보포털 회원가입을 환영합니다.</p>
+                        <p>아래 버튼을 누르시면 로그인 페이지로 이동합니다.</p>
+
+
+                        
+                        <div class="btn-set center big">
+                            <button class="btn main">로그인하기</button>
                         </div>
-
-                        <input type="text" placeholder="아이디(통합회원의 경우 이메일 주소 타입)">
-                        <input type="password" placeholder="비밀번호(문자/숫자/특수문자로 조합된 8~16자리)">
-                        <button class="submit">로그인</button>
-
-                        <ul class="tools">
-                            <li><a href="">아이디 찾기</a></li>
-                            <li><a href="">비밀번호 찾기</a></li>
-                        </ul>
-
-                        <div class="sign">
-                            회원가입 후 장비등록, 장비예약관리를 <span>이용하실 수 있습니다.</span>
-
-                            <a href="">회원가입</a>
-                        </div>
-                    </fieldset>
+                    </div>
 
 
+
+
+
+
+
+
+
+
+                    
 
 
 

@@ -130,29 +130,139 @@
             </button>
         </aside>
 
+
+
+
+
+
+
+
+
+
+<!--  Modal 아이디중복확인 -->
+    <div id="modal-id" class="modal">
+ 
+        <!-- Modal content -->
+        <div class="modal-content">
+                  <h2>아이디 중복확인 <button class="close">닫기</button></h2>
+                  <div class="inside">
+
+                    <div class="text-check">
+                        <input type="text">
+                        <span>사용가능한 아이디입니다.</span>
+                    </div>
+
+
+
+                  </div>
+                  <div class="btn-set center full">
+                    <button class="btn sub">사용</button>
+                </div>
+        </div>
+   
+      </div>
+ <!-- Modal-->
+
+
+
+
+<!--  Modal 사업자등록번호 조회 -->
+<div id="modal-co" class="modal on">
+ 
+    <!-- Modal content -->
+    <div class="modal-content big">
+              <h2>소속 기업/기관 찾기 <button class="close">닫기</button></h2>
+              <div class="inside">
+
+                <div class="co-check">
+                    
+                    <span class="select-outline">
+                        <span>@</span>
+                        <select id="mail" name="mail">
+                            <option value="">사업자번호</option>
+                        </select>
+                    </span>
+                    <div class="search-box">
+                        <input type="text">
+                        <button><i class="bx bx-search"></i>검색</button>
+                    </div>
+
+                </div>
+
+
+
+                <ul class="co-list">
+                    <li>
+                        <a href="">
+                            <p class="select"><span>선택</span><u><button>선택</button></u></p>
+                            <p class="num"><span>사업자번호</span><u>03-5624-5982255</u></p>
+                            <p class="name"><span>기업/기관명</span><u>제주테크노파크</u></p>
+                            <p class="ceo"><span>대표자명</span><u>홍길동</u></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p class="select"><span>선택</span><u><button>선택</button></u></p>
+                            <p class="num"><span>사업자번호</span><u>03-5624-5872255</u></p>
+                            <p class="name"><span>기업/기관명</span><u>제주테크노파크</u></p>
+                            <p class="ceo"><span>대표자명</span><u>홍길동</u></p>
+                        </a>
+                    </li>
+    
+            
+            
+            
+            
+            
+                </ul>
+    
+                <article class="pagenation">
+            
+                                    <a href="?pageIndex=1" title="이전 페이지로 이동" class="move" onclick="linkPage(1);return false; ">이전<i class="bx bx-chevron-left " aria-hidden="true"></i></a>
+                                    <strong>1</strong>
+                                    <a href="?pageIndex=2" onclick="linkPage(2);return false; " title="2 페이지로 이동">2</a>
+                                    <a href="?pageIndex=3" onclick="linkPage(3);return false; " title="3 페이지로 이동">3</a>
+                                    <a href="?pageIndex=11" title="다음 페이지로 이동" class="move" onclick="linkPage(6);return false; ">다음<i class="bx bx-chevron-right" aria-hidden="true"></i></a>
+                             
+                             
+                </article>          
+
+
+              </div>
+
+
+    
+
+
+
+
+
+    </div>
+
+  </div>
+<!-- Modal-->
+
+
+
+
+
+
+
         <!-- S:mainContent -->
 
         <div id="content">
 
-            <section class="sub-header sub01">
-                <!-- 
-                    대메뉴에 따른 Class
+            <!-- <section class="sub-header sub01">
 
-                    플랫폼소개 : sub01
-                    이용안내 : sub02
-                    장비관리 : sub03
-                    장비자료실 : sub04
-                    커뮤니티 : sub05
-                -->
 
                 <div class="container">
 
-                    <h2>플랫폼 소개</h2>
+                    <h2>회원가입</h2>
 
                 </div>
-            </section>
+            </section> -->
 
-            <section class="sub-menu">
+            <!-- <section class="sub-menu">
                 <div class="container">
 
                     <p class="home"><a href="/">홈으로</a></p>
@@ -178,7 +288,8 @@
                   </ul>
 
                 </div>
-            </section>
+            </section> -->
+
 
             <section class="signup">
                 <div class="container">
@@ -218,7 +329,7 @@
                             <dt><label for="id">아이디</label> <i>*</i></dt>
                             <dd>
                                 <input id="id" class="with-button" type="text" placeholder="영문+숫자 조합 6~12자리">
-                                <button>아이디 중복확인</button>
+                                <button class="check-id">아이디 중복확인</button>
                             </dd>
 
                             <dt><label for="passwd">비밀번호</label> <i>*</i></dt>
@@ -240,7 +351,7 @@
                                 <button>가입정보 중복확인</button>
                             </dd>
 
-                            <dt><label for="mail"">이메일</label> <i>*</i><span>세금계산서 발행에 사용됩니다.</span></dt>
+                            <dt><label for="mail"">이메일</label> <i>*</i></dt>
                             <dd>
                                 <input type="text" class="with-mail">
                                 <span class="select-outline mail">
@@ -249,40 +360,35 @@
                                         <option value="">직접입력(선택)</option>
                                     </select>
                                 </span>
+                                <span class="info">세금계산서 발행에 사용됩니다.</span>
 
                             </dd>
 
-                            <dt><label for="mobile-first"">휴대전화</label> <i>*</i><span>진행상황 등을 SMS로 알려드립니다.</span></dt>
+                            <dt><label for="mobile-first"">휴대전화</label> <i>*</i></dt>
                             <dd>
-                                <span class="select-outline tel">
-                                    <select id="mobile-first" name="mobile-first">
-                                        <option value="">010</option>
-                                    </select>
-                                </span>
-
+                                <input id="mobile-first" type="text" class="tel">
+                                <u>-</u>
                                 <input type="text" class="tel">
                                 <u>-</u>
                                 <input type="text" class="tel">
+                                <span class="info">진행상황 등을 SMS로 알려드립니다.</span>
 
                             </dd>
 
                             <dt><label for="tel-first"">전화</label></dt>
                             <dd>
-                                <span class="select-outline tel">
-                                    <select id="tel-first" name="tel-first">
-                                        <option value="">010</option>
-                                    </select>
-                                </span>
-
+                                <input id="tel-first" type="text" class="tel">
+                                <u>-</u>
                                 <input type="text" class="tel">
                                 <u>-</u>
                                 <input type="text" class="tel">
 
                             </dd>
 
-                            <dt><label for="name">부서</label> <i>*</i></dt>
+                            <dt><label for="co-name">소속기업/기관</label> <i>*</i></dt>
                             <dd>
-                                <input id="name" type="text" placeholder="소속된 부서가 있다면 입력해주세요">
+                                <input id="co-name" class="with-button" type="text" readonly>
+                                <button class="check-co">찾기</button>
                             </dd>
 
 
@@ -292,7 +398,7 @@
 
 
 
-                    <div class="input">
+                    <!-- <div class="input">
                         <h4>
                             기업/기관 정보
 
@@ -428,7 +534,7 @@
 
 
                         </dl>
-                    </div>
+                    </div> -->
 
 
 

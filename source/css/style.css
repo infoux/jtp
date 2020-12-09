@@ -679,6 +679,17 @@ button {
   }
 }
 
+.btn-set.full .btn {
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .btn-set.full .btn {
+    width: auto;
+    min-width: 200px;
+  }
+}
+
 .btn-set.align div {
   display: inline-block;
   width: 100%;
@@ -701,6 +712,360 @@ button {
 @media (min-width: 1200px) {
   .btn-set.align div.right {
     text-align: right;
+  }
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal.on {
+  display: block;
+}
+
+.modal .modal-content {
+  position: relative;
+  background-color: #fff;
+  margin: 30vh auto 0;
+  padding: 20px;
+  width: calc(100% - 20px);
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content {
+    width: 500px;
+  }
+}
+
+.modal .modal-content.big {
+  width: calc(100% - 40px);
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content.big {
+    width: 600px;
+  }
+}
+
+.modal .modal-content h2 {
+  font-size: 20px;
+  margin: 0 0 20px;
+  padding: 0 0 10px;
+  border-bottom: 2px solid #333;
+}
+
+.modal .modal-content h2 button {
+  position: absolute;
+  right: 20px;
+  bottom: 10;
+  border: none;
+  background: transparent;
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  background: url("../images/icon-close.svg") no-repeat center/100% auto;
+}
+
+.modal .modal-content div.inside div.text-check {
+  border: 1px solid #d4d4d4;
+}
+
+.modal .modal-content div.inside div.text-check input {
+  height: 46px;
+  border: none;
+  width: 100%;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside div.text-check input {
+    width: 280px;
+  }
+}
+
+.modal .modal-content div.inside div.text-check span {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  color: #1c7cc2;
+  padding: 5px 0;
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside div.text-check span {
+    display: inline-block;
+  }
+}
+
+.modal .modal-content div.inside div.co-check {
+  font-size: 0;
+  background: #efefef;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.modal .modal-content div.inside div.co-check span.select-outline {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  margin-right: 10px;
+  margin-bottom: 6px;
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside div.co-check span.select-outline {
+    width: 114px;
+    margin-bottom: 0;
+  }
+}
+
+.modal .modal-content div.inside div.co-check span.select-outline select {
+  appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 46px;
+  font-size: 14px;
+  display: inline-block;
+  padding: 0 30px 0 10px;
+  border: 1px solid #cccccc;
+}
+
+.modal .modal-content div.inside div.co-check span.select-outline select::-ms-expand {
+  display: none;
+}
+
+.modal .modal-content div.inside div.co-check span.select-outline::before, .modal .modal-content div.inside div.co-check span.select-outline::after {
+  content: "";
+  position: absolute;
+  top: 22px;
+  display: block;
+  width: 8px;
+  height: 1px;
+  background: #999999;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.modal .modal-content div.inside div.co-check span.select-outline::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  right: 12px;
+}
+
+.modal .modal-content div.inside div.co-check span.select-outline::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  right: 6px;
+}
+
+.modal .modal-content div.inside div.co-check span.select-outline:focus-within::before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.modal .modal-content div.inside div.co-check span.select-outline:focus-within::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.modal .modal-content div.inside div.co-check div.search-box {
+  display: inline-block;
+  border: 1px solid #ccc;
+  background: #fff;
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside div.co-check div.search-box {
+    width: calc(100% - 124px);
+  }
+}
+
+.modal .modal-content div.inside div.co-check div.search-box input {
+  height: 44px;
+  border: none;
+  width: calc(100% - 40px);
+  font-size: 16px;
+  vertical-align: top;
+  padding: 0 10px;
+}
+
+.modal .modal-content div.inside div.co-check div.search-box button {
+  width: 40px;
+  height: 44px;
+  border: none;
+  background: none;
+  color: #999999;
+}
+
+.modal .modal-content div.inside div.co-check div.search-box button i {
+  font-size: 18px;
+}
+
+.modal .modal-content div.inside ul.co-list {
+  position: relative;
+  margin: 30px 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: 2px solid #333;
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside ul.co-list {
+    padding: 50px 0 0;
+    border: none;
+  }
+  .modal .modal-content div.inside ul.co-list::before {
+    content: "";
+    height: 50px;
+    background: #101010;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+}
+
+.modal .modal-content div.inside ul.co-list li {
+  position: relative;
+  font-size: 0;
+  border: 1px solid #ccc;
+  border-top: none;
+  padding: 10px 20px 10px 10px;
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside ul.co-list li {
+    padding: 0;
+  }
+}
+
+.modal .modal-content div.inside ul.co-list li p {
+  display: block;
+  position: relative;
+  vertical-align: top;
+  font-size: 13px;
+  padding: 0 0 2px;
+  margin: 0;
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside ul.co-list li p {
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 44px;
+  }
+}
+
+.modal .modal-content div.inside ul.co-list li p.select {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.modal .modal-content div.inside ul.co-list li p.select span {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside ul.co-list li p.select {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 16%;
+  }
+}
+
+.modal .modal-content div.inside ul.co-list li p.select button {
+  background: #1c7cc2;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  height: 32px;
+  padding: 0 10px;
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside ul.co-list li p.select button {
+    height: 44px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside ul.co-list li p.num {
+    width: 34%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside ul.co-list li p.name {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside ul.co-list li p.ceo {
+    width: 20%;
+  }
+}
+
+.modal .modal-content div.inside ul.co-list li p span {
+  display: inline-block;
+  width: 75px;
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside ul.co-list li p span {
+    display: none;
+    font-weight: 400;
+  }
+}
+
+.modal .modal-content div.inside ul.co-list li p span::after {
+  content: "|";
+  display: inline-block;
+  float: right;
+  color: #bbb;
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside ul.co-list li p span::after {
+    display: none;
+  }
+}
+
+.modal .modal-content div.inside ul.co-list li p u {
+  text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside ul.co-list li:first-child p span {
+    display: block;
+    width: auto;
+    color: #fff;
+    position: absolute;
+    top: -46px;
+    left: 0;
+    right: 0;
   }
 }
 
@@ -967,6 +1332,7 @@ body header button.menu i.bar:last-of-type {
     border-radius: 4px;
     color: #3268b2;
     font-weight: 600;
+    text-align: center;
   }
   body aside ul.tools li a::before {
     content: "";
@@ -4251,22 +4617,6 @@ body div#content section.signup div.container div.input dl dt i {
   font-style: normal;
 }
 
-body div#content section.signup div.container div.input dl dt span {
-  font-size: 12px;
-  color: #1c7cc2;
-  font-weight: 400;
-  padding-left: 10px;
-}
-
-@media (min-width: 1200px) {
-  body div#content section.signup div.container div.input dl dt span {
-    position: absolute;
-    right: -940px;
-    bottom: 20px;
-    font-size: 14px;
-  }
-}
-
 body div#content section.signup div.container div.input dl dd {
   padding: 0;
   margin: 0 0 12px;
@@ -4277,7 +4627,7 @@ body div#content section.signup div.container div.input dl dd {
 @media (min-width: 1200px) {
   body div#content section.signup div.container div.input dl dd {
     position: relative;
-    padding: 20px 20px 20px 260px;
+    padding: 20px 20px 10px 260px;
     margin: 0;
     border-bottom: 1px solid #ccc;
     min-height: 90px;
@@ -4331,7 +4681,7 @@ body div#content section.signup div.container div.input dl dd input[type="passwo
 @media (min-width: 1200px) {
   body div#content section.signup div.container div.input dl dd input[type="text"].with-button,
   body div#content section.signup div.container div.input dl dd input[type="password"].with-button {
-    width: calc(570px - 124px);
+    width: calc(570px - 142px);
   }
 }
 
@@ -4350,13 +4700,13 @@ body div#content section.signup div.container div.input dl dd input[type="passwo
 
 body div#content section.signup div.container div.input dl dd input[type="text"].tel,
 body div#content section.signup div.container div.input dl dd input[type="password"].tel {
-  width: calc(50% - 55px);
+  width: calc((100% - 40px) / 3);
 }
 
 @media (min-width: 1200px) {
   body div#content section.signup div.container div.input dl dd input[type="text"].tel,
   body div#content section.signup div.container div.input dl dd input[type="password"].tel {
-    width: 196px;
+    width: 176px;
   }
 }
 
@@ -4577,6 +4927,90 @@ body div#content section.signup div.container div.input dl dd span.select-outlin
 body div#content section.signup div.container div.input dl dd span.select-outline:focus-within::after {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+
+body div#content section.signup div.container div.input dl dd span.info {
+  display: block;
+  font-size: 12px;
+  color: #1c7cc2;
+  font-weight: 400;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.signup div.container div.input dl dd span.info {
+    font-size: 14px;
+  }
+}
+
+body div#content section.signup div.container div.result {
+  text-align: center;
+}
+
+body div#content section.signup div.container div.result h4 {
+  font-size: 22px;
+  margin: 50px 0 20px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.signup div.container div.result h4 {
+    font-size: 26px;
+    margin: 100px 0 26px;
+  }
+}
+
+body div#content section.signup div.container div.result h4::before {
+  content: "";
+  display: block;
+  margin: 0 auto 20px;
+  width: 62px;
+  height: 62px;
+  background: url("../images/icon-result.svg") no-repeat center/100% auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.signup div.container div.result h4::before {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 35px;
+  }
+}
+
+body div#content section.signup div.container div.result h4 u {
+  color: #1c7cc2;
+  text-decoration: none;
+}
+
+body div#content section.signup div.container div.result p {
+  font-size: 14px;
+  margin: 0;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.signup div.container div.result p {
+    font-size: 18px;
+  }
+}
+
+body div#content section.signup div.container div.result div.btn-set {
+  margin: 40px 0 30px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.signup div.container div.result div.btn-set {
+    margin: 40px 0 60px;
+  }
+}
+
+body div#content section.signup div.container div.result div.btn-set button.btn {
+  width: 260px;
+  height: 50px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.signup div.container div.result div.btn-set button.btn {
+    width: 400px;
+    height: 68px;
+  }
 }
 
 body div#content section.sub-ready {

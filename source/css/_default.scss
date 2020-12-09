@@ -188,6 +188,17 @@ button {
 		}
 	}
 
+	&.full {
+		.btn {
+			width: 100%;
+
+			@media (min-width: $screen-size-pc) {
+				width: auto;
+				min-width: 200px;
+			}
+		}
+	}
+
 	&.align {
 		div {
 			display: inline-block;
@@ -208,6 +219,335 @@ button {
 			&.right {
 				@media (min-width: $screen-size-pc) {
 					text-align: right;
+				}
+			}
+		}
+	}
+}
+
+/* Modal */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.5);
+
+	&.on {
+		display: block;
+	}
+
+	.modal-content {
+		position: relative;
+		background-color: #fff;
+		margin: 30vh auto 0;
+		padding: 20px;
+		width: calc(100% - 20px);
+
+		@media (min-width: $screen-size-pc) {
+			width: 500px;
+		}
+
+		&.big {
+			width: calc(100% - 40px);
+
+			@media (min-width: $screen-size-pc) {
+				width: 600px;
+			}
+		}
+
+		h2 {
+			font-size: 20px;
+			margin: 0 0 20px;
+			padding: 0 0 10px;
+			border-bottom: 2px solid #333;
+
+			button {
+				position: absolute;
+				right: 20px;
+				bottom: 10;
+				border: none;
+				background: transparent;
+				width: 22px;
+				height: 22px;
+				font-size: 0;
+				background: url("../images/icon-close.svg") no-repeat center / 100% auto;
+			}
+		}
+
+		div.inside {
+			div.text-check {
+				border: 1px solid #d4d4d4;
+
+				input {
+					height: 46px;
+					border: none;
+					width: 100%;
+					outline: none;
+					padding: 10px;
+					font-size: 16px;
+
+					@media (min-width: $screen-size-pc) {
+						width: 280px;
+					}
+				}
+
+				span {
+					display: block;
+					font-size: 14px;
+					text-align: center;
+					color: #1c7cc2;
+					padding: 5px 0;
+
+					@media (min-width: $screen-size-pc) {
+						display: inline-block;
+					}
+				}
+			}
+
+			div.co-check {
+				font-size: 0;
+				background: #efefef;
+				padding: 16px;
+				border-radius: 10px;
+
+				span.select-outline {
+					display: inline-block;
+					position: relative;
+					vertical-align: top;
+					margin-right: 10px;
+					margin-bottom: 6px;
+					width: 100%;
+
+					@media (min-width: $screen-size-pc) {
+						width: 114px;
+						margin-bottom: 0;
+					}
+
+					select {
+						appearance: none;
+						-moz-appearance: none;
+						-ms-appearance: none;
+						-webkit-appearance: none;
+
+						&::-ms-expand {
+							display: none;
+						}
+
+						width: 100%;
+						height: 46px;
+						font-size: 14px;
+						display: inline-block;
+						padding: 0 30px 0 10px;
+						border: 1px solid #cccccc;
+					}
+
+					&::before,
+					&::after {
+						content: "";
+						position: absolute;
+						top: 22px;
+						display: block;
+						width: 8px;
+						height: 1px;
+						background: #999999;
+						@include ani(0.2s);
+					}
+
+					&::before {
+						transform: rotate(45deg);
+						right: 12px;
+					}
+
+					&::after {
+						transform: rotate(-45deg);
+						right: 6px;
+					}
+
+					&:focus-within {
+						&::before {
+							transform: rotate(-45deg);
+						}
+
+						&::after {
+							transform: rotate(45deg);
+						}
+					}
+				}
+
+				div.search-box {
+					display: inline-block;
+					border: 1px solid #ccc;
+					background: #fff;
+					width: 100%;
+
+					@media (min-width: $screen-size-pc) {
+						width: calc(100% - 124px);
+					}
+
+					input {
+						height: 44px;
+						border: none;
+						width: calc(100% - 40px);
+						font-size: 16px;
+						vertical-align: top;
+						padding: 0 10px;
+					}
+
+					button {
+						width: 40px;
+						height: 44px;
+						border: none;
+						background: none;
+						color: #999999;
+
+						i {
+							font-size: 18px;
+						}
+					}
+				}
+			}
+
+			ul.co-list {
+				position: relative;
+				margin: 30px 0 0;
+				padding: 0;
+				list-style: none;
+				border-top: 2px solid #333;
+
+				@media (min-width: $screen-size-pc) {
+					padding: 50px 0 0;
+					border: none;
+
+					&::before {
+						content: "";
+						height: 50px;
+						background: #101010;
+						position: absolute;
+						left: 0;
+						right: 0;
+						top: 0;
+					}
+				}
+
+				li {
+					position: relative;
+					font-size: 0;
+					border: 1px solid #ccc;
+					border-top: none;
+					padding: 10px 20px 10px 10px;
+
+					@media (min-width: $screen-size-pc) {
+						padding: 0;
+					}
+
+					p {
+						display: block;
+						position: relative;
+						vertical-align: top;
+						font-size: 13px;
+						padding: 0 0 2px;
+						margin: 0;
+
+						@media (min-width: $screen-size-pc) {
+							text-align: center;
+							display: inline-block;
+							padding: 10px;
+							font-size: 14px;
+							line-height: 44px;
+						}
+
+						&.select {
+							position: absolute;
+							right: 10px;
+							bottom: 10px;
+
+							span {
+								display: none;
+							}
+
+							@media (min-width: $screen-size-pc) {
+								position: relative;
+								left: 0;
+								top: 0;
+								width: 16%;
+							}
+
+							button {
+								background: #1c7cc2;
+								border: none;
+								border-radius: 4px;
+								color: #fff;
+								height: 32px;
+								padding: 0 10px;
+
+								@media (min-width: $screen-size-pc) {
+									height: 44px;
+									padding: 0 20px;
+								}
+							}
+						}
+						&.num {
+							@media (min-width: $screen-size-pc) {
+								width: 34%;
+							}
+						}
+						&.name {
+							@media (min-width: $screen-size-pc) {
+								width: 30%;
+							}
+						}
+						&.ceo {
+							@media (min-width: $screen-size-pc) {
+								width: 20%;
+							}
+						}
+						span {
+							display: inline-block;
+							width: 75px;
+							margin-right: 10px;
+							font-weight: 600;
+
+							@media (min-width: $screen-size-pc) {
+								display: none;
+								font-weight: 400;
+							}
+
+							&::after {
+								content: "|";
+								display: inline-block;
+								float: right;
+								color: #bbb;
+
+								@media (min-width: $screen-size-pc) {
+									display: none;
+								}
+							}
+						}
+						u {
+							text-decoration: none;
+						}
+					}
+
+					@media (min-width: $screen-size-pc) {
+						&:first-child {
+							p {
+								span {
+									display: block;
+									width: auto;
+									color: #fff;
+									position: absolute;
+									top: -46px;
+									left: 0;
+									right: 0;
+								}
+							}
+						}
+					}
 				}
 			}
 		}

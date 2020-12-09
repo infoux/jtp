@@ -169,10 +169,22 @@ $(document).ready(function() {
         return $chart_slider.slick(settings);
       }
 
-
-
     });
 
+
+    $("button.check-id").click(function() {
+        $("#modal-id").addClass("on");
+    });
+
+    $("button.check-co").click(function() {
+        $("#modal-co").addClass("on");
+    });
+
+
+
+    $(".modal button.close").click(function() {
+        $(".modal").removeClass("on");
+    });
 
 
 
