@@ -2883,6 +2883,11 @@ body div#content section.sub-menu div.container p.home {
   }
 }
 
+body div#content section.sub-menu div.container p.home a {
+  display: block;
+  height: 100%;
+}
+
 body div#content section.sub-menu div.container ul.submenu {
   list-style: none;
   margin: 0;
