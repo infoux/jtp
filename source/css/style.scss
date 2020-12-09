@@ -3543,6 +3543,18 @@ body {
 								}
 							}
 
+							strong {
+								display: inline-block;
+								font-size: 16px;
+								line-height: 40px;
+								padding: 0 20px;
+								background: #efefef;
+
+								@media (min-width: $screen-size-pc) {
+									line-height: 48px;
+								}
+							}
+
 							input[type="text"],
 							input[type="password"] {
 								width: 100%;
@@ -3561,6 +3573,17 @@ body {
 
 								&.gray {
 									background: #f5f5f5;
+								}
+
+								&.danger {
+									color: #eb2828;
+								}
+
+								&.ok {
+									color: #0075bc;
+									font-weight: 600;
+									background: #d1e4f2;
+									border-color: rgba(0, 0, 0, 0.1);
 								}
 
 								&.with-button {

@@ -182,6 +182,12 @@ $(document).ready(function() {
         $("#modal-co").addClass("on");
     });
 
+    $("button.check-zeus").click(function() {
+        $("#modal-zeus").addClass("on");
+    });
+
+
+
 
 
     $(".modal button.close").click(function() {
