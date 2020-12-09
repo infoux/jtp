@@ -1705,6 +1705,8 @@ body {
 
 				p.home {
 					display: inline-block;
+					position: relative;
+					z-index: 100;
 					vertical-align: top;
 					margin: 0;
 					width: 60px;

@@ -25,7 +25,6 @@ $(document).ready(function() {
     $('section.equipment-list ul.list li p.image').each(function() {
         $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
     });
-    ection.equipment-list 
 
     $("nav#main-menu h3 a").on("click mouseover", function(){
 
