@@ -280,6 +280,9 @@ button {
 		}
 
 		div.inside {
+			p.info {
+				margin: 0 0 10px;
+			}
 			div.text-check {
 				border: 1px solid #d4d4d4;
 
@@ -628,6 +631,13 @@ button {
 						width: 100%;
 						line-height: 36px;
 					}
+				}
+			}
+
+			div.maps {
+				div.map-outline {
+					min-height: 200px;
+					border: 1px solid #ccc;
 				}
 			}
 		}

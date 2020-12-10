@@ -4280,6 +4280,425 @@ body {
 			}
 		}
 
+		section.equipment-view {
+			padding-bottom: 40px;
+
+			div.container {
+				div.head {
+					@media (min-width: $screen-size-pc) {
+						border: 1px solid #ccc;
+						padding: 30px 30px 30px 470px;
+						position: relative;
+					}
+
+					h4 {
+						text-align: center;
+						font-size: 26px;
+						color: #1c7cc2;
+						margin: 30px 0 20px;
+						word-break: keep-all;
+
+						@media (min-width: $screen-size-pc) {
+							text-align: left;
+							font-size: 32px;
+							margin: 10px 0;
+						}
+
+						small {
+							display: block;
+							color: #333333;
+							font-weight: 400;
+							font-size: 16px;
+
+							@media (min-width: $screen-size-pc) {
+								font-size: 20px;
+							}
+						}
+					}
+
+					p.big-image {
+						margin: 0 0 10px;
+						width: 100%;
+						height: 220px;
+
+						@media (min-width: $screen-size-pc) {
+							position: absolute;
+							left: 30px;
+							top: 30px;
+							width: 410px;
+							height: 300px;
+						}
+
+						img {
+							display: none;
+						}
+					}
+
+					ul {
+						list-style: none;
+						padding: 0;
+						border: 1px solid #ccc;
+						border-left: none;
+						border-bottom: none;
+						margin: 10px 0;
+						font-size: 0;
+
+						@media (min-width: $screen-size-pc) {
+							margin: 20px 0 0;
+						}
+
+						li {
+							border: 1px solid #ccc;
+							border-top: none;
+							border-right: none;
+							padding: 15px;
+							color: #333333;
+							background: #fbfbfb;
+							font-size: 16px;
+							word-break: keep-all;
+
+							@media (min-width: $screen-size-pc) {
+								font-size: 18px;
+								padding: 12px 15px;
+
+								&.half {
+									display: inline-block;
+									width: 50%;
+								}
+							}
+
+							strong {
+								display: block;
+								color: #555555;
+								font-weight: 400;
+								font-size: 14px;
+
+								@media (min-width: $screen-size-pc) {
+									font-size: 16px;
+								}
+							}
+						}
+					}
+				}
+
+				div.big-button {
+					font-size: 0;
+					background: rgba(0, 0, 0, 0.2);
+					position: fixed;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					z-index: 600;
+					padding: 6px 6px 0 6px;
+
+					@media (min-width: $screen-size-pc) {
+						position: absolute;
+						right: auto;
+						bottom: auto;
+						left: 31px;
+						top: 538px;
+						width: 410px;
+						background: none;
+						padding: 0;
+					}
+
+					button {
+						font-size: 20px;
+						height: 56px;
+						width: calc(50% - 3px);
+						border: 1px solid transparent;
+						color: #fff;
+
+						@media (min-width: $screen-size-pc) {
+							width: 100%;
+							height: 64px;
+							font-size: 22px;
+						}
+
+						i {
+							font-size: 26px;
+							position: relative;
+							top: 3px;
+							margin: 0 10px 0 0;
+							opacity: 0.7;
+						}
+
+						&.reservation {
+							margin-right: 6px;
+							border-color: #0c5c97;
+							background: #1c7cc2;
+
+							@media (min-width: $screen-size-pc) {
+								margin: 0 0 20px;
+							}
+						}
+
+						&.cart {
+							border-color: #456500;
+							background: #699b00;
+						}
+					}
+				}
+
+				h5 {
+					font-size: 20px;
+					margin: 20px 0 10px;
+
+					@media (min-width: $screen-size-pc) {
+						font-size: 22px;
+						margin: 48px 0 20px;
+					}
+				}
+
+				ul.service {
+					position: relative;
+					list-style: none;
+					margin: 0 0 20px;
+					padding: 0;
+					border-top: 2px solid #3d3d3d;
+
+					@media (min-width: $screen-size-pc) {
+						padding: 50px 0 0;
+						margin: 0 0 50px;
+
+						&::before {
+							content: "";
+							position: absolute;
+							display: block;
+							display: block;
+							background: #d9d9d9;
+							left: 0;
+							right: 0;
+							top: 0;
+							height: 50px;
+
+							border: 1px solid #ababab;
+							border-top: none;
+						}
+					}
+
+					li {
+						border: 1px solid #ccc;
+						border-top: none;
+						padding: 20px 20px 10px;
+
+						@media (min-width: $screen-size-pc) {
+							position: relative;
+							padding: 0;
+							font-size: 0;
+						}
+
+						p {
+							margin: 0;
+							padding: 0 0 15px;
+
+							@media (min-width: $screen-size-pc) {
+								display: inline-block;
+								text-align: center;
+								position: relative;
+								vertical-align: top;
+								padding: 18.5px 0;
+								border-right: 1px solid #ccc;
+								min-height: 60px;
+							}
+
+							span {
+								display: block;
+								font-size: 13px;
+							}
+
+							u {
+								font-size: 14px;
+								text-decoration: none;
+
+								@media (min-width: $screen-size-pc) {
+									font-size: 16px;
+								}
+							}
+
+							span {
+								@media (min-width: $screen-size-pc) {
+									display: none;
+								}
+							}
+
+							&.check {
+								text-align: right;
+								padding: 0 0 2px;
+
+								@media (min-width: $screen-size-pc) {
+									display: inline-block;
+									text-align: center;
+									padding: 15px 0;
+									border-right: 1px solid #ccc;
+									width: 15%;
+								}
+
+								span {
+									display: inline-block;
+									font-size: 14px;
+									padding: 0 6px 0 0;
+
+									@media (min-width: $screen-size-pc) {
+										display: none;
+									}
+								}
+
+								input {
+									position: relative;
+									top: 3px;
+									width: 18px;
+									height: 18px;
+
+									@media (min-width: $screen-size-pc) {
+										top: 5px;
+									}
+								}
+							}
+
+							&.id {
+								@media (min-width: $screen-size-pc) {
+									width: 20%;
+								}
+							}
+
+							&.name {
+								@media (min-width: $screen-size-pc) {
+									width: 24%;
+								}
+							}
+
+							&.eng-name {
+								@media (min-width: $screen-size-pc) {
+									width: 24%;
+								}
+							}
+
+							&.zeus-num {
+								@media (min-width: $screen-size-pc) {
+									width: 17%;
+									border-right: none;
+								}
+							}
+						}
+
+						&:first-child {
+							@media (min-width: $screen-size-pc) {
+								p {
+									span {
+										display: block;
+										position: absolute;
+										left: 0;
+										right: -1px;
+										top: -50px;
+										line-height: 50px;
+										border-right: 1px solid #ababab;
+										font-size: 16px;
+										color: #333333;
+									}
+
+									&:last-of-type {
+										span {
+											border-color: transparent;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+
+				dl.detail {
+					margin: 0;
+					padding: 0;
+					border: 1px solid #ccc;
+
+					dt {
+						float: left;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						position: relative;
+						z-index: 10;
+						width: 84px;
+						padding: 10px 15px;
+						word-break: keep-all;
+						text-align: center;
+						font-size: 16px;
+
+						@media (min-width: $screen-size-pc) {
+							width: 200px;
+							padding: 20px;
+							font-size: 18px;
+						}
+					}
+
+					dd {
+						position: relative;
+						margin: 0;
+						padding: 10px 10px 10px 104px;
+						border-bottom: 1px solid #ccc;
+						min-height: 70px;
+
+						@media (min-width: $screen-size-pc) {
+							padding: 20px 20px 20px 220px;
+							font-size: 16px;
+						}
+
+						&:last-of-type {
+							border-bottom: none;
+						}
+
+						&::before {
+							content: "";
+							display: block;
+							position: absolute;
+							left: 0;
+							top: 0;
+							bottom: 0;
+							width: 84px;
+							border-right: 1px solid #ccc;
+							background: #f8fbff;
+
+							@media (min-width: $screen-size-pc) {
+								width: 200px;
+							}
+						}
+
+						p {
+							min-height: 10px;
+							margin: 0 0 4px;
+						}
+
+						button.map {
+							height: 34px;
+							padding: 0 20px;
+							margin: 0 10px;
+							background: #1f222d;
+							color: #fff;
+							border: none;
+
+							@media (min-width: $screen-size-pc) {
+								height: 40px;
+							}
+
+							i {
+								position: relative;
+								top: 2px;
+								color: #1c7cc2;
+								font-size: 16px;
+								margin: 0 4px 0 0;
+
+								@media (min-width: $screen-size-pc) {
+									font-size: 18px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
 		section.sub-ready {
 			line-height: 500px;
 			font-size: 80px;

@@ -25,6 +25,16 @@ $(document).ready(function() {
     $('section.equipment-list ul.list li p.image').each(function() {
         $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
     });
+    
+    $('section.equipment-view p.big-image').each(function() {
+        $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
+    });
+
+
+
+
+
+
 
     $("nav#main-menu h3 a").on("click mouseover", function(){
 
@@ -185,6 +195,11 @@ $(document).ready(function() {
     $("button.check-zeus").click(function() {
         $("#modal-zeus").addClass("on");
     });
+
+    $("button.map").click(function() {
+        $("#modal-map").addClass("on");
+    });
+
 
 
 
