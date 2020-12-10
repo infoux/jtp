@@ -775,6 +775,13 @@ button {
   background: url("../images/icon-close.svg") no-repeat center/100% auto;
 }
 
+.modal .modal-content.notitle h2 {
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 .modal .modal-content div.inside p.info {
   margin: 0 0 10px;
 }
@@ -1156,6 +1163,23 @@ button {
 .modal .modal-content div.inside div.maps div.map-outline {
   min-height: 200px;
   border: 1px solid #ccc;
+}
+
+.modal .modal-content div.inside div.date h3 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  margin: 20px 0 30px;
+}
+
+.modal .modal-content div.inside div.date h3::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 37px;
+  margin: 10px auto 20px;
+  background: url("../images/icon-attention.svg") no-repeat center/100% auto;
 }
 
 /* 입력테이블 */

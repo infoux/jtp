@@ -199,6 +199,10 @@ $(document).ready(function() {
     $("button.map").click(function() {
         $("#modal-map").addClass("on");
     });
+    $("button.check-reserv").click(function() {
+        $("#modal-reserv").addClass("on");
+    });
+
 
 
 
