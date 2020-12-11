@@ -192,8 +192,56 @@
     <div class="board-box">
 
         <div class="line">
-            <label for="title">제목</label>
+            <strong><label for="title">제목</label></strong>
             <input id="title" type="text" placeholder="제목을 입력하세요">
+        </div>
+        <div class="line">
+            <strong>공지여부</strong>
+            <input id="notice" type="checkbox"><label for="notice">공지사항입니다.</label>
+        </div>
+
+
+        <div class="line">
+            <strong class="show">게시기간</strong>
+
+                <p class="rows">
+                    <input id="datetime-first" class="date" type="date">
+                    <u>-</u>
+                    <input class="date" type="date">
+                </p>
+                <p class="rows">
+                    
+                    <span class="select-outline time">
+                        <select>
+                            <option value="">01</option>
+                        </select>
+                    </span>
+                    <u>시</u>
+                    <span class="select-outline time">
+                        <select>
+                            <option value="">01</option>
+                        </select>
+                    </span>
+                    <u>분</u>
+                    <u>-</u>
+                    
+                    <span class="select-outline time">
+                        <select>
+                            <option value="">01</option>
+                        </select>
+                    </span>
+                    <u>시</u>
+                    <span class="select-outline time">
+                        <select>
+                            <option value="">01</option>
+                        </select>
+                    </span>
+                    <u>분</u>
+                </p>
+                    
+
+
+
         </div>
     </div>
 

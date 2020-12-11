@@ -4261,6 +4261,7 @@ body div#content section.board-write div.board-box {
 }
 
 body div#content section.board-write div.board-box div.line {
+  position: relative;
   font-size: 16px;
   margin: 0;
   padding: 0;
@@ -4276,12 +4277,12 @@ body div#content section.board-write div.board-box div.line {
   }
 }
 
-body div#content section.board-write div.board-box div.line label {
+body div#content section.board-write div.board-box div.line strong {
   display: none;
 }
 
 @media (min-width: 1200px) {
-  body div#content section.board-write div.board-box div.line label {
+  body div#content section.board-write div.board-box div.line strong {
     display: inline-block;
     width: 176px;
     font-weight: 600;
@@ -4291,6 +4292,46 @@ body div#content section.board-write div.board-box div.line label {
     border-right: 1px solid #dfdfdf;
     margin-right: 20px;
   }
+}
+
+body div#content section.board-write div.board-box div.line strong.show {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-write div.board-box div.line strong.show {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 17px;
+    margin: 0 20px 0 0;
+  }
+}
+
+body div#content section.board-write div.board-box div.line input[type="checkbox"] {
+  position: relative;
+  top: 3px;
+  margin: 0 6px 0 0;
+  width: 18px;
+  height: 18px;
+}
+
+body div#content section.board-write div.board-box div.line label {
+  display: inline-block;
+  line-height: 50px;
+  font-size: 14px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-write div.board-box div.line label {
+    font-size: 16px;
+  }
+}
+
+body div#content section.board-write div.board-box div.line input:checked + label {
+  font-weight: 600;
 }
 
 body div#content section.board-write div.board-box div.line input[type="text"] {
@@ -4306,6 +4347,104 @@ body div#content section.board-write div.board-box div.line input[type="text"] {
     width: calc(100% - 201px);
     font-size: 16px;
   }
+}
+
+body div#content section.board-write div.board-box div.line p.rows {
+  margin: 0 0 10px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-write div.board-box div.line p.rows {
+    margin: 0;
+    display: inline-block;
+    line-height: 1.4;
+    vertical-align: middle;
+  }
+}
+
+body div#content section.board-write div.board-box div.line p.rows input[type="date"] {
+  width: calc(50% - 10px);
+  height: 35px;
+  background: #f5f5f5;
+  border: none;
+  padding: 0 10px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-write div.board-box div.line p.rows input[type="date"] {
+    width: 160px;
+  }
+}
+
+body div#content section.board-write div.board-box div.line p.rows u {
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  line-height: 35px;
+}
+
+body div#content section.board-write div.board-box div.line p.rows span.select-outline {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  width: calc((100% - 100px) / 4);
+}
+
+@media (min-width: 1200px) {
+  body div#content section.board-write div.board-box div.line p.rows span.select-outline {
+    width: 80px;
+  }
+}
+
+body div#content section.board-write div.board-box div.line p.rows span.select-outline select {
+  appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -webkit-appearance: none;
+  height: 34px;
+  width: 100%;
+  font-size: 14px;
+  display: inline-block;
+  padding: 0 30px 0 10px;
+  border: 1px solid #cccccc;
+}
+
+body div#content section.board-write div.board-box div.line p.rows span.select-outline select::-ms-expand {
+  display: none;
+}
+
+body div#content section.board-write div.board-box div.line p.rows span.select-outline::before, body div#content section.board-write div.board-box div.line p.rows span.select-outline::after {
+  content: "";
+  position: absolute;
+  top: 19px;
+  display: block;
+  width: 8px;
+  height: 1px;
+  background: #999999;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+body div#content section.board-write div.board-box div.line p.rows span.select-outline::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  right: 12px;
+}
+
+body div#content section.board-write div.board-box div.line p.rows span.select-outline::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  right: 6px;
+}
+
+body div#content section.board-write div.board-box div.line p.rows span.select-outline:focus-within::before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+body div#content section.board-write div.board-box div.line p.rows span.select-outline:focus-within::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 body div#content section.board-write hr {
