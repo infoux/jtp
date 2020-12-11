@@ -131,7 +131,7 @@
                 -->
 
 				<div class="container">
-					<h2>장비관리</h2>
+					<h2>플랫폼 소개</h2>
 				</div>
 			</section>
 
@@ -167,34 +167,155 @@
 				</div>
 			</section>
 
-			<section class="agency-view">
+			<section class="reservation-list">
 				<div class="container">
-					<h3 class="subtitle sr-only">참여기관</h3>
+					<h3 class="subtitle">실시간 예약 내역조회</h3>
 
-					<div class="head">
-						<p class="image">
-							<img src="source/images/logo-temp.png" />
-						</p>
-						<h4>
-							<small>기관/센터</small>
-							전남개발공사
-						</h4>
+					<!--S:SKIN -->
+					<div class="inBoard list">
+
+                        <fieldset>
+                            <legend class="sr-only">내역조회</legend>
+    
+    
+                            <label for="date-first">등록일자</label>
+                            <input id="date-first" type="date">
+                            <u>~</u>
+                            <input type="date">
+
+    
+                            <label for="search">진행상태</label>
+                            <span class="select-outline">
+                                <select id="search"">
+                                    <option>전체</option>
+                                </select>
+                            </span>
+                            <button>검색</button>
+    
+    
+                        </fieldset>
+    
+                        <ul class="sort">
+                            <li>전체 <strong>5984</strong>건</li>
+                            <li>
+                                
+                                <span class="select-outline">
+                                    <select id="search"">
+                                        <option>조회순</option>
+                                    </select>
+                                </span>
+                                
+    
+                            </li>
+                        </ul>
+    
+						<ul class="list">
+							<li>
+								<a href="">
+									<p class="num"><span>예약번호</span><u>Z-20-12344</u></p>
+									<p class="name">
+										<span>예약장비명</span><u>공용실험실 대여</u>
+									</p>
+									<p class="status"><span>진행상태</span><u>예약신청</u></p>
+									<p class="how"><span>청구방법</span><u>일반결제</u></p>
+									<p class="agency">
+										<span>장비소속기관</span><u>(재)제주테크노파크</u>
+									</p>
+									<p class="hope">
+										<span>희망기간</span><u>2020-11-21 ~ 2020-11-22</u>
+									</p>
+									<p class="conf">
+										<span>확정기간</span><u>2020-11-21 ~ 2020-11-22</u>
+									</p>
+									<p class="price"><span>이용금액</span><u>200,000원</u></p>
+									<p class="date"><span>예약등록일</span><u>2020-09-18</u></p>
+								</a>
+                            </li>
+							<li>
+								<a href="">
+									<p class="num"><span>예약번호</span><u>Z-20-12344</u></p>
+									<p class="name">
+										<span>예약장비명</span><u>공용실험실 대여</u>
+									</p>
+									<p class="status"><span>진행상태</span><u>예약신청</u></p>
+									<p class="how"><span>청구방법</span><u>일반결제</u></p>
+									<p class="agency">
+										<span>장비소속기관</span><u>(재)제주테크노파크</u>
+									</p>
+									<p class="hope">
+										<span>희망기간</span><u>2020-11-21 ~ 2020-11-22</u>
+									</p>
+									<p class="conf">
+										<span>확정기간</span><u>2020-11-21 ~ 2020-11-22</u>
+									</p>
+									<p class="price"><span>이용금액</span><u>1,300,000원</u></p>
+									<p class="date"><span>예약등록일</span><u>2020-09-18</u></p>
+								</a>
+                            </li>
+                            
+						</ul>
+
+						<div class="btn-set align">
+							<div class="left"></div>
+							<div class="right">
+								<button class="btn main">
+									<i class="bx bx-pencil"></i>작성하기
+								</button>
+							</div>
+						</div>
+
+						<article class="pagenation">
+							<a
+								href="?pageIndex=1"
+								title="처음으로 이동"
+								class="jump"
+								onclick="linkPage(1);return false; "
+								>처음<i class="bx bx-chevrons-left" aria-hidden="true"></i
+							></a>
+							<a
+								href="?pageIndex=1"
+								title="이전 페이지로 이동"
+								class="move"
+								onclick="linkPage(1);return false; "
+								>이전<i class="bx bx-chevron-left" aria-hidden="true"></i
+							></a>
+							<strong>1</strong>
+							<a
+								href="?pageIndex=2"
+								onclick="linkPage(2);return false; "
+								title="2 페이지로 이동"
+								>2</a
+							>
+							<a
+								href="?pageIndex=3"
+								onclick="linkPage(3);return false; "
+								title="3 페이지로 이동"
+								>3</a
+							>
+							<a
+								href="?pageIndex=4"
+								onclick="linkPage(4);return false; "
+								title="4 페이지로 이동"
+								>4</a
+							>
+							<a
+								href="?pageIndex=11"
+								title="다음 페이지로 이동"
+								class="move"
+								onclick="linkPage(6);return false; "
+								>다음<i class="bx bx-chevron-right" aria-hidden="true"></i
+							></a>
+							<a
+								href="?pageIndex=17"
+								title="마지막 페이지로 이동"
+								class="jump"
+								onclick="linkPage(17);return false; "
+								>마지막<i class="bx bx-chevrons-right" aria-hidden="true"></i
+							></a>
+						</article>
 					</div>
 
-					<dl>
-						<dt>기관구분</dt>
-						<dd>
-							<div class="box">야옹</div>
-						</dd>
-						<dt>소속지역</dt>
-						<dd>
-							<div class="box">
-								<input id="regii" name="region" type="radio" /><label
-									for=""
-								></label>
-							</div>
-						</dd>
-					</dl>
+					<!--E:SKIN-->
 				</div>
 			</section>
 		</div>
