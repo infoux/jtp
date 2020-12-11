@@ -6638,6 +6638,126 @@ body div#content section.equipment-reservation div.container div.head div.info p
   }
 }
 
+body div#content section.epuipment-consulting {
+  padding-bottom: 40px;
+}
+
+body div#content section.epuipment-consulting div.container div.head {
+  margin: 0 0 20px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.epuipment-consulting div.container div.head {
+    border: 1px solid #ccc;
+    border-bottom: none;
+    position: relative;
+    background: #fbfbfb;
+    margin: 0;
+  }
+}
+
+body div#content section.epuipment-consulting div.container div.head h4 {
+  text-align: center;
+  font-size: 26px;
+  color: #1c7cc2;
+  margin: 30px 0 20px;
+  word-break: keep-all;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.epuipment-consulting div.container div.head h4 {
+    text-align: left;
+    font-size: 32px;
+    margin: 0;
+    padding: 40px;
+  }
+}
+
+body div#content section.epuipment-consulting div.container div.head h4 small {
+  display: block;
+  color: #333333;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.epuipment-consulting div.container div.head h4 small {
+    font-size: 20px;
+  }
+}
+
+body div#content section.epuipment-consulting div.container dl {
+  border-top: 2px solid #333333;
+  background: #fbfbfb;
+  margin: 0 0 20px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.epuipment-consulting div.container dl {
+    margin: 0 0 30px;
+  }
+}
+
+body div#content section.epuipment-consulting div.container dl dt {
+  font-size: 18px;
+  padding: 20px 0 0;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.epuipment-consulting div.container dl dt {
+    padding: 30px 30px 0;
+  }
+}
+
+body div#content section.epuipment-consulting div.container dl dt label {
+  font-weight: 600;
+}
+
+body div#content section.epuipment-consulting div.container dl dd {
+  border-bottom: 1px solid #ccc;
+  margin: 0;
+  padding: 10px 0 20px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.epuipment-consulting div.container dl dd {
+    padding: 10px 30px 30px;
+  }
+}
+
+body div#content section.epuipment-consulting div.container dl dd input {
+  border: 1px solid #ccc;
+  background: #fff;
+  height: 40px;
+  width: 100%;
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.epuipment-consulting div.container dl dd input {
+    height: 48px;
+    font-size: 16px;
+  }
+}
+
+body div#content section.epuipment-consulting div.container dl dd textarea {
+  border: 1px solid #ccc;
+  background: #fff;
+  min-height: 200px;
+  width: 100%;
+  font-size: 14px;
+  padding: 10px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.epuipment-consulting div.container dl dd textarea {
+    min-height: 470px;
+    font-size: 16px;
+    padding: 20px;
+  }
+}
+
 body div#content section.sub-ready {
   line-height: 500px;
   font-size: 80px;

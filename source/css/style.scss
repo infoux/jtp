@@ -4520,6 +4520,112 @@ body {
 			}
 		}
 
+		section.epuipment-consulting {
+			padding-bottom: 40px;
+
+			div.container {
+				div.head {
+					margin: 0 0 20px;
+
+					@media (min-width: $screen-size-pc) {
+						border: 1px solid #ccc;
+						border-bottom: none;
+						position: relative;
+						background: #fbfbfb;
+						margin: 0;
+					}
+
+					h4 {
+						text-align: center;
+						font-size: 26px;
+						color: #1c7cc2;
+						margin: 30px 0 20px;
+						word-break: keep-all;
+
+						@media (min-width: $screen-size-pc) {
+							text-align: left;
+							font-size: 32px;
+							margin: 0;
+							padding: 40px;
+						}
+
+						small {
+							display: block;
+							color: #333333;
+							font-weight: 400;
+							font-size: 16px;
+
+							@media (min-width: $screen-size-pc) {
+								font-size: 20px;
+							}
+						}
+					}
+				}
+
+				dl {
+					border-top: 2px solid #333333;
+					background: #fbfbfb;
+					margin: 0 0 20px;
+
+					@media (min-width: $screen-size-pc) {
+						margin: 0 0 30px;
+					}
+
+					dt {
+						font-size: 18px;
+						padding: 20px 0 0;
+
+						@media (min-width: $screen-size-pc) {
+							padding: 30px 30px 0;
+						}
+
+						label {
+							font-weight: 600;
+						}
+					}
+
+					dd {
+						border-bottom: 1px solid #ccc;
+						margin: 0;
+						padding: 10px 0 20px;
+
+						@media (min-width: $screen-size-pc) {
+							padding: 10px 30px 30px;
+						}
+
+						input {
+							border: 1px solid #ccc;
+							background: #fff;
+							height: 40px;
+							width: 100%;
+							font-size: 14px;
+							padding: 0 10px;
+
+							@media (min-width: $screen-size-pc) {
+								height: 48px;
+								font-size: 16px;
+							}
+						}
+
+						textarea {
+							border: 1px solid #ccc;
+							background: #fff;
+							min-height: 200px;
+							width: 100%;
+							font-size: 14px;
+							padding: 10px;
+
+							@media (min-width: $screen-size-pc) {
+								min-height: 470px;
+								font-size: 16px;
+								padding: 20px;
+							}
+						}
+					}
+				}
+			}
+		}
+
 		section.sub-ready {
 			line-height: 500px;
 			font-size: 80px;
