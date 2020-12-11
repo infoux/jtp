@@ -7026,6 +7026,128 @@ body div#content section.agency-view div.container dl {
   border-top: 2px solid #333;
 }
 
+body div#content section.mypage-main {
+  padding: 0 0 40px;
+}
+
+body div#content section.mypage-main:last-child {
+  padding: 0 0 100px;
+}
+
+body div#content section.mypage-main div.container ul {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+  font-size: 0;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.mypage-main div.container ul li {
+    vertical-align: top;
+    width: calc((100% - 120px) / 3);
+    display: inline-block;
+    margin-right: 60px;
+  }
+  body div#content section.mypage-main div.container ul li:last-child {
+    margin-right: 0;
+  }
+}
+
+body div#content section.mypage-main div.container ul li a {
+  display: block;
+  position: relative;
+  border: 1px solid #ccc;
+  background: #f5f5f5;
+  margin-bottom: 20px;
+  padding: 20px 20px 20px 110px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.mypage-main div.container ul li a {
+    padding: 50px;
+    text-align: center;
+  }
+}
+
+body div#content section.mypage-main div.container ul li a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 15px;
+  top: 20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background-size: 44px auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.mypage-main div.container ul li a::before {
+    position: static;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 30px;
+  }
+}
+
+body div#content section.mypage-main div.container ul li a.member::before {
+  background: url("../images/icon-mypage01.svg") no-repeat #fff center/44px auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.mypage-main div.container ul li a.member::before {
+    background-size: 86px auto;
+  }
+}
+
+body div#content section.mypage-main div.container ul li a.reservation::before {
+  background: url("../images/icon-mypage02.svg") no-repeat #fff center/44px auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.mypage-main div.container ul li a.reservation::before {
+    background-size: 86px auto;
+  }
+}
+
+body div#content section.mypage-main div.container ul li a.consulting::before {
+  background: url("../images/icon-mypage03.svg") no-repeat #fff center/44px auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.mypage-main div.container ul li a.consulting::before {
+    background-size: 86px auto;
+  }
+}
+
+body div#content section.mypage-main div.container ul li a h4 {
+  margin: 0 0 6px;
+  font-size: 20px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.mypage-main div.container ul li a h4 {
+    font-size: 28px;
+    margin: 0 0 20px;
+  }
+}
+
+body div#content section.mypage-main div.container ul li a p {
+  font-size: 14px;
+  margin: 0;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.mypage-main div.container ul li a p {
+    font-size: 20px;
+  }
+}
+
+body div#content section.mypage-main div.container ul li a p span {
+  display: block;
+}
+
 body div#content section.sub-ready {
   line-height: 500px;
   font-size: 80px;
