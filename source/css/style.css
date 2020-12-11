@@ -7148,6 +7148,36 @@ body div#content section.mypage-main div.container ul li a p span {
   display: block;
 }
 
+body div#content section.mypage-main div.container ul li a:hover {
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+  background: #fff;
+}
+
+body div#content section.mypage-main div.container ul li a:hover.member {
+  border-color: #1c7cc2;
+}
+
+body div#content section.mypage-main div.container ul li a:hover.member::before {
+  background-color: #1c7cc2;
+}
+
+body div#content section.mypage-main div.container ul li a:hover.reservation {
+  border-color: #699b00;
+}
+
+body div#content section.mypage-main div.container ul li a:hover.reservation::before {
+  background-color: #699b00;
+}
+
+body div#content section.mypage-main div.container ul li a:hover.consulting {
+  border-color: #d67622;
+}
+
+body div#content section.mypage-main div.container ul li a:hover.consulting::before {
+  background-color: #d67622;
+}
+
 body div#content section.sub-ready {
   line-height: 500px;
   font-size: 80px;
