@@ -1221,6 +1221,45 @@ button {
   width: calc(100% - 130px);
 }
 
+.modal .modal-content div.inside div.board-reply {
+  font-size: 0;
+}
+
+.modal .modal-content div.inside div.board-reply textarea {
+  height: 120px;
+  border: none;
+  width: 100%;
+  outline: none;
+  padding: 10px;
+  margin: 0 0 6px;
+  border: 1px solid #d4d4d4;
+  font-size: 16px;
+}
+
+.modal .modal-content div.inside div.board-reply span {
+  display: inline-block;
+  font-size: 14px;
+  color: #eb2828;
+  padding: 0 0 10px;
+  font-size: 16px;
+  width: calc(100% - 150px);
+}
+
+.modal .modal-content div.inside div.board-reply button {
+  width: 120px;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  line-height: 46px;
+  padding: 0;
+  background: #1f222d;
+  margin-right: 10px;
+}
+
+.modal .modal-content div.inside div.board-reply button + input {
+  width: calc(100% - 130px);
+}
+
 /* 입력테이블 */
 div.input h4 {
   font-size: 22px;

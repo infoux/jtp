@@ -708,6 +708,45 @@ button {
 					width: calc(100% - 130px);
 				}
 			}
+
+			div.board-reply {
+				font-size: 0;
+
+				textarea {
+					height: 120px;
+					border: none;
+					width: 100%;
+					outline: none;
+					padding: 10px;
+					margin: 0 0 6px;
+					border: 1px solid #d4d4d4;
+					font-size: 16px;
+				}
+
+				span {
+					display: inline-block;
+					font-size: 14px;
+					color: #eb2828;
+					padding: 0 0 10px;
+					font-size: 16px;
+					width: calc(100% - 150px);
+				}
+
+				button {
+					width: 120px;
+					color: #fff;
+					font-size: 16px;
+					border: none;
+					line-height: 46px;
+					padding: 0;
+					background: #1f222d;
+					margin-right: 10px;
+				}
+
+				button + input {
+					width: calc(100% - 130px);
+				}
+			}
 		}
 	}
 }
