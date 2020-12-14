@@ -8555,6 +8555,276 @@ body div#content section.charts div.container div.chart-frame div.chart-outline 
   }
 }
 
+body div#content section.docs-list {
+  margin: 0 0 30px;
+}
+
+body div#content section.docs-list div.container fieldset.search {
+  vertical-align: top;
+  border: none;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 0;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.docs-list div.container fieldset.search {
+    padding: 0 0 20px;
+  }
+}
+
+body div#content section.docs-list div.container fieldset.search p.counter {
+  display: inline-block;
+  margin: 0;
+  line-height: 34px;
+  font-size: 14px;
+  width: 80px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.docs-list div.container fieldset.search p.counter {
+    line-height: 42px;
+    width: 840px;
+  }
+}
+
+body div#content section.docs-list div.container fieldset.search p.counter strong {
+  font-weight: 800;
+  color: #1c7cc2;
+}
+
+body div#content section.docs-list div.container fieldset.search span.select-outline {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  margin-right: 10px;
+}
+
+body div#content section.docs-list div.container fieldset.search span.select-outline select {
+  appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -webkit-appearance: none;
+  height: 34px;
+  width: 80px;
+  font-size: 14px;
+  display: inline-block;
+  padding: 0 30px 0 10px;
+  border: 1px solid #cccccc;
+}
+
+body div#content section.docs-list div.container fieldset.search span.select-outline select::-ms-expand {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.docs-list div.container fieldset.search span.select-outline select {
+    width: 100px;
+    height: 42px;
+  }
+}
+
+body div#content section.docs-list div.container fieldset.search span.select-outline::before, body div#content section.docs-list div.container fieldset.search span.select-outline::after {
+  content: "";
+  position: absolute;
+  top: 19px;
+  display: block;
+  width: 8px;
+  height: 1px;
+  background: #999999;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+body div#content section.docs-list div.container fieldset.search span.select-outline::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  right: 12px;
+}
+
+body div#content section.docs-list div.container fieldset.search span.select-outline::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  right: 6px;
+}
+
+body div#content section.docs-list div.container fieldset.search span.select-outline:focus-within::before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+body div#content section.docs-list div.container fieldset.search span.select-outline:focus-within::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+body div#content section.docs-list div.container fieldset.search input[type="text"] {
+  vertical-align: top;
+  border: 1px solid #ccc;
+  width: calc(100% - 200px);
+  font-size: 14px;
+  height: 34px;
+  border-right: none;
+  outline: none;
+  padding: 0 10px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.docs-list div.container fieldset.search input[type="text"] {
+    height: 42px;
+    width: calc(100% - 990px);
+  }
+}
+
+body div#content section.docs-list div.container fieldset.search button {
+  font-size: 0;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  width: 30px;
+  background: none;
+  border: 1px solid #ccc;
+  height: 34px;
+  border-left: none;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.docs-list div.container fieldset.search button {
+    height: 42px;
+    width: 40px;
+  }
+}
+
+body div#content section.docs-list div.container fieldset.search button i {
+  font-size: 16px;
+  color: #999999;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.docs-list div.container fieldset.search button i {
+    font-size: 20px;
+  }
+}
+
+body div#content section.docs-list div.container ul.list {
+  list-style: none;
+  margin: 20px 0 30px;
+  padding: 0;
+}
+
+body div#content section.docs-list div.container ul.list li {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+body div#content section.docs-list div.container ul.list li a.link {
+  display: block;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  background: #fbfbfb;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.docs-list div.container ul.list li a.link {
+    position: relative;
+    padding: 20px 20px 20px 280px;
+    min-height: 370px;
+    text-align: left;
+    border: 1px solid #ccc;
+  }
+}
+
+body div#content section.docs-list div.container ul.list li a.link p.image {
+  overflow: hidden;
+  font-size: 0;
+  margin: 0 auto 20px;
+  border: 1px solid #ccc;
+  width: 120px;
+  height: auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.docs-list div.container ul.list li a.link p.image {
+    width: 230px;
+    height: 330px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+}
+
+body div#content section.docs-list div.container ul.list li a.link p.image img {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+}
+
+body div#content section.docs-list div.container ul.list li a.link h4 {
+  font-size: 16px;
+  margin: 20px 0 10px;
+}
+
+body div#content section.docs-list div.container ul.list li a.link h4 span {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.docs-list div.container ul.list li a.link h4 {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0 0 10px;
+  }
+}
+
+body div#content section.docs-list div.container ul.list li a.link p.info {
+  word-break: keep-all;
+  margin: 0 0 20px;
+  color: #555555;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.docs-list div.container ul.list li a.link p.info {
+    font-size: 16px;
+  }
+}
+
+body div#content section.docs-list div.container ul.list li a.link p.text {
+  word-break: keep-all;
+  border-top: 1px solid #ccc;
+  margin: 20px 0 0;
+  padding: 20px 0 0;
+  color: #555555;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.docs-list div.container ul.list li a.link p.text {
+    font-size: 18px;
+  }
+}
+
+body div#content section.docs-list div.container ul.list li a.download {
+  display: block;
+  text-align: center;
+  line-height: 48px;
+  background: #1c7cc2;
+  color: #fff;
+  font-size: 16px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.docs-list div.container ul.list li a.download {
+    position: absolute;
+    left: 280px;
+    bottom: 20px;
+    z-index: auto;
+    font-size: 18px;
+    line-height: 50px;
+    width: 200px;
+  }
+}
+
 body div#content section.sub-ready {
   line-height: 500px;
   font-size: 80px;
