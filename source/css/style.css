@@ -2263,6 +2263,7 @@ body header button.menu i.bar:last-of-type {
   body aside nav#main-menu ul.list li.depth1 {
     display: inline-block;
     margin-right: 28px;
+    vertical-align: top;
   }
   body aside nav#main-menu ul.list li.depth1 h3 {
     margin: 0;
@@ -2270,7 +2271,6 @@ body header button.menu i.bar:last-of-type {
   body aside nav#main-menu ul.list li.depth1 h3 a {
     font-family: "NanumSquare";
     font-size: 20px;
-    display: block;
   }
   body aside nav#main-menu ul.list li.depth1 ul {
     position: absolute;
@@ -7681,6 +7681,10 @@ body div#content section.reservation-list div.container ul.list li.notice a p.nu
   }
 }
 
+body div#content section.reservation-view {
+  padding: 0 0 30px;
+}
+
 body div#content section.reservation-view div.container ul.head {
   list-style: none;
   margin: 20px 0 30px;
@@ -8341,6 +8345,213 @@ body div#content section.consulting-list div.container ul.list li.notice a p.num
     padding: 5px 0;
     margin: -5px 15px 0;
     top: 0;
+  }
+}
+
+body div#content section.charts {
+  padding: 0 0 30px;
+}
+
+body div#content section.charts div.container ul.epuip-tabs {
+  position: relative;
+  list-style: none;
+  margin: 20px 0;
+  padding: 48px 0 0;
+  border-top: 1px solid #ccc;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.charts div.container ul.epuip-tabs {
+    padding: none;
+    border-top: none;
+    font-size: 0;
+    padding: 0;
+    margin: 0 0 40px;
+  }
+}
+
+body div#content section.charts div.container ul.epuip-tabs li {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.charts div.container ul.epuip-tabs li {
+    display: inline-block;
+    width: calc(100% / 4);
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+body div#content section.charts div.container ul.epuip-tabs li a {
+  display: block;
+  position: relative;
+  line-height: 48px;
+  padding: 0 10px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.charts div.container ul.epuip-tabs li a {
+    border-right: none;
+    border-top: 1px solid #ccc;
+    line-height: 68px;
+    background: #f8fbff;
+  }
+}
+
+body div#content section.charts div.container ul.epuip-tabs li a i {
+  position: absolute;
+  right: 10px;
+  top: 16px;
+  font-size: 12px;
+  color: transparent;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.charts div.container ul.epuip-tabs li a i {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  body div#content section.charts div.container ul.epuip-tabs li:last-child a {
+    border-right: 1px solid #ccc;
+  }
+}
+
+body div#content section.charts div.container ul.epuip-tabs li.on {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.charts div.container ul.epuip-tabs li.on {
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+  }
+}
+
+body div#content section.charts div.container ul.epuip-tabs li.on a {
+  color: #1c7cc2;
+  font-weight: 600;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.charts div.container ul.epuip-tabs li.on a {
+    border-color: #1c7cc2;
+    background: #fff;
+    -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+  }
+  body div#content section.charts div.container ul.epuip-tabs li.on a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -24px;
+    margin-left: -12px;
+    width: 0;
+    height: 0;
+    border: 12px solid transparent;
+    border-top-color: #1c7cc2;
+  }
+}
+
+body div#content section.charts div.container ul.epuip-tabs li.on a i {
+  color: #1c7cc2;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.charts div.container ul.epuip-tabs li.on + li a {
+    border-left-color: #1c7cc2;
+  }
+}
+
+body div#content section.charts div.container ul.epuip-tabs.on li {
+  display: block;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.charts div.container ul.epuip-tabs.on li {
+    display: inline-block;
+  }
+}
+
+body div#content section.charts div.container div.chart-frame {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.charts div.container div.chart-frame {
+    text-align: left;
+    position: relative;
+  }
+}
+
+body div#content section.charts div.container div.chart-frame h4 {
+  margin: 20px 20px 10px;
+  font-size: 20px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.charts div.container div.chart-frame h4 {
+    font-size: 28px;
+    margin: 26px 26px 10px;
+  }
+}
+
+body div#content section.charts div.container div.chart-frame > p {
+  margin: 0;
+  padding: 0 20px 2px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.charts div.container div.chart-frame > p {
+    font-size: 16px;
+    padding: 0 26px 4px;
+  }
+}
+
+body div#content section.charts div.container div.chart-frame a.download {
+  display: block;
+  margin: 10px auto 20px;
+  background: #1c7cc2;
+  color: #fff;
+  width: 176px;
+  line-height: 48px;
+  font-size: 16px;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.charts div.container div.chart-frame a.download {
+    position: absolute;
+    right: 26px;
+    top: 30px;
+    font-size: 18px;
+    width: 200px;
+    line-height: 50px;
+  }
+}
+
+body div#content section.charts div.container div.chart-frame div.chart-outline {
+  border-top: 1px solid #ccc;
+  min-height: 200px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.charts div.container div.chart-frame div.chart-outline {
+    margin-top: 20px;
+    min-height: 300px;
   }
 }
 

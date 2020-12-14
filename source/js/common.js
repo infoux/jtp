@@ -156,16 +156,16 @@ $(document).ready(function() {
         $(this).toggleClass("on"); 
     });
 
-
-
     
-    $(".agency-open").focusin(function(){
-        $(this).toggleClass("on"); 
-    });
     $(".agency-link a:last-of-type()").focusout(function(){
         $(".agency-open").toggleClass("on"); 
     });
 
+    $(".epuip-tabs li.on a").removeAttr("href");
+
+    $(".epuip-tabs li.on a").click(function(){
+        $("ul.epuip-tabs").addClass("on");
+    });
 
   
     // reslick only if it's not slick()
