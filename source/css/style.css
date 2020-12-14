@@ -8825,6 +8825,127 @@ body div#content section.docs-list div.container ul.list li a.download {
   }
 }
 
+body div#content section.docs-view {
+  padding: 0 0 20px;
+}
+
+body div#content section.docs-view div.container div.docs-frame {
+  border: 1px solid #ccc;
+  margin: 20px 0;
+  text-align: center;
+  background: #fbfbfb;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.docs-view div.container div.docs-frame {
+    text-align: left;
+    position: relative;
+  }
+}
+
+body div#content section.docs-view div.container div.docs-frame h4 {
+  margin: 20px 20px 10px;
+  font-size: 20px;
+  word-break: keep-all;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.docs-view div.container div.docs-frame h4 {
+    font-size: 28px;
+    margin: 26px 26px 10px;
+  }
+}
+
+body div#content section.docs-view div.container div.docs-frame > p {
+  margin: 0;
+  padding: 0 20px 2px;
+  color: #555;
+  word-break: keep-all;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.docs-view div.container div.docs-frame > p {
+    font-size: 16px;
+    padding: 0 26px 4px;
+  }
+}
+
+body div#content section.docs-view div.container div.docs-frame a.download {
+  display: block;
+  margin: 10px auto 20px;
+  background: #1c7cc2;
+  color: #fff;
+  width: 176px;
+  line-height: 48px;
+  font-size: 16px;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.docs-view div.container div.docs-frame a.download {
+    position: absolute;
+    right: 26px;
+    top: 30px;
+    font-size: 18px;
+    width: 200px;
+    line-height: 50px;
+  }
+}
+
+body div#content section.docs-view div.container div.docs-frame div.docs-outline {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.docs-view div.container div.docs-frame div.docs-outline {
+    display: block;
+    margin-top: 20px;
+    min-height: 300px;
+    border-top: 1px solid #ccc;
+  }
+}
+
+body div#content article.docs-text {
+  margin: 0 0 30px;
+}
+
+body div#content article.docs-text div.container h5 {
+  font-size: 18px;
+  border-bottom: 2px solid #333;
+  margin: 0 0 20px;
+  padding: 0 0 10px;
+}
+
+@media (min-width: 1200px) {
+  body div#content article.docs-text div.container h5 {
+    font-size: 22px;
+  }
+}
+
+body div#content article.docs-text div.container div.text {
+  font-size: 14px;
+  margin: 0 0 10px;
+  color: #555;
+}
+
+@media (min-width: 1200px) {
+  body div#content article.docs-text div.container div.text {
+    font-size: 18px;
+  }
+}
+
+body div#content article.docs-text div.container p.info {
+  text-align: right;
+  font-size: 14px;
+  color: #555;
+}
+
+@media (min-width: 1200px) {
+  body div#content article.docs-text div.container p.info {
+    font-size: 16px;
+  }
+}
+
 body div#content section.sub-ready {
   line-height: 500px;
   font-size: 80px;

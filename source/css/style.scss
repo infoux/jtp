@@ -6551,6 +6551,115 @@ body {
 			}
 		}
 
+		section.docs-view {
+			padding: 0 0 20px;
+
+			div.container {
+				div.docs-frame {
+					border: 1px solid #ccc;
+					margin: 20px 0;
+					text-align: center;
+					background: #fbfbfb;
+
+					@media (min-width: $screen-size-pc) {
+						text-align: left;
+						position: relative;
+					}
+
+					h4 {
+						margin: 20px 20px 10px;
+						font-size: 20px;
+						word-break: keep-all;
+
+						@media (min-width: $screen-size-pc) {
+							font-size: 28px;
+							margin: 26px 26px 10px;
+						}
+					}
+
+					& > p {
+						margin: 0;
+						padding: 0 20px 2px;
+						color: #555;
+						word-break: keep-all;
+
+						@media (min-width: $screen-size-pc) {
+							font-size: 16px;
+							padding: 0 26px 4px;
+						}
+					}
+
+					a.download {
+						display: block;
+						margin: 10px auto 20px;
+						background: #1c7cc2;
+						color: #fff;
+						width: 176px;
+						line-height: 48px;
+						font-size: 16px;
+						text-align: center;
+
+						@media (min-width: $screen-size-pc) {
+							position: absolute;
+							right: 26px;
+							top: 30px;
+							font-size: 18px;
+							width: 200px;
+							line-height: 50px;
+						}
+					}
+
+					div.docs-outline {
+						display: none;
+
+						@media (min-width: $screen-size-pc) {
+							display: block;
+							margin-top: 20px;
+							min-height: 300px;
+							border-top: 1px solid #ccc;
+						}
+					}
+				}
+			}
+		}
+
+		article.docs-text {
+			margin: 0 0 30px;
+
+			div.container {
+				h5 {
+					font-size: 18px;
+					border-bottom: 2px solid #333;
+					margin: 0 0 20px;
+					padding: 0 0 10px;
+
+					@media (min-width: $screen-size-pc) {
+						font-size: 22px;
+					}
+				}
+
+				div.text {
+					font-size: 14px;
+					margin: 0 0 10px;
+					color: #555;
+
+					@media (min-width: $screen-size-pc) {
+						font-size: 18px;
+					}
+				}
+
+				p.info {
+					text-align: right;
+					font-size: 14px;
+					color: #555;
+
+					@media (min-width: $screen-size-pc) {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+
 		section.sub-ready {
 			line-height: 500px;
 			font-size: 80px;
