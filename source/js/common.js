@@ -156,7 +156,7 @@ $(document).ready(function() {
         $(this).toggleClass("on"); 
     });
 
-    
+
     $(".agency-link a:last-of-type()").focusout(function(){
         $(".agency-open").toggleClass("on"); 
     });
@@ -194,6 +194,10 @@ $(document).ready(function() {
 
     $("button.check-zeus").click(function() {
         $("#modal-zeus").addClass("on");
+    });
+
+    $("button.check-passwd").click(function() {
+        $("#modal-passwd").addClass("on");
     });
 
     $("button.map").click(function() {
