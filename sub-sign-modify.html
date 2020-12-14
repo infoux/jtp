@@ -133,14 +133,40 @@
 
 
 
+<!--  Modal passwd -->
+<div id="modal-passwd" class="modal on">
+ 
+    <!-- Modal content -->
+    <div class="modal-content">
+              <h2>비밀번호 변경하기<button class="close">닫기</button></h2>
+              <div class="inside">
 
+                <div class="passwd-check">
+                    <input type="password" placeholder="현재 비밀번호를 입력하세요">
+                    <span>비밀번호가 일치하지 않습니다.</span>
+                    <input type="password" placeholder="새 비밀번호를 입력하세요">
+                    <input type="password" placeholder="새 비밀번호를 다시한번 입력하세요">
+                    <span>입력하신 새 비밀번호가 일치하지 않습니다.</span>
+                </div>
+
+                <div class="btn-set center full">
+                    <button class="btn main">확인</button>
+                </div>
+
+              </div>
+
+
+    </div>
+
+  </div>
+<!-- Modal-->
 
 
 
 
 
 <!--  Modal ZEUS -->
-    <div id="modal-zeus" class="modal on">
+    <div id="modal-zeus" class="modal">
  
         <!-- Modal content -->
         <div class="modal-content">
@@ -212,14 +238,9 @@
                                 <strong>mysam36</strong>
                             </dd>
 
-                            <dt><label for="passwd">비밀번호 변경</label> <i>*</i></dt>
+                            <dt><label for="passwd">비밀번호 변경</label></dt>
                             <dd>
-                                <input id="passwd" type="password" placeholder="영문+숫자+특수문자로 조횝된 8~16자리">
-                            </dd>
-
-                            <dt><label for="passwd">비밀번호 확인</label> <i>*</i></dt>
-                            <dd>
-                                <input id="passwd" type="password" placeholder="설정하신 비밀번호를 한번 더 입력해주세요.">
+                                <button class="check-zeus">비밀번호 변경하기</button>
                             </dd>
 
                             <dt>회원분류 <i>*</i></dt>
