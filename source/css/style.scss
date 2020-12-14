@@ -729,7 +729,7 @@ body {
 								a {
 									&::before {
 										background: url("../images/icon-main01.svg") no-repeat
-											center / 95% auto;
+											center / 74% auto;
 									}
 								}
 							}
@@ -2335,6 +2335,107 @@ body {
 
 				img {
 					max-width: 100%;
+				}
+			}
+
+			div.reply {
+				ul {
+					list-style: none;
+					margin: 0 0 20px;
+					padding: 0;
+					border-top: 1px solid #ccc;
+
+					@media (min-width: $screen-size-pc) {
+						margin: 0 0 30px;
+					}
+
+					li {
+						position: relative;
+						border-bottom: 1px solid #ccc;
+						padding: 20px 0;
+
+						@media (min-width: $screen-size-pc) {
+							padding: 30px;
+						}
+
+						h5 {
+							display: inline-block;
+							font-size: 14px;
+							font-weight: 600;
+							margin: 0;
+
+							@media (min-width: $screen-size-pc) {
+								font-size: 16px;
+							}
+						}
+
+						&.admin {
+							background: #f3fbff;
+
+							h5 {
+								font-size: 14px;
+								font-weight: 400;
+								background: #1c7cc2;
+								color: #fff;
+								padding: 4px 10px;
+
+								@media (min-width: $screen-size-pc) {
+									font-size: 16px;
+								}
+							}
+						}
+
+						p.date {
+							display: inline-block;
+							margin: 0 0 0 10px;
+							font-size: 13px;
+							color: #777777;
+
+							@media (min-width: $screen-size-pc) {
+								font-size: 15px;
+							}
+						}
+
+						div.text {
+							padding: 20px 0 0;
+						}
+					}
+				}
+
+				div.btn-set.right {
+					position: absolute;
+					right: 0;
+					top: 10px;
+					margin: 10px 0;
+					font-size: 0;
+
+					@media (min-width: $screen-size-pc) {
+						right: 30px;
+						top: 30px;
+					}
+
+					.btn {
+						line-height: 1;
+						border: none;
+						padding: 0;
+						margin: 0;
+						font-size: 13px;
+						background: none;
+
+						@media (min-width: $screen-size-pc) {
+							font-size: 16px;
+						}
+
+						&:first-of-type {
+							&::after {
+								content: "|";
+								position: relative;
+								top: -1px;
+								margin: 0 6px;
+								font-size: 12px;
+							}
+						}
+					}
 				}
 			}
 		}
