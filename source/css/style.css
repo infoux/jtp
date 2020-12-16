@@ -3046,6 +3046,7 @@ body div#content section.main-equipment div.container ul.list li p.image img {
 body div#content section.main-equipment div.container ul.list li h3 {
   margin: 10px 0 5px;
   font-size: 16px;
+  padding: 0 10px;
   font-family: "NanumSquare";
 }
 
@@ -3053,6 +3054,9 @@ body div#content section.main-equipment div.container ul.list li h3 {
   body div#content section.main-equipment div.container ul.list li h3 {
     margin: 15px 0 5px;
     font-size: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 }
 
@@ -9692,6 +9696,199 @@ body div#content section.faq div.container ul.list li input:checked + label + di
 @media (min-width: 1200px) {
   body div#content section.faq div.container ul.list li input:checked + label + div.answer {
     padding: 30px 40px 30px 80px;
+  }
+}
+
+body div#content section.manual {
+  margin: 0 0 30px;
+}
+
+body div#content section.manual div.container {
+  font-size: 0;
+}
+
+body div#content section.manual div.container ul {
+  list-style: none;
+  margin: 30px 0 0;
+  padding: 0;
+}
+
+body div#content section.manual div.container ul li {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  width: 50%;
+  font-size: 16px;
+  text-align: center;
+  margin: 0 0 30px;
+  word-break: keep-all;
+}
+
+body div#content section.manual div.container ul li::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -5px;
+  top: 60px;
+  width: 11px;
+  height: 20px;
+  background: url("../images/icon-manual-right.svg") no-repeat center/auto 100%;
+}
+
+@media (max-width: 1199px) {
+  body div#content section.manual div.container ul li:nth-child(even)::after {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  body div#content section.manual div.container ul li {
+    width: calc((100% - 252px) / 5);
+    margin: 0 63px 80px 0;
+    font-size: 20px;
+  }
+  body div#content section.manual div.container ul li::after {
+    width: 16px;
+    height: 26px;
+    right: -40px;
+    top: 80px;
+  }
+  body div#content section.manual div.container ul li:nth-child(5n) {
+    margin-right: 0;
+  }
+  body div#content section.manual div.container ul li:nth-child(5n)::after {
+    display: none;
+  }
+}
+
+body div#content section.manual div.container ul li strong {
+  display: block;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  background: #F5F5F5;
+  font-size: 22px;
+  color: #1C7CC2;
+  padding: 14px 0 0;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.manual div.container ul li strong {
+    width: 190px;
+    height: 190px;
+    margin-bottom: 16px;
+    font-size: 26px;
+  }
+}
+
+body div#content section.manual div.container ul li strong.step01 {
+  background: url("../images/icon-manual01.svg") no-repeat #f5f5f5 center 52px/42px auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.manual div.container ul li strong.step01 {
+    background-size: 58px auto;
+    background-position: center 75px;
+  }
+}
+
+body div#content section.manual div.container ul li strong.step02 {
+  background: url("../images/icon-manual02.svg") no-repeat #f5f5f5 center 52px/59px auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.manual div.container ul li strong.step02 {
+    background-size: 74px auto;
+    background-position: center 80px;
+  }
+}
+
+body div#content section.manual div.container ul li strong.step03 {
+  background: url("../images/icon-manual03.svg") no-repeat #f5f5f5 center 52px/48px auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.manual div.container ul li strong.step03 {
+    background-size: 70px auto;
+    background-position: center 78px;
+  }
+}
+
+body div#content section.manual div.container ul li strong.step04 {
+  background: url("../images/icon-manual04.svg") no-repeat #f5f5f5 center 52px/49px auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.manual div.container ul li strong.step04 {
+    background-size: 73px auto;
+    background-position: center 73px;
+  }
+}
+
+body div#content section.manual div.container ul li strong.step05 {
+  background: url("../images/icon-manual05.svg") no-repeat #f5f5f5 center 52px/42px auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.manual div.container ul li strong.step05 {
+    background-size: 66px auto;
+    background-position: center 64px;
+  }
+}
+
+body div#content section.manual div.container ul li strong.step06 {
+  background: url("../images/icon-manual06.svg") no-repeat #f5f5f5 center 52px/43px auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.manual div.container ul li strong.step06 {
+    background-size: 67px auto;
+    background-position: center 63px;
+  }
+}
+
+body div#content section.manual div.container ul li strong.step07 {
+  background: url("../images/icon-manual07.svg") no-repeat #f5f5f5 center 52px/46px auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.manual div.container ul li strong.step07 {
+    background-size: 72px auto;
+    background-position: center 72px;
+  }
+}
+
+body div#content section.manual div.container ul li strong.step08 {
+  background: url("../images/icon-manual08.svg") no-repeat #f5f5f5 center 52px/58px auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.manual div.container ul li strong.step08 {
+    background-size: 86px auto;
+    background-position: center 72px;
+  }
+}
+
+body div#content section.manual div.container ul li strong.step09 {
+  background: url("../images/icon-manual09.svg") no-repeat #f5f5f5 center 52px/54px auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.manual div.container ul li strong.step09 {
+    background-size: 78px auto;
+    background-position: center 77px;
+  }
+}
+
+body div#content section.manual div.container ul li strong.step10 {
+  background: url("../images/icon-manual10.svg") no-repeat #f5f5f5 center 52px/50px auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.manual div.container ul li strong.step10 {
+    background-size: 69px auto;
+    background-position: center 76px;
   }
 }
 
