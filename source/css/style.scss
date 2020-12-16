@@ -7284,9 +7284,9 @@ body {
 			div.container {
 				font-size:0;
 
-				ul {
+				ul.list {
 					list-style:none;
-					margin:30px 0 0;
+					margin:30px 0;
 					padding:0;
 
 					li {
@@ -7460,6 +7460,45 @@ body {
 									background-position:center 76px;
 								}
 							}
+						}
+					}
+				}
+
+				h4 {
+					font-size:18px;
+					padding:0 0 10px;
+					margin:0 0 20px;
+					border-bottom:2px solid #222;
+
+					@media (min-width: $screen-size-pc) {
+						font-size:22px;
+					}
+				}
+
+				ul.info {
+					list-style:none;
+					margin:0 0 30px;
+					padding:0;
+
+					li {
+						position:relative;
+						font-size:14px;
+						padding:0 0 6px 10px;
+						word-break:keep-all;
+
+						@media (min-width: $screen-size-pc) {
+							font-size:16px;
+						}
+
+						&.red {
+							color:#EB2828;
+						}
+
+						&::before {
+							content:"-";
+							display:inline-block;
+							position:absolute;
+							left:0;
 						}
 					}
 				}

@@ -1865,6 +1865,7 @@ div.input dl dd textarea {
   min-height: 80px;
   padding: 10px;
   margin: 0 0 10px;
+  font-size: 14px;
 }
 
 div.input dl dd div.total-result {
@@ -1873,6 +1874,12 @@ div.input dl dd div.total-result {
   padding: 10px;
   margin: 20px 0;
   font-size: 14px;
+}
+
+@media (min-width: 1200px) {
+  div.input dl dd div.total-result {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -9707,13 +9714,13 @@ body div#content section.manual div.container {
   font-size: 0;
 }
 
-body div#content section.manual div.container ul {
+body div#content section.manual div.container ul.list {
   list-style: none;
-  margin: 30px 0 0;
+  margin: 30px 0;
   padding: 0;
 }
 
-body div#content section.manual div.container ul li {
+body div#content section.manual div.container ul.list li {
   display: inline-block;
   position: relative;
   vertical-align: top;
@@ -9724,7 +9731,7 @@ body div#content section.manual div.container ul li {
   word-break: keep-all;
 }
 
-body div#content section.manual div.container ul li::after {
+body div#content section.manual div.container ul.list li::after {
   content: "";
   display: block;
   position: absolute;
@@ -9736,32 +9743,32 @@ body div#content section.manual div.container ul li::after {
 }
 
 @media (max-width: 1199px) {
-  body div#content section.manual div.container ul li:nth-child(even)::after {
+  body div#content section.manual div.container ul.list li:nth-child(even)::after {
     display: none;
   }
 }
 
 @media (min-width: 1200px) {
-  body div#content section.manual div.container ul li {
+  body div#content section.manual div.container ul.list li {
     width: calc((100% - 252px) / 5);
     margin: 0 63px 80px 0;
     font-size: 20px;
   }
-  body div#content section.manual div.container ul li::after {
+  body div#content section.manual div.container ul.list li::after {
     width: 16px;
     height: 26px;
     right: -40px;
     top: 80px;
   }
-  body div#content section.manual div.container ul li:nth-child(5n) {
+  body div#content section.manual div.container ul.list li:nth-child(5n) {
     margin-right: 0;
   }
-  body div#content section.manual div.container ul li:nth-child(5n)::after {
+  body div#content section.manual div.container ul.list li:nth-child(5n)::after {
     display: none;
   }
 }
 
-body div#content section.manual div.container ul li strong {
+body div#content section.manual div.container ul.list li strong {
   display: block;
   width: 130px;
   height: 130px;
@@ -9774,7 +9781,7 @@ body div#content section.manual div.container ul li strong {
 }
 
 @media (min-width: 1200px) {
-  body div#content section.manual div.container ul li strong {
+  body div#content section.manual div.container ul.list li strong {
     width: 190px;
     height: 190px;
     margin-bottom: 16px;
@@ -9782,114 +9789,157 @@ body div#content section.manual div.container ul li strong {
   }
 }
 
-body div#content section.manual div.container ul li strong.step01 {
+body div#content section.manual div.container ul.list li strong.step01 {
   background: url("../images/icon-manual01.svg") no-repeat #f5f5f5 center 52px/42px auto;
 }
 
 @media (min-width: 1200px) {
-  body div#content section.manual div.container ul li strong.step01 {
+  body div#content section.manual div.container ul.list li strong.step01 {
     background-size: 58px auto;
     background-position: center 75px;
   }
 }
 
-body div#content section.manual div.container ul li strong.step02 {
+body div#content section.manual div.container ul.list li strong.step02 {
   background: url("../images/icon-manual02.svg") no-repeat #f5f5f5 center 52px/59px auto;
 }
 
 @media (min-width: 1200px) {
-  body div#content section.manual div.container ul li strong.step02 {
+  body div#content section.manual div.container ul.list li strong.step02 {
     background-size: 74px auto;
     background-position: center 80px;
   }
 }
 
-body div#content section.manual div.container ul li strong.step03 {
+body div#content section.manual div.container ul.list li strong.step03 {
   background: url("../images/icon-manual03.svg") no-repeat #f5f5f5 center 52px/48px auto;
 }
 
 @media (min-width: 1200px) {
-  body div#content section.manual div.container ul li strong.step03 {
+  body div#content section.manual div.container ul.list li strong.step03 {
     background-size: 70px auto;
     background-position: center 78px;
   }
 }
 
-body div#content section.manual div.container ul li strong.step04 {
+body div#content section.manual div.container ul.list li strong.step04 {
   background: url("../images/icon-manual04.svg") no-repeat #f5f5f5 center 52px/49px auto;
 }
 
 @media (min-width: 1200px) {
-  body div#content section.manual div.container ul li strong.step04 {
+  body div#content section.manual div.container ul.list li strong.step04 {
     background-size: 73px auto;
     background-position: center 73px;
   }
 }
 
-body div#content section.manual div.container ul li strong.step05 {
+body div#content section.manual div.container ul.list li strong.step05 {
   background: url("../images/icon-manual05.svg") no-repeat #f5f5f5 center 52px/42px auto;
 }
 
 @media (min-width: 1200px) {
-  body div#content section.manual div.container ul li strong.step05 {
+  body div#content section.manual div.container ul.list li strong.step05 {
     background-size: 66px auto;
     background-position: center 64px;
   }
 }
 
-body div#content section.manual div.container ul li strong.step06 {
+body div#content section.manual div.container ul.list li strong.step06 {
   background: url("../images/icon-manual06.svg") no-repeat #f5f5f5 center 52px/43px auto;
 }
 
 @media (min-width: 1200px) {
-  body div#content section.manual div.container ul li strong.step06 {
+  body div#content section.manual div.container ul.list li strong.step06 {
     background-size: 67px auto;
     background-position: center 63px;
   }
 }
 
-body div#content section.manual div.container ul li strong.step07 {
+body div#content section.manual div.container ul.list li strong.step07 {
   background: url("../images/icon-manual07.svg") no-repeat #f5f5f5 center 52px/46px auto;
 }
 
 @media (min-width: 1200px) {
-  body div#content section.manual div.container ul li strong.step07 {
+  body div#content section.manual div.container ul.list li strong.step07 {
     background-size: 72px auto;
     background-position: center 72px;
   }
 }
 
-body div#content section.manual div.container ul li strong.step08 {
+body div#content section.manual div.container ul.list li strong.step08 {
   background: url("../images/icon-manual08.svg") no-repeat #f5f5f5 center 52px/58px auto;
 }
 
 @media (min-width: 1200px) {
-  body div#content section.manual div.container ul li strong.step08 {
+  body div#content section.manual div.container ul.list li strong.step08 {
     background-size: 86px auto;
     background-position: center 72px;
   }
 }
 
-body div#content section.manual div.container ul li strong.step09 {
+body div#content section.manual div.container ul.list li strong.step09 {
   background: url("../images/icon-manual09.svg") no-repeat #f5f5f5 center 52px/54px auto;
 }
 
 @media (min-width: 1200px) {
-  body div#content section.manual div.container ul li strong.step09 {
+  body div#content section.manual div.container ul.list li strong.step09 {
     background-size: 78px auto;
     background-position: center 77px;
   }
 }
 
-body div#content section.manual div.container ul li strong.step10 {
+body div#content section.manual div.container ul.list li strong.step10 {
   background: url("../images/icon-manual10.svg") no-repeat #f5f5f5 center 52px/50px auto;
 }
 
 @media (min-width: 1200px) {
-  body div#content section.manual div.container ul li strong.step10 {
+  body div#content section.manual div.container ul.list li strong.step10 {
     background-size: 69px auto;
     background-position: center 76px;
   }
+}
+
+body div#content section.manual div.container h4 {
+  font-size: 18px;
+  padding: 0 0 10px;
+  margin: 0 0 20px;
+  border-bottom: 2px solid #222;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.manual div.container h4 {
+    font-size: 22px;
+  }
+}
+
+body div#content section.manual div.container ul.info {
+  list-style: none;
+  margin: 0 0 30px;
+  padding: 0;
+}
+
+body div#content section.manual div.container ul.info li {
+  position: relative;
+  font-size: 14px;
+  padding: 0 0 6px 10px;
+  word-break: keep-all;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.manual div.container ul.info li {
+    font-size: 16px;
+  }
+}
+
+body div#content section.manual div.container ul.info li.red {
+  color: #EB2828;
+}
+
+body div#content section.manual div.container ul.info li::before {
+  content: "-";
+  display: inline-block;
+  position: absolute;
+  left: 0;
 }
 
 body div#content section.sub-ready {
