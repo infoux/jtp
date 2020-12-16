@@ -3612,16 +3612,19 @@ body div#content section.sub-header {
     background: url("../images/sub-image01.png") no-repeat #517186 center;
   }
   body div#content section.sub-header.sub02 {
-    background: url("../images/sub-image02.png") no-repeat #000 center;
+    background: url("../images/sub-image02.png") no-repeat #282828 center;
   }
   body div#content section.sub-header.sub03 {
-    background: url("../images/sub-image03.png") no-repeat #000 center;
+    background: url("../images/sub-image03.png") no-repeat #000f29 center;
   }
   body div#content section.sub-header.sub04 {
-    background: url("../images/sub-image04.png") no-repeat #000 center;
+    background: url("../images/sub-image04.png") no-repeat #404040 center;
   }
   body div#content section.sub-header.sub05 {
-    background: url("../images/sub-image05.png") no-repeat #000 center;
+    background: url("../images/sub-image05.png") no-repeat #090A0F center;
+  }
+  body div#content section.sub-header.sub06 {
+    background: url("../images/sub-image06.png") no-repeat #575145 center;
   }
   body div#content section.sub-header div.container {
     height: 200px;
