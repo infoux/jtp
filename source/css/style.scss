@@ -7510,11 +7510,23 @@ body {
 			}
 		}
 
-		section.sub-ready {
-			line-height: 500px;
-			font-size: 80px;
-			font-weight: 800;
+		div.page-ready {
+			font-size: 30px;
+			font-weight: 600;
+			padding:276px 0 100px;
 			color: #999;
+			text-align:center;
+			background:url("../images/icon-ready.svg") no-repeat center 70px / 180px auto;
+
+			@media (min-width: $screen-size-pc) {
+				width:$screen-size-pc;
+				padding:576px 0 150px;
+				margin:0 auto 40px;
+				font-size:40px;
+				border:1px solid #ccc;
+				background-size: 340px auto;
+				background-position:center 200px
+			}
 		}
 	}
 
