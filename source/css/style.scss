@@ -4552,6 +4552,240 @@ body {
 			}
 		}
 
+
+
+		section.consulting-view {
+			h3.subtitle {
+				display: none;
+
+				@media (min-width: $screen-size-pc) {
+					display: block;
+				}
+			}
+
+			div.board-box {
+
+
+				h4 {
+					border-bottom:1px solid #ccc;
+					background:#FBFBFB;
+					margin:0;
+					padding:10px;
+					font-size:20px;
+					color:#1C7CC2;
+
+					@media (min-width: $screen-size-pc) {
+						padding:20px;
+						font-size:28px;
+						border:1px solid #ccc;
+					}
+	
+
+					small {
+						display:block;
+						font-size:14px;
+						font-weight:400;
+						color:#333333;
+
+						@media (min-width: $screen-size-pc) {
+							font-size:18px;
+						}
+					}
+				}
+
+				h5 {
+					position:relative;
+					font-size: 16px;
+					margin: 0;
+					padding: 14px 0;
+					border-bottom: 1px solid #dfdfdf;
+					word-break: keep-all;
+					position:relative;
+					padding-left:84px;
+
+					@media (min-width: $screen-size-pc) {
+						padding: 20px 20px 20px 114px;
+						font-size: 18px;
+						border:1px solid #ccc;
+						border-top:none;
+					}
+
+					&::before {
+						content: "제목";
+						display: inline-block;
+						position:absolute;
+						left:0;
+						width: 66px;
+						font-size: 14px;
+						text-align: center;
+						border-right: 1px solid #dfdfdf;
+						margin-right: 20px;
+
+						@media (min-width: $screen-size-pc) {
+							font-size:17px;
+							width:88px;
+						}
+	
+					}
+
+					small {
+						display:block;
+						font-weight:400;
+						color:#555555;
+						font-size:13px;
+
+						@media (min-width: $screen-size-pc) {
+							font-size:16px;
+							position:absolute;
+							right:20px;
+							bottom:20px;
+
+						}
+					}
+				}
+
+			}
+
+			hr {
+				display: none;
+			}
+
+			div.board-text {
+				padding: 20px 10px;
+				border-bottom: 1px solid #dfdfdf;
+				font-size:16px;
+
+				@media (min-width: $screen-size-pc) {
+					font-size: 18px;
+					padding: 40px;
+				}
+
+				p {
+					margin: 0;
+
+					&.image {
+						text-align: center;
+					}
+				}
+
+				img {
+					max-width: 100%;
+				}
+			}
+
+			div.reply {
+				ul {
+					list-style: none;
+					margin: 0 0 20px;
+					padding: 0;
+					border-top: 1px solid #ccc;
+
+					@media (min-width: $screen-size-pc) {
+						margin: 0 0 30px;
+					}
+
+					li {
+						position: relative;
+						border-bottom: 1px solid #ccc;
+						padding: 20px 10px;
+
+						@media (min-width: $screen-size-pc) {
+							padding: 30px;
+						}
+
+						h5 {
+							display: inline-block;
+							font-size: 14px;
+							font-weight: 600;
+							margin: 0;
+
+							@media (min-width: $screen-size-pc) {
+								font-size: 16px;
+							}
+						}
+
+						&.admin {
+							background: #f3fbff;
+
+							h5 {
+								font-size: 14px;
+								font-weight: 400;
+								background: #1c7cc2;
+								color: #fff;
+								padding: 4px 10px;
+
+								@media (min-width: $screen-size-pc) {
+									font-size: 16px;
+								}
+							}
+						}
+
+						p.date {
+							position:absolute;
+							right:10px;
+							top:24px;
+							display: inline-block;
+							margin: 0 0 0 10px;
+							font-size: 13px;
+							color: #777777;
+
+							@media (min-width: $screen-size-pc) {
+								font-size: 16px;
+								right:30px;
+								top:36px;
+							}
+						}
+
+						div.text {
+							padding: 20px 0 0;
+							font-size:16px;
+
+							@media (min-width: $screen-size-pc) {
+								font-size: 18px;
+							}
+						}
+					}
+				}
+
+				div.btn-set.right {
+					position: absolute;
+					right: 0;
+					top: 10px;
+					margin: 10px 0;
+					font-size: 0;
+
+					@media (min-width: $screen-size-pc) {
+						right: 30px;
+						top: 30px;
+					}
+
+					.btn {
+						line-height: 1;
+						border: none;
+						padding: 0;
+						margin: 0;
+						font-size: 13px;
+						background: none;
+
+						@media (min-width: $screen-size-pc) {
+							font-size: 16px;
+						}
+
+						&:first-of-type {
+							&::after {
+								content: "|";
+								position: relative;
+								top: -1px;
+								margin: 0 6px;
+								font-size: 12px;
+							}
+						}
+					}
+				}
+			}
+		}
+
+
 		section.equipment-reservation {
 			padding-bottom: 40px;
 

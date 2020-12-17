@@ -6749,6 +6749,253 @@ body div#content section.equipment-view div.container dl.detail dd button.map i 
   }
 }
 
+body div#content section.consulting-view h3.subtitle {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.consulting-view h3.subtitle {
+    display: block;
+  }
+}
+
+body div#content section.consulting-view div.board-box h4 {
+  border-bottom: 1px solid #ccc;
+  background: #FBFBFB;
+  margin: 0;
+  padding: 10px;
+  font-size: 20px;
+  color: #1C7CC2;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.consulting-view div.board-box h4 {
+    padding: 20px;
+    font-size: 28px;
+    border: 1px solid #ccc;
+  }
+}
+
+body div#content section.consulting-view div.board-box h4 small {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.consulting-view div.board-box h4 small {
+    font-size: 18px;
+  }
+}
+
+body div#content section.consulting-view div.board-box h5 {
+  position: relative;
+  font-size: 16px;
+  margin: 0;
+  padding: 14px 0;
+  border-bottom: 1px solid #dfdfdf;
+  word-break: keep-all;
+  position: relative;
+  padding-left: 84px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.consulting-view div.board-box h5 {
+    padding: 20px 20px 20px 114px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+}
+
+body div#content section.consulting-view div.board-box h5::before {
+  content: "제목";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  width: 66px;
+  font-size: 14px;
+  text-align: center;
+  border-right: 1px solid #dfdfdf;
+  margin-right: 20px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.consulting-view div.board-box h5::before {
+    font-size: 17px;
+    width: 88px;
+  }
+}
+
+body div#content section.consulting-view div.board-box h5 small {
+  display: block;
+  font-weight: 400;
+  color: #555555;
+  font-size: 13px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.consulting-view div.board-box h5 small {
+    font-size: 16px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+body div#content section.consulting-view hr {
+  display: none;
+}
+
+body div#content section.consulting-view div.board-text {
+  padding: 20px 10px;
+  border-bottom: 1px solid #dfdfdf;
+  font-size: 16px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.consulting-view div.board-text {
+    font-size: 18px;
+    padding: 40px;
+  }
+}
+
+body div#content section.consulting-view div.board-text p {
+  margin: 0;
+}
+
+body div#content section.consulting-view div.board-text p.image {
+  text-align: center;
+}
+
+body div#content section.consulting-view div.board-text img {
+  max-width: 100%;
+}
+
+body div#content section.consulting-view div.reply ul {
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0;
+  border-top: 1px solid #ccc;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.consulting-view div.reply ul {
+    margin: 0 0 30px;
+  }
+}
+
+body div#content section.consulting-view div.reply ul li {
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 10px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.consulting-view div.reply ul li {
+    padding: 30px;
+  }
+}
+
+body div#content section.consulting-view div.reply ul li h5 {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.consulting-view div.reply ul li h5 {
+    font-size: 16px;
+  }
+}
+
+body div#content section.consulting-view div.reply ul li.admin {
+  background: #f3fbff;
+}
+
+body div#content section.consulting-view div.reply ul li.admin h5 {
+  font-size: 14px;
+  font-weight: 400;
+  background: #1c7cc2;
+  color: #fff;
+  padding: 4px 10px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.consulting-view div.reply ul li.admin h5 {
+    font-size: 16px;
+  }
+}
+
+body div#content section.consulting-view div.reply ul li p.date {
+  position: absolute;
+  right: 10px;
+  top: 24px;
+  display: inline-block;
+  margin: 0 0 0 10px;
+  font-size: 13px;
+  color: #777777;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.consulting-view div.reply ul li p.date {
+    font-size: 16px;
+    right: 30px;
+    top: 36px;
+  }
+}
+
+body div#content section.consulting-view div.reply ul li div.text {
+  padding: 20px 0 0;
+  font-size: 16px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.consulting-view div.reply ul li div.text {
+    font-size: 18px;
+  }
+}
+
+body div#content section.consulting-view div.reply div.btn-set.right {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  margin: 10px 0;
+  font-size: 0;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.consulting-view div.reply div.btn-set.right {
+    right: 30px;
+    top: 30px;
+  }
+}
+
+body div#content section.consulting-view div.reply div.btn-set.right .btn {
+  line-height: 1;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+  background: none;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.consulting-view div.reply div.btn-set.right .btn {
+    font-size: 16px;
+  }
+}
+
+body div#content section.consulting-view div.reply div.btn-set.right .btn:first-of-type::after {
+  content: "|";
+  position: relative;
+  top: -1px;
+  margin: 0 6px;
+  font-size: 12px;
+}
+
 body div#content section.equipment-reservation {
   padding-bottom: 40px;
 }
