@@ -3016,6 +3016,16 @@ body {
 					}
 				}
 
+				p.text {
+					font-size: 15px;
+					margin:0 0 10px;
+
+					@media (min-width: $screen-size-pc) {
+						font-size: 17px;
+					}
+
+				}
+
 				ul.text {
 					list-style: none;
 					margin: 0;
@@ -7748,6 +7758,150 @@ body {
 					}
 				}
 				
+			}
+		}
+
+		section.location {
+			padding:0 0 30px;
+
+			@media (min-width: $screen-size-pc) {
+				padding:0 0 40px;
+			}
+			div.container {
+				div.maps {
+					height:300px;
+					background:#eee;
+					margin:0 -10px;
+
+					@media (min-width: $screen-size-pc) {
+						margin:0;
+						height:500px;
+					}
+				}
+
+				&>ul {
+					list-style:none;
+					margin:0;
+					padding:20px 0 40px;
+					font-size:16px;
+
+					@media (min-width: $screen-size-pc) {
+						font-size:22px;
+						padding:30px 0 60px;
+					}
+
+					li {
+						position:relative;
+						padding:0 0 10px 34px;
+						word-break:keep-all; 
+
+						@media (min-width: $screen-size-pc) {
+							padding:0 0 16px 44px;
+						}
+
+						i {
+							position:absolute;
+							left:0;
+							top:0;
+							width:24px;
+							background:#1C7CC2;
+							color:#fff;
+							text-align:center;
+							line-height:24px;
+							font-size:12px;
+							border-radius:50%;
+
+							@media (min-width: $screen-size-pc) {
+								width:34px;
+								line-height:34px;
+								font-size:20px;
+							}
+						}
+					}
+				}
+
+				h4 {
+					font-size:18px;
+					color:#1C7CC2;
+					margin:0 0 10px;
+
+					@media (min-width: $screen-size-pc) {
+						font-size:26px;
+						margin:0 0 20px;
+					}
+				}
+
+				dl {
+					padding:0;
+					margin:0;
+
+					dt {
+						display:block;
+						background:#F5F5F5;
+						font-size:16px;
+						padding:5px;
+
+						@media (min-width: $screen-size-pc) {
+							font-size:20px;
+							padding:15px;
+						}
+
+						i {
+							color:#1C7CC2;
+							margin:0 6px 0 0;
+						}
+					}
+
+					dd {
+						margin:0 0 20px;
+						padding:10px 0;
+						border-bottom:1px solid #ccc;
+						font-size:14px;
+
+						@media (min-width: $screen-size-pc) {
+							font-size:16px;
+							padding:20px 10px;
+							margin:0 0 30px;
+						}
+
+						ul {
+							list-style:none;
+							margin:0;
+							padding:0;
+
+							li {
+								position:relative;
+								padding:0 0 14px 80px;
+								color:#555;
+
+								@media (min-width: $screen-size-pc) {
+									padding:0 0 24px 100px;
+								}
+
+								strong {
+									position:absolute;
+									left:0;
+									top:-1px;
+									font-weight:400;
+									font-size:15px;
+									color:#333;
+
+									@media (min-width: $screen-size-pc) {
+										font-size:18px;
+									}
+
+									&::before {
+										content:"·";
+										padding:0 4px 0 0;
+									}
+								}
+							}
+						}
+
+					}
+				}
+
+
 			}
 		}
 

@@ -751,6 +751,57 @@ button {
 	}
 }
 
+article.layer-popup {
+	display:none;
+	
+	@media all and (min-width: 1200px) {
+		display:block;
+		position:absolute;
+		left:0;
+		top:240px;
+		right:0;
+		text-align:center;
+
+		.container {
+			text-align:center;
+
+			div.outline {
+				font-size:zero;
+				@include drop-shadow();
+				display:inline-block;
+				margin:0 10px;
+
+				div.check {
+					background:#222;
+					color:#fff;
+					font-size:14px;
+					padding:10px;
+					text-align:left;
+					position:relative;
+
+					input {
+						width:16px;
+						height:16px;
+						vertical-align:bottom;
+					}
+
+					button {
+						position:absolute;
+						right:0;
+						top:0;
+						bottom:0;
+						border:none;
+						background:#555;
+						color:#fff;
+						padding:0 10px;
+					}
+				}
+			}
+		}
+
+	}
+}
+
 /* 입력테이블 */
 
 div.input {

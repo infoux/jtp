@@ -1260,6 +1260,54 @@ button {
   width: calc(100% - 130px);
 }
 
+article.layer-popup {
+  display: none;
+}
+
+@media all and (min-width: 1200px) {
+  article.layer-popup {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 240px;
+    right: 0;
+    text-align: center;
+  }
+  article.layer-popup .container {
+    text-align: center;
+  }
+  article.layer-popup .container div.outline {
+    font-size: zero;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+    display: inline-block;
+    margin: 0 10px;
+  }
+  article.layer-popup .container div.outline div.check {
+    background: #222;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px;
+    text-align: left;
+    position: relative;
+  }
+  article.layer-popup .container div.outline div.check input {
+    width: 16px;
+    height: 16px;
+    vertical-align: bottom;
+  }
+  article.layer-popup .container div.outline div.check button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: none;
+    background: #555;
+    color: #fff;
+    padding: 0 10px;
+  }
+}
+
 /* 입력테이블 */
 div.input h4 {
   font-size: 22px;
@@ -5068,6 +5116,17 @@ body div#content section.statute div.container h5::before {
   body div#content section.statute div.container h5::before {
     width: 24px;
     height: 24px;
+  }
+}
+
+body div#content section.statute div.container p.text {
+  font-size: 15px;
+  margin: 0 0 10px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.statute div.container p.text {
+    font-size: 17px;
   }
 }
 
@@ -10193,6 +10252,166 @@ body div#content section.manual div.container ul.info li::before {
   display: inline-block;
   position: absolute;
   left: 0;
+}
+
+body div#content section.location {
+  padding: 0 0 30px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.location {
+    padding: 0 0 40px;
+  }
+}
+
+body div#content section.location div.container div.maps {
+  height: 300px;
+  background: #eee;
+  margin: 0 -10px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.location div.container div.maps {
+    margin: 0;
+    height: 500px;
+  }
+}
+
+body div#content section.location div.container > ul {
+  list-style: none;
+  margin: 0;
+  padding: 20px 0 40px;
+  font-size: 16px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.location div.container > ul {
+    font-size: 22px;
+    padding: 30px 0 60px;
+  }
+}
+
+body div#content section.location div.container > ul li {
+  position: relative;
+  padding: 0 0 10px 34px;
+  word-break: keep-all;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.location div.container > ul li {
+    padding: 0 0 16px 44px;
+  }
+}
+
+body div#content section.location div.container > ul li i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 24px;
+  background: #1C7CC2;
+  color: #fff;
+  text-align: center;
+  line-height: 24px;
+  font-size: 12px;
+  border-radius: 50%;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.location div.container > ul li i {
+    width: 34px;
+    line-height: 34px;
+    font-size: 20px;
+  }
+}
+
+body div#content section.location div.container h4 {
+  font-size: 18px;
+  color: #1C7CC2;
+  margin: 0 0 10px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.location div.container h4 {
+    font-size: 26px;
+    margin: 0 0 20px;
+  }
+}
+
+body div#content section.location div.container dl {
+  padding: 0;
+  margin: 0;
+}
+
+body div#content section.location div.container dl dt {
+  display: block;
+  background: #F5F5F5;
+  font-size: 16px;
+  padding: 5px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.location div.container dl dt {
+    font-size: 20px;
+    padding: 15px;
+  }
+}
+
+body div#content section.location div.container dl dt i {
+  color: #1C7CC2;
+  margin: 0 6px 0 0;
+}
+
+body div#content section.location div.container dl dd {
+  margin: 0 0 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.location div.container dl dd {
+    font-size: 16px;
+    padding: 20px 10px;
+    margin: 0 0 30px;
+  }
+}
+
+body div#content section.location div.container dl dd ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body div#content section.location div.container dl dd ul li {
+  position: relative;
+  padding: 0 0 14px 80px;
+  color: #555;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.location div.container dl dd ul li {
+    padding: 0 0 24px 100px;
+  }
+}
+
+body div#content section.location div.container dl dd ul li strong {
+  position: absolute;
+  left: 0;
+  top: -1px;
+  font-weight: 400;
+  font-size: 15px;
+  color: #333;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.location div.container dl dd ul li strong {
+    font-size: 18px;
+  }
+}
+
+body div#content section.location div.container dl dd ul li strong::before {
+  content: "·";
+  padding: 0 4px 0 0;
 }
 
 body div#content div.page-ready {
