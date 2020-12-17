@@ -2203,6 +2203,13 @@ body {
 							border-right: 1px solid #dfdfdf;
 							margin-right: 20px;
 						}
+
+
+						&.equipment {
+							&::before {
+								content:"장비명";
+							}
+						}
 					}
 				}
 

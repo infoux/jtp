@@ -4185,6 +4185,9 @@ body div#content section.board-view div.board-box h4 {
     border-right: 1px solid #dfdfdf;
     margin-right: 20px;
   }
+  body div#content section.board-view div.board-box h4.equipment::before {
+    content: "장비명";
+  }
 }
 
 body div#content section.board-view div.board-box ul.info {
