@@ -2026,7 +2026,7 @@ body header h1 {
   font-family: "NanumSquare";
   display: inline-block;
   position: relative;
-  margin: 16px 0 0;
+  margin: 25px 0 0;
   padding-left: 64px;
   font-size: 18px;
   line-height: 1.2;
@@ -2035,7 +2035,7 @@ body header h1 {
 
 @media (min-width: 1200px) {
   body header h1 {
-    margin: 22px 0 0;
+    margin: 34px 0 0;
     font-size: 24px;
     padding-left: 78px;
   }
@@ -2045,10 +2045,10 @@ body header h1 span {
   display: block;
   position: absolute;
   left: 0;
-  top: 0;
+  top: -5px;
   font-size: 0;
-  width: 55px;
-  height: 29px;
+  width: 52px;
+  height: 26px;
   background: url("../images/logo.svg") no-repeat center/100% auto;
 }
 
@@ -6813,6 +6813,214 @@ body div#content section.equipment-view div.container dl.detail dd button.map i 
   }
 }
 
+body div#content section.intro {
+  padding: 0 0 30px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.intro {
+    padding: 0 0 40px;
+  }
+}
+
+body div#content section.intro div.container {
+  text-align: center;
+}
+
+body div#content section.intro div.container div.head {
+  font-size: 22px;
+  background: #EFEFEF;
+  border-radius: 500px;
+  padding: 28px 20px;
+  margin: 30px 0;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.intro div.container div.head {
+    width: 700px;
+    line-height: 100px;
+    padding: 0;
+    text-align: center;
+    margin: 0 auto 50px;
+  }
+}
+
+body div#content section.intro div.container div.head p {
+  margin: 0;
+  font-weight: 900;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.intro div.container div.head p {
+    display: inline-block;
+  }
+}
+
+body div#content section.intro div.container div.head p strong {
+  font-weight: inherit;
+  color: #3268B2;
+}
+
+body div#content section.intro div.container p.text {
+  position: relative;
+  font-size: 16px;
+  padding: 30px 0;
+  margin: 30px 0 140px;
+  word-break: keep-all;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.intro div.container p.text {
+    margin: 50px 0;
+    padding: 50px 0;
+    font-size: 20px;
+  }
+  body div#content section.intro div.container p.text span {
+    display: block;
+  }
+}
+
+body div#content section.intro div.container p.text::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 1px;
+  background: #333;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -10px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.intro div.container p.text::before {
+    width: 30px;
+    margin-left: -15px;
+  }
+}
+
+body div#content section.intro div.container h4 {
+  font-size: 16px;
+  color: #1C7CC2;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.intro div.container h4 {
+    font-size: 20px;
+  }
+}
+
+body div#content section.intro div.container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 50px;
+  font-size: 0;
+}
+
+body div#content section.intro div.container ul li {
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.intro div.container ul li {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% / 3);
+    margin-bottom: 70px;
+    min-height: 93px;
+    font-size: 18px;
+  }
+}
+
+body div#content section.intro div.container ul li span {
+  display: block;
+}
+
+body div#content section.intro div.container ul li::before {
+  content: "";
+  display: block;
+  margin: 0 auto 10px;
+}
+
+body div#content section.intro div.container ul li.inc01::before {
+  width: 54px;
+  height: 41px;
+  background: url("../images/icon-intro01.svg") no-repeat center/100% auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.intro div.container ul li.inc01::before {
+    width: 80px;
+    height: 61px;
+  }
+}
+
+body div#content section.intro div.container ul li.inc02::before {
+  width: 47px;
+  height: 50px;
+  background: url("../images/icon-intro02.svg") no-repeat center/100% auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.intro div.container ul li.inc02::before {
+    width: 70px;
+    height: 75px;
+  }
+}
+
+body div#content section.intro div.container ul li.inc03::before {
+  width: 50px;
+  height: 43px;
+  background: url("../images/icon-intro03.svg") no-repeat center/100% auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.intro div.container ul li.inc03::before {
+    width: 77px;
+    height: 66px;
+  }
+}
+
+body div#content section.intro div.container ul li.inc04::before {
+  width: 44px;
+  height: 47px;
+  background: url("../images/icon-intro04.svg") no-repeat center/100% auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.intro div.container ul li.inc04::before {
+    width: 64px;
+    height: 69px;
+  }
+}
+
+body div#content section.intro div.container ul li.inc05::before {
+  width: 40px;
+  height: 44px;
+  background: url("../images/icon-intro05.svg") no-repeat center/100% auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.intro div.container ul li.inc05::before {
+    width: 60px;
+    height: 65px;
+  }
+}
+
+body div#content section.intro div.container ul li.inc06::before {
+  width: 54px;
+  height: 44px;
+  background: url("../images/icon-intro06.svg") no-repeat center/100% auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.intro div.container ul li.inc06::before {
+    width: 80px;
+    height: 66px;
+  }
+}
+
 body div#content section.consulting-view h3.subtitle {
   display: none;
 }
@@ -7464,6 +7672,7 @@ body div#content section.agency-list div.container ul.list li a {
     padding: 44px 30px;
     text-align: center;
     min-height: 260px;
+    min-height: 302px;
   }
 }
 
@@ -7499,6 +7708,7 @@ body div#content section.agency-list div.container ul.list li a p.site,
 body div#content section.agency-list div.container ul.list li a p.tel {
   text-align: left;
   font-size: 13px;
+  letter-spacing: -1px;
   margin: 0;
   color: #555555;
 }
@@ -10419,6 +10629,37 @@ body div#content section.location div.container dl dd ul li strong::before {
   padding: 0 4px 0 0;
 }
 
+body div#content section.system {
+  padding: 0 0 60px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.system {
+    padding: 0 0 100px;
+  }
+}
+
+body div#content section.system div.container {
+  text-align: center;
+}
+
+body div#content section.system div.container div.system-map {
+  font-size: 0;
+  margin: 50px auto;
+  width: 329px;
+  height: 713px;
+  background: url("../images/img-system-mobile.svg") no-repeat center/100% auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.system div.container div.system-map {
+    width: 1020px;
+    height: 714px;
+    margin: 0 auto;
+    background: url("../images/img-system.svg") no-repeat center/100% auto;
+  }
+}
+
 body div#content div.page-ready {
   font-size: 30px;
   font-weight: 600;
@@ -10521,13 +10762,13 @@ body footer#footer div.container h2 span {
   display: none;
   width: 55px;
   height: 29px;
+  top: -5px;
 }
 
 @media (min-width: 1200px) {
   body footer#footer div.container h2 span {
     position: absolute;
     left: 0;
-    top: 0;
     font-size: 0;
     display: block;
     width: 69px;
