@@ -1269,7 +1269,8 @@ article.layer-popup {
     display: block;
     position: absolute;
     left: 0;
-    top: 240px;
+    top: 12vh;
+    z-index: 1000;
     right: 0;
     text-align: center;
   }
@@ -1277,11 +1278,15 @@ article.layer-popup {
     text-align: center;
   }
   article.layer-popup .container div.outline {
-    font-size: zero;
+    font-size: 0;
     -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
     display: inline-block;
-    margin: 0 10px;
+    margin: 10px;
+  }
+  article.layer-popup .container div.outline a {
+    display: block;
+    font-size: 0;
   }
   article.layer-popup .container div.outline div.check {
     background: #222;

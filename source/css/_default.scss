@@ -758,7 +758,8 @@ article.layer-popup {
 		display:block;
 		position:absolute;
 		left:0;
-		top:240px;
+		top:12vh;
+		z-index:1000;
 		right:0;
 		text-align:center;
 
@@ -766,10 +767,15 @@ article.layer-popup {
 			text-align:center;
 
 			div.outline {
-				font-size:zero;
+				font-size:0;
 				@include drop-shadow();
 				display:inline-block;
-				margin:0 10px;
+				margin:10px;
+
+				a {
+					display:block;
+					font-size:0;
+				}
 
 				div.check {
 					background:#222;
