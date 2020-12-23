@@ -6315,6 +6315,9 @@ body div#content section.equipment-list div.container ul.list li h4 {
   font-size: 16px;
   margin: 6px 0 4px;
   word-break: keep-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 @media (min-width: 1200px) {

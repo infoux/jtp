@@ -4111,6 +4111,8 @@ body {
 							margin: 6px 0 4px;
 							word-break: keep-all;
 
+							@include ellipse;
+
 							@media (min-width: $screen-size-pc) {
 								font-size: 18px;
 								margin: 14px 0 6px;
