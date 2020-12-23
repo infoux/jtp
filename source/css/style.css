@@ -3108,15 +3108,15 @@ body div#content section.main-equipment div.container ul.list li h3 {
   font-size: 16px;
   padding: 0 10px;
   font-family: "NanumSquare";
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 @media (min-width: 1200px) {
   body div#content section.main-equipment div.container ul.list li h3 {
     margin: 15px 0 5px;
     font-size: 22px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
   }
 }
 
@@ -3167,7 +3167,7 @@ body div#content section.main-chart div.container {
   font-size: 0;
   border-radius: 5px;
   width: calc(100% - 20px);
-  height: 280px;
+  min-height: 280px;
   margin: 0 10px 40px;
   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
@@ -5842,6 +5842,12 @@ body div#content section.signup div.container div.terms div.textarea {
     padding: 20px;
     height: 246px;
   }
+}
+
+body div#content section.signup div.container div.terms div.textarea pre {
+  font-size: 14px;
+  font-family: inherit;
+  white-space: pre-wrap;
 }
 
 body div#content section.signup div.container div.terms p.infotext {

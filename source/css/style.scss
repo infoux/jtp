@@ -1164,11 +1164,11 @@ body {
 							padding:0 10px;
 							font-family: "NanumSquare";
 
+							@include ellipse;
+
 							@media (min-width: $screen-size-pc) {
 								margin: 15px 0 5px;
 								font-size: 22px;
-
-								@include ellipse;
 							}
 
 							small {
@@ -1224,7 +1224,7 @@ body {
 				font-size: 0;
 				border-radius: 5px;
 				width: calc(100% - 20px);
-				height: 280px;
+				min-height: 280px;
 				margin: 0 10px 40px;
 				@include drop-shadow(0, 3px, 6px, 0, 0.25);
 
@@ -3681,6 +3681,12 @@ body {
 							font-size: 16px;
 							padding: 20px;
 							height: 246px;
+						}
+
+						pre {
+							font-size:14px;
+							font-family:inherit;
+							white-space:pre-wrap;
 						}
 					}
 
