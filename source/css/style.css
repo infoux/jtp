@@ -2608,7 +2608,7 @@ body div#content section.main-issue div.container ul.main-links li:nth-child(-n 
 
 @media (min-width: 1200px) {
   body div#content section.main-issue div.container ul.main-links li:nth-child(-n + 3) {
-    width: calc(860px / 3);
+    width: calc(859px / 3);
   }
 }
 
