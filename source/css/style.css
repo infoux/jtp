@@ -9247,13 +9247,178 @@ body div#content section.charts div.container div.chart-frame h4 {
 
 body div#content section.charts div.container div.chart-frame > p {
   margin: 0;
-  padding: 0 20px 2px;
+  padding: 6px 20px;
+  text-align: left;
 }
 
 @media (min-width: 1200px) {
   body div#content section.charts div.container div.chart-frame > p {
     font-size: 16px;
-    padding: 0 26px 4px;
+    padding: 10px 0 6px 26px;
+    display: inline-block;
+  }
+}
+
+body div#content section.charts div.container div.chart-frame > p.center {
+  text-align: center;
+  padding: 10px 20px 10px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.charts div.container div.chart-frame > p.center {
+    padding-bottom: 10px;
+  }
+}
+
+body div#content section.charts div.container div.chart-frame > p.center button {
+  width: 100px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.charts div.container div.chart-frame > p.center button {
+    width: 70px;
+  }
+}
+
+body div#content section.charts div.container div.chart-frame input.days {
+  height: 30px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  width: 80px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.charts div.container div.chart-frame input.days {
+    height: 32px;
+  }
+}
+
+body div#content section.charts div.container div.chart-frame label {
+  word-break: keep-all;
+  display: inline-block;
+  line-height: 30px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.charts div.container div.chart-frame label {
+    line-height: 32px;
+  }
+}
+
+body div#content section.charts div.container div.chart-frame label + span.select-outline,
+body div#content section.charts div.container div.chart-frame label + .days {
+  margin-left: 10px;
+}
+
+body div#content section.charts div.container div.chart-frame input[type="radio"] + label {
+  margin: 0 10px 0 4px;
+}
+
+body div#content section.charts div.container div.chart-frame span.radio {
+  display: inline-block;
+}
+
+body div#content section.charts div.container div.chart-frame u {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 30px;
+  width: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.charts div.container div.chart-frame u {
+    line-height: 32px;
+  }
+}
+
+body div#content section.charts div.container div.chart-frame span.select-outline {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  margin-bottom: 6px;
+  width: 76px;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.charts div.container div.chart-frame span.select-outline {
+    width: 100px;
+    margin-bottom: 0;
+  }
+}
+
+body div#content section.charts div.container div.chart-frame span.select-outline select {
+  appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 30px;
+  font-size: 14px;
+  display: inline-block;
+  padding: 0 30px 0 10px;
+  border: 1px solid #cccccc;
+}
+
+body div#content section.charts div.container div.chart-frame span.select-outline select::-ms-expand {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.charts div.container div.chart-frame span.select-outline select {
+    height: 32px;
+  }
+}
+
+body div#content section.charts div.container div.chart-frame span.select-outline::before, body div#content section.charts div.container div.chart-frame span.select-outline::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  display: block;
+  width: 8px;
+  height: 1px;
+  background: #999999;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+body div#content section.charts div.container div.chart-frame span.select-outline::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  right: 12px;
+}
+
+body div#content section.charts div.container div.chart-frame span.select-outline::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  right: 6px;
+}
+
+body div#content section.charts div.container div.chart-frame span.select-outline:focus-within::before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+body div#content section.charts div.container div.chart-frame span.select-outline:focus-within::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+body div#content section.charts div.container div.chart-frame > button {
+  width: 72px;
+  height: 40px;
+  border: none;
+  vertical-align: top;
+  color: #fff;
+  font-size: 16px;
+  background: #1f222d;
+}
+
+@media (min-width: 1200px) {
+  body div#content section.charts div.container div.chart-frame > button {
+    height: 42px;
+    width: 90px;
   }
 }
 
