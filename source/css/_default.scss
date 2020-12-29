@@ -1133,6 +1133,30 @@ div.input {
 				}
 			}
 
+			
+
+			input[type="radio"] + label {
+				line-height:40px;
+				
+				@media (min-width: $screen-size-pc) {
+					line-height:48px;
+				}
+
+				&::before {
+					top:0;
+					@media (min-width: $screen-size-pc) {
+						top:14px;
+					}
+				}
+
+				&::after {
+					top:5px;
+					@media (min-width: $screen-size-pc) {
+						top:19px;
+					}
+				}
+			}
+
 			u {
 				display: inline-block;
 				vertical-align: top;

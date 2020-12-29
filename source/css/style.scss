@@ -231,6 +231,10 @@ body {
 					display: inline-block;
 					width: 50%;
 
+					&.full {
+						width:100%;
+					}
+
 					a {
 						margin: 0 10px;
 						display: block;
@@ -263,6 +267,16 @@ body {
 							&::before {
 								background: url("../images/icon-mypage.svg") no-repeat center /
 									98% auto;
+							}
+						}
+
+						&.cms {
+							margin-top:10px;
+							color:#fff;
+							background:#333;
+							
+							&::before {
+								display:none;
 							}
 						}
 					}
@@ -412,7 +426,7 @@ body {
 			ul.tools {
 				position: absolute;
 				right: 50%;
-				top: 37px;
+				top: 39px;
 				margin: 0 -600px 0;
 				list-style: none;
 				padding: 0;
@@ -423,42 +437,27 @@ body {
 					display: inline-block;
 					a {
 						position: relative;
-						font-size: 16px;
-						font-weight: 600;
+						font-size: 14px;
+						font-weight: 400;
 
-						&::before {
+						&::after {
 							content: "";
-							display: inline-block;
 							position: relative;
-							margin-right: 4px;
-							top: 3px;
-							width: 18px;
-							height: 18px;
+							display: inline-block;
+							margin: 0 8px;
+							top: 2px;
+							width: 1px;
+							height: 13px;
+							background: #999;
 						}
+					}
 
-						&.login {
-							&::before {
-								background: url("../images/icon-login-gray.svg") no-repeat
-									center / 88% auto;
-							}
-
+					&:last-child {
+						a {
 							&::after {
-								content: "";
-								position: relative;
-								display: inline-block;
-								margin: 0 8px;
-								top: 2px;
-								width: 1px;
-								height: 13px;
-								background: #5a5a5a;
+								display:none;
 							}
-						}
 
-						&.mypage {
-							&::before {
-								background: url("../images/icon-mypage-gray.svg") no-repeat
-									center / 88% auto;
-							}
 						}
 					}
 				}
