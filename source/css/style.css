@@ -2029,7 +2029,7 @@ body header {
 
 @media (min-width: 1200px) {
   body header {
-    height: 100px;
+    height: 140px;
   }
   body header::before {
     content: "";
@@ -2038,7 +2038,7 @@ body header {
     z-index: 200;
     left: 0;
     right: 0;
-    top: 100px;
+    top: 140px;
     height: 0;
     border-top: 1px solid #aaaaaa;
     -webkit-transition: all 0.5s ease;
@@ -2065,7 +2065,7 @@ body header h1 {
 
 @media (min-width: 1200px) {
   body header h1 {
-    margin: 34px 0 0;
+    margin: 44px 0 0;
     font-size: 24px;
     padding-left: 78px;
   }
@@ -2387,7 +2387,7 @@ body header button.menu i.bar:last-of-type {
   body aside ul.tools {
     position: absolute;
     right: 50%;
-    top: 39px;
+    top: 20px;
     margin: 0 -600px 0;
     list-style: none;
     padding: 0;
@@ -2402,7 +2402,19 @@ body header button.menu i.bar:last-of-type {
     font-size: 14px;
     font-weight: 400;
   }
-  body aside ul.tools li a::after {
+  body aside ul.tools li a::before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    margin-right: 4px;
+    top: 3px;
+    width: 18px;
+    height: 18px;
+  }
+  body aside ul.tools li a.login::before {
+    background: url("../images/icon-login-gray.svg") no-repeat center/88% auto;
+  }
+  body aside ul.tools li a.login::after {
     content: "";
     position: relative;
     display: inline-block;
@@ -2410,7 +2422,23 @@ body header button.menu i.bar:last-of-type {
     top: 2px;
     width: 1px;
     height: 13px;
-    background: #999;
+    background: #5a5a5a;
+  }
+  body aside ul.tools li a.mypage::before {
+    background: url("../images/icon-mypage-gray.svg") no-repeat center/88% auto;
+  }
+  body aside ul.tools li a.cms {
+    display: inline-block;
+    background: #496081;
+    color: #fff;
+    line-height: 28px;
+    border-radius: 15px;
+    padding: 0 20px;
+    margin-left: 20px;
+    border: 1px solid #3F506A;
+  }
+  body aside ul.tools li a.cms::before {
+    display: none;
   }
   body aside ul.tools li:last-child a::after {
     display: none;
@@ -2418,8 +2446,8 @@ body header button.menu i.bar:last-of-type {
   body aside nav#main-menu {
     position: absolute;
     left: 50%;
-    top: 40px;
-    margin-left: -200px;
+    top: 82px;
+    margin-left: -174px;
   }
   body aside nav#main-menu ul.list {
     margin: 0;
@@ -2429,7 +2457,7 @@ body header button.menu i.bar:last-of-type {
   }
   body aside nav#main-menu ul.list li.depth1 {
     display: inline-block;
-    margin-right: 28px;
+    margin-left: 74px;
     vertical-align: top;
   }
   body aside nav#main-menu ul.list li.depth1 h3 {
@@ -2439,9 +2467,12 @@ body header button.menu i.bar:last-of-type {
     font-family: "NanumSquare";
     font-size: 20px;
   }
+  body aside nav#main-menu ul.list li.depth1 h3 a:hover, body aside nav#main-menu ul.list li.depth1 h3 a.on {
+    color: #3268B2;
+  }
   body aside nav#main-menu ul.list li.depth1 ul {
     position: absolute;
-    left: 0;
+    left: 74px;
     right: 0;
     top: 61px;
     font-size: 0;

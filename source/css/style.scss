@@ -47,7 +47,7 @@ body {
 		@include drop-shadow(0, 3px, 6px, 0, 0.25);
 
 		@media (min-width: $screen-size-pc) {
-			height: 100px;
+			height: 140px;
 
 			&::before {
 				content: "";
@@ -56,7 +56,7 @@ body {
 				z-index: 200;
 				left: 0;
 				right: 0;
-				top: 100px;
+				top: 140px;
 				height: 0;
 				border-top: 1px solid #aaaaaa;
 				@include ani(0.5s);
@@ -83,7 +83,7 @@ body {
 			font-weight: 800;
 
 			@media (min-width: $screen-size-pc) {
-				margin: 34px 0 0;
+				margin: 44px 0 0;
 				font-size: 24px;
 				padding-left: 78px;
 			}
@@ -426,7 +426,7 @@ body {
 			ul.tools {
 				position: absolute;
 				right: 50%;
-				top: 39px;
+				top: 20px;
 				margin: 0 -600px 0;
 				list-style: none;
 				padding: 0;
@@ -440,16 +440,57 @@ body {
 						font-size: 14px;
 						font-weight: 400;
 
-						&::after {
+						&::before {
 							content: "";
-							position: relative;
 							display: inline-block;
-							margin: 0 8px;
-							top: 2px;
-							width: 1px;
-							height: 13px;
-							background: #999;
+							position: relative;
+							margin-right: 4px;
+							top: 3px;
+							width: 18px;
+							height: 18px;
 						}
+
+						&.login {
+							&::before {
+								background: url("../images/icon-login-gray.svg") no-repeat
+									center / 88% auto;
+							}
+
+							&::after {
+								content: "";
+								position: relative;
+								display: inline-block;
+								margin: 0 8px;
+								top: 2px;
+								width: 1px;
+								height: 13px;
+								background: #5a5a5a;
+							}
+						}
+
+						&.mypage {
+							&::before {
+								background: url("../images/icon-mypage-gray.svg") no-repeat
+									center / 88% auto;
+							}
+						}
+
+						&.cms {
+							&::before {
+								display:none;
+							}
+							display:inline-block;
+							background:#496081;
+							color:#fff;
+							line-height:28px;
+							border-radius:15px;
+							padding:0 20px;
+							margin-left:20px;
+							border:1px solid #3F506A;
+						}
+
+
+
 					}
 
 					&:last-child {
@@ -466,8 +507,8 @@ body {
 			nav#main-menu {
 				position: absolute;
 				left: 50%;
-				top: 40px;
-				margin-left: -200px;
+				top: 82px;
+				margin-left: -174px;
 
 				ul.list {
 					margin: 0;
@@ -477,7 +518,7 @@ body {
 
 					li.depth1 {
 						display: inline-block;
-						margin-right: 28px;
+						margin-left: 74px;
 						vertical-align: top;
 
 						h3 {
@@ -486,12 +527,17 @@ body {
 							a {
 								font-family: "NanumSquare";
 								font-size: 20px;
+
+								&:hover,
+								&.on {
+									color:#3268B2;
+								}
 							}
 						}
 
 						ul {
 							position: absolute;
-							left: 0;
+							left: 74px;
 							right: 0;
 							top: 61px;
 							font-size: 0;

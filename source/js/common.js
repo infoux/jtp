@@ -40,6 +40,9 @@ $(document).ready(function() {
 
         $("nav#main-menu ul").removeClass("on");
         $(this).parent().parent().find("ul").addClass("on");
+        $("nav#main-menu h3 a").removeClass("on");
+        
+        $(this).addClass("on");
         
         if ($(window).width() > 1200 && $("header").hasClass("open") == false) {
             $("#header").addClass("open");
@@ -50,9 +53,10 @@ $(document).ready(function() {
 
     $(document).mousemove(function(e){
 
-        if ($(window).width() > 1200 && e.pageY > 180) {
+        if ($(window).width() > 1200 && e.pageY > 220) {
             $("#header").removeClass("open");
             $("nav#main-menu ul").removeClass("on");
+            $("nav#main-menu h3 a").removeClass("on");
         }
 
 	});
