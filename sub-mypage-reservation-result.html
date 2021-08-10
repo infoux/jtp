@@ -167,157 +167,94 @@
 				</div>
 			</section>
 
-			<section class="reservation-list">
+			<section class="reservation-view">
 				<div class="container">
-					<h3 class="subtitle">실시간 예약 내역조회</h3>
+					<h3 class="subtitle">결제가 완료되었습니다.</h3>
 
-					<!--S:SKIN -->
-					<div class="inBoard list">
+					<ul class="head">
+						<li>
+							<span>예약접수</span>
+							<strong>(재)제주테크노파크</strong>
+						</li>
+						<li class="half">
+							<span>접수번호</span>
+							Z-19-11236
+						</li>
+						<li class="half">
+							<span>ZEUS접수번호</span>
+							Z-19-11236
+						</li>
+						<li class="half">
+							<span>진행상태</span>
+							<strong class="status blue">이용승인</strong>
+						</li>
+						<li class="half">
+							<span>청구방법</span>
+							내부결제
+						</li>
+					</ul>
 
-                        <fieldset>
-                            <legend class="sr-only">내역조회</legend>
-    
-    
-                            <label for="date-first">등록일자</label>
-                            <input id="date-first" type="text" class="date">
-                            <u>~</u>
-                            <input type="text" class="date">
+					<h4>예약정보</h4>
 
-    
-                            <label for="search">진행상태</label>
-                            <span class="select-outline">
-                                <select id="search"">
-                                    <option>전체</option>
-                                </select>
-                            </span>
-                            <button>검색</button>
-    
-    
-                        </fieldset>
-    
-                        <ul class="sort">
-                            <li>전체 <strong>5984</strong>건</li>
-                            <li>
-                                
-                                <span class="select-outline">
-                                    <select id="search"">
-                                        <option>조회순</option>
-                                    </select>
-                                </span>
-                                
-    
-                            </li>
-                        </ul>
-    
-						<ul class="list">
-							<li>
-								<a href="">
-									<p class="num"><span>예약번호</span><u>Z-20-12344</u></p>
-									<p class="name">
-										<span>예약장비명</span><u>공용실험실 대여</u>
-									</p>
-									<p class="status"><span>진행상태</span><u>예약신청</u></p>
-									<p class="how"><span>청구방법</span><u>일반결제</u></p>
-									<p class="agency">
-										<span>장비소속기관</span><u>(재)제주테크노파크</u>
-									</p>
-									<p class="hope">
-										<span>희망기간</span><u>2020-11-21 ~ 2020-11-22</u>
-									</p>
-									<p class="conf">
-										<span>확정기간</span><u>2020-11-21 ~ 2020-11-22</u>
-									</p>
-									<p class="price"><span>이용금액</span><u>200,000원</u></p>
-									<p class="date"><span>예약등록일</span><u>2020-09-18</u></p>
-									<p class="check ok"><span>결제여부</span><u>결제완료</u></p>
-								</a>
-                            </li>
-							<li>
-								<a href="">
-									<p class="num"><span>예약번호</span><u>Z-20-12344</u></p>
-									<p class="name">
-										<span>예약장비명</span><u>공용실험실 대여</u>
-									</p>
-									<p class="status"><span>진행상태</span><u>예약신청</u></p>
-									<p class="how"><span>청구방법</span><u>일반결제</u></p>
-									<p class="agency">
-										<span>장비소속기관</span><u>(재)제주테크노파크</u>
-									</p>
-									<p class="hope">
-										<span>희망기간</span><u>2020-11-21 ~ 2020-11-22</u>
-									</p>
-									<p class="conf">
-										<span>확정기간</span><u>2020-11-21 ~ 2020-11-22</u>
-									</p>
-									<p class="price"><span>이용금액</span><u>1,300,000원</u></p>
-									<p class="date"><span>예약등록일</span><u>2020-09-18</u></p>
-									<p class="check"><span>결제여부</span><u>결제 전</u></p>
-								</a>
-                            </li>
-                            
-						</ul>
+					<ul class="table">
+						<li class="half">
+							<span>예약등록일</span>
+							<u>2020-12-30 16:42:28</u>
+						</li>
+						<li class="half">
+							<span>기관접수일</span>
+							<u>2020-12-30</u>
+						</li>
+						<li>
+							<span>이용확정기간</span>
+							<u>2020-12-30 ~ 2020-12-30</u>
+						</li>
+					</ul>
 
-						<div class="btn-set align">
-							<div class="left"></div>
-							<div class="right">
-								<button class="btn main">
-									<i class="bx bx-pencil"></i>작성하기
-								</button>
-							</div>
-						</div>
+					<h4>의뢰내용</h4>
 
-						<article class="pagenation">
-							<a
-								href="?pageIndex=1"
-								title="처음으로 이동"
-								class="jump"
-								onclick="linkPage(1);return false; "
-								>처음<i class="bx bx-chevrons-left" aria-hidden="true"></i
-							></a>
-							<a
-								href="?pageIndex=1"
-								title="이전 페이지로 이동"
-								class="move"
-								onclick="linkPage(1);return false; "
-								>이전<i class="bx bx-chevron-left" aria-hidden="true"></i
-							></a>
-							<strong>1</strong>
-							<a
-								href="?pageIndex=2"
-								onclick="linkPage(2);return false; "
-								title="2 페이지로 이동"
-								>2</a
-							>
-							<a
-								href="?pageIndex=3"
-								onclick="linkPage(3);return false; "
-								title="3 페이지로 이동"
-								>3</a
-							>
-							<a
-								href="?pageIndex=4"
-								onclick="linkPage(4);return false; "
-								title="4 페이지로 이동"
-								>4</a
-							>
-							<a
-								href="?pageIndex=11"
-								title="다음 페이지로 이동"
-								class="move"
-								onclick="linkPage(6);return false; "
-								>다음<i class="bx bx-chevron-right" aria-hidden="true"></i
-							></a>
-							<a
-								href="?pageIndex=17"
-								title="마지막 페이지로 이동"
-								class="jump"
-								onclick="linkPage(17);return false; "
-								>마지막<i class="bx bx-chevrons-right" aria-hidden="true"></i
-							></a>
-						</article>
+					<ul class="table">
+						<li>
+							<span>장비명(영문명)</span>
+							<u class="block">공용실험실 대여(Test Laboratory)</u>
+						</li>
+						<li class="half">
+							<span>시설장비등록아이디</span>
+							<u class="block">Z-20190516-32551</u>
+						</li>
+						<li class="half">
+							<span>ZEUS시설장비등록번호</span>
+							<u class="block">NFEC-2019-15-1234567</u>
+						</li>
+						<li class="half">
+							<span>사용구분</span>
+							<u>이용자 직접 사용</u>
+						</li>
+						<li class="half">
+							<span>시료명/시료수</span>
+							<u>시료명/3ea</u>
+						</li>
+						<li class="half">
+							<span>성적서 종류</span>
+							<u>성적서 필요없음</u>
+						</li>
+						<li class="half">
+							<span>성적서 용도</span>
+							<u>참고용</u>
+						</li>
+						<li class="half">
+							<span>성적서 신청 매수</span>
+							<u class="block">국문 0매 / 영문 0매 / 부본 0매</u>
+						</li>
+						<li class="half">
+							<span>시험 후 시료처리</span>
+							<u>폐기</u>
+						</li>
+					</ul>
+
+					<div class="btn-set center big">
+						<button class="btn">목록으로</button>
 					</div>
-
-					<!--E:SKIN-->
 				</div>
 			</section>
 		</div>
