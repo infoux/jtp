@@ -21,11 +21,11 @@ $(document).ready(function() {
     $('.main-equipment ul.list li p.image').each(function() {
         $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
     });
-    
+
     $('section.equipment-list ul.list li p.image').each(function() {
         $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
     });
-    
+
     $('section.equipment-view p.big-image').each(function() {
         $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
     });
@@ -41,9 +41,9 @@ $(document).ready(function() {
         $("nav#main-menu ul").removeClass("on");
         $(this).parent().parent().find("ul").addClass("on");
         $("nav#main-menu h3 a").removeClass("on");
-        
+
         $(this).addClass("on");
-        
+
         if ($(window).width() > 1200 && $("header").hasClass("open") == false) {
             $("#header").addClass("open");
         }
@@ -59,7 +59,7 @@ $(document).ready(function() {
             $("nav#main-menu h3 a").removeClass("on");
         }
 
-	});
+    });
 
 
     var $popStatus = $('.pagingInfo');
@@ -85,7 +85,7 @@ $(document).ready(function() {
         $('.main-popupzone .pause').toggleClass("none");
     });
 
-    $popSlickElement.slick({  
+    $popSlickElement.slick({
         mobileFirst: true,
         autoplay:true,
         speed: 1000,
@@ -100,7 +100,7 @@ $(document).ready(function() {
             {
                 breakpoint: 1200,
                 settings: {
-                    
+
                     slidesToShow: 3,
                     slidesToScroll: 1,
                     variableWidth:true,
@@ -119,8 +119,8 @@ $(document).ready(function() {
             }
         ]
 
-        
-        
+
+
     });
 
 
@@ -140,6 +140,23 @@ $(document).ready(function() {
 
 
 
+    $(".quickguide button").on("click", function() {
+
+        $(".quickguide button").removeClass("on");
+        $(this).addClass("on");
+
+        var onn = $(this).attr("data");
+
+        console.log(onn);
+
+        $("div.dataset").removeClass("on");
+
+        $("div#" + onn).addClass("on");
+
+
+    });
+
+
 
 
     $('.main-outsite div.slider').slick({
@@ -149,7 +166,7 @@ $(document).ready(function() {
         infinite: true,
         slidesToShow: 5,
         slidesToScroll: 1,
-        
+
         nextArrow:$('.main-outsite button.right'),
         prevArrow:$('.main-outsite button.left')
     });
@@ -157,12 +174,29 @@ $(document).ready(function() {
 
     $(".agency-open").click(function() {
         console.log("클릭");
-        $(this).toggleClass("on"); 
+        $(this).toggleClass("on");
     });
 
 
-    $(".agency-link a:last-of-type()").focusout(function(){
-        $(".agency-open").toggleClass("on"); 
+
+    $("section.faq input[type=radio]").click(function() {
+
+        var previousValue = $(this).data('storedValue');
+        if (previousValue) {
+            $(this).prop('checked', !previousValue);
+            $(this).data('storedValue', !previousValue);
+        }
+        else{
+            $(this).data('storedValue', true);
+            $("input[type=radio]:not(:checked)").data("storedValue", false);
+        }
+
+    });
+
+
+
+    $(".agency-link a:last-of-type").focusout(function(){
+        $(".agency-open").toggleClass("on");
     });
 
     $(".epuip-tabs li.on a").removeAttr("href");
@@ -171,19 +205,19 @@ $(document).ready(function() {
         $("ul.epuip-tabs").addClass("on");
     });
 
-  
+
     // reslick only if it's not slick()
     $(window).on('resize', function() {
-      if ($(window).width() > 1200) {
-        if ($chart_slider.hasClass('slick-initialized')) {
-          $chart_slider.slick('unslick');
+        if ($(window).width() > 1200) {
+            if ($chart_slider.hasClass('slick-initialized')) {
+                $chart_slider.slick('unslick');
+            }
+            return
         }
-        return
-      }
-  
-      if (!$chart_slider.hasClass('slick-initialized')) {
-        return $chart_slider.slick(settings);
-      }
+
+        if (!$chart_slider.hasClass('slick-initialized')) {
+            return $chart_slider.slick(settings);
+        }
 
     });
 
@@ -221,7 +255,7 @@ $(document).ready(function() {
         $(".modal").removeClass("on");
     });
 
-    
+
 
 
 

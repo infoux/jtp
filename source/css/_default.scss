@@ -971,6 +971,7 @@ div.input {
 				font-size: 16px;
 				line-height: 40px;
 				padding: 0 20px;
+				margin:0 6px 0 0;
 				background: #efefef;
 
 				@media (min-width: $screen-size-pc) {
@@ -1339,6 +1340,12 @@ div.input {
 				&.with-btn {
 					display: inline-block;
 					padding-left: 20px;
+				}
+
+				a {
+					display: inline-block;
+					color: #0075bc;
+					text-decoration: underline;
 				}
 			}
 
