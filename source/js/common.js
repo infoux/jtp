@@ -156,8 +156,9 @@ $(document).ready(function() {
 
     });
 
-
-
+    $('section.equipment-list fieldset button.option').on("click", function() {
+        $('section.equipment-list fieldset').toggleClass("on");
+    });
 
     $('.main-outsite div.slider').slick({
         autoplay:true,
