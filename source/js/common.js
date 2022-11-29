@@ -174,8 +174,6 @@ $(document).ready(function() {
     });
 
 
-
-
     $('.main-outsite div.slider').slick({
         autoplay:true,
         speed: 1000,
