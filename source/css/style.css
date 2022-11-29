@@ -3859,6 +3859,7 @@ body div#content section.qna-view h3.subtitle {
   }
 }
 body div#content section.qna-view div.board-box h4 {
+  position: relative;
   font-size: 16px;
   margin: 0;
   padding: 14px 0;
@@ -3867,140 +3868,169 @@ body div#content section.qna-view div.board-box h4 {
 }
 @media (min-width: 1200px) {
   body div#content section.qna-view div.board-box h4 {
-    padding: 0;
-    line-height: 60px;
-    font-size: 18px;
-  }
-  body div#content section.qna-view div.board-box h4::before {
-    content: "제목";
-    display: inline-block;
-    width: 176px;
-    background: #fafafa;
-    font-size: 17px;
-    text-align: center;
-    border-right: 1px solid #dfdfdf;
-    margin-right: 20px;
-  }
-  body div#content section.qna-view div.board-box h4.equipment::before {
-    content: "장비명";
+    font-size: 26px;
   }
 }
-body div#content section.qna-view div.board-box ul.info {
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-  list-style: none;
-  border-bottom: 1px solid #dfdfdf;
-}
-body div#content section.qna-view div.board-box ul.info li {
+body div#content section.qna-view div.board-box h4::before {
+  content: "Q";
   display: inline-block;
+  font-size: 16px;
+  width: 35px;
+  line-height: 35px;
+  background: #0075bc;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+@media (min-width: 1200px) {
+  body div#content section.qna-view div.board-box h4::before {
+    font-size: 20px;
+    width: 45px;
+    line-height: 45px;
+  }
+}
+@media (min-width: 1200px) {
+  body div#content section.qna-view div.board-box.answer h4 {
+    font-size: 20px;
+  }
+}
+body div#content section.qna-view div.board-box.answer h4::before {
+  content: "A";
+  background: #555;
+}
+@media (min-width: 1200px) {
+  body div#content section.qna-view div.board-box.answer h4::before {
+    font-size: 16px;
+    width: 40px;
+    line-height: 40px;
+  }
+}
+body div#content section.qna-view div.board-box.answer h4 button {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #222;
+  border: none;
+  color: #fff;
+  padding: 0 10px;
+  height: 36px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+}
+@media (min-width: 1200px) {
+  body div#content section.qna-view div.board-box.answer h4 button {
+    font-size: 18px;
+    height: 42px;
+    padding: 0 20px;
+  }
+}
+body div#content section.qna-view div.board-box div.info {
+  font-size: 0;
+  border-bottom: 1px solid #dfdfdf;
   padding: 14px 10px 14px 0;
+}
+@media (min-width: 1200px) {
+  body div#content section.qna-view div.board-box div.info {
+    background: #f4f4f4;
+    padding: 10px 10px 10px 40px;
+  }
+}
+body div#content section.qna-view div.board-box div.info p {
+  display: inline-block;
+  margin: 0 10px 0 0;
   font-size: 14px;
 }
 @media (min-width: 1200px) {
-  body div#content section.qna-view div.board-box ul.info li {
+  body div#content section.qna-view div.board-box div.info p {
     font-size: 0;
     padding: 0;
-    border-right: 1px solid #dfdfdf;
-  }
-  body div#content section.qna-view div.board-box ul.info li:last-child {
-    border: none;
-  }
-  body div#content section.qna-view div.board-box ul.info li:first-child {
-    width: 550px;
-  }
-}
-body div#content section.qna-view div.board-box ul.info li.count {
-  display: none;
-}
-@media (min-width: 1200px) {
-  body div#content section.qna-view div.board-box ul.info li.count {
-    display: inline-block;
+    margin: 0;
   }
 }
 @media (min-width: 1200px) {
-  body div#content section.qna-view div.board-box ul.info li span {
-    display: inline-block;
-    width: 176px;
-    background: #fafafa;
+  body div#content section.qna-view div.board-box div.info p span {
     font-size: 17px;
-    text-align: center;
-    line-height: 60px;
-    font-weight: 600;
   }
 }
-body div#content section.qna-view div.board-box ul.info li u {
+body div#content section.qna-view div.board-box div.info p u {
   text-decoration: none;
 }
-body div#content section.qna-view div.board-box ul.info li u::before {
+body div#content section.qna-view div.board-box div.info p u::before {
   content: ": ";
 }
 @media (min-width: 1200px) {
-  body div#content section.qna-view div.board-box ul.info li u::before {
+  body div#content section.qna-view div.board-box div.info p u::before {
     display: none;
   }
 }
 @media (min-width: 1200px) {
-  body div#content section.qna-view div.board-box ul.info li u {
+  body div#content section.qna-view div.board-box div.info p u {
     display: inline-block;
-    border-left: 1px solid #dfdfdf;
     font-size: 16px;
     padding: 0 40px 0 20px;
-    line-height: 60px;
     font-weight: 600;
   }
+}
+body div#content section.qna-view div.board-box div.info div.right {
+  display: inline-block;
+}
+@media (min-width: 1200px) {
+  body div#content section.qna-view div.board-box div.info div.right {
+    float: right;
+  }
+}
+body div#content section.qna-view div.board-box div.info div.right p u {
+  font-weight: 600;
+  color: #0075bc;
 }
 body div#content section.qna-view hr {
   display: none;
 }
-body div#content section.qna-view ul.file,
-body div#content section.qna-view ul.link {
-  position: relative;
-  margin: 0;
-  padding: 14px 0;
-  list-style: none;
-  border-bottom: 1px solid #dfdfdf;
+body div#content section.qna-view div.no-answer {
+  text-align: center;
+  font-size: 16px;
+  background: #eee;
+  padding: 60px 0;
 }
-@media (min-width: 1200px) {
-  body div#content section.qna-view ul.file,
-body div#content section.qna-view ul.link {
-    padding: 20px 0 20px 196px;
-    font-size: 16px;
-  }
-  body div#content section.qna-view ul.file::before,
-body div#content section.qna-view ul.link::before {
-    content: "첨부파일";
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    font-weight: 600;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 176px;
-    background: #fafafa;
-    font-size: 17px;
-    border-right: 1px solid #dfdfdf;
-    margin-right: 20px;
-  }
+body div#content section.qna-view div.no-answer strong {
+  display: block;
+  font-size: 22px;
+  color: #0075bc;
 }
-body div#content section.qna-view ul.file.link::before,
-body div#content section.qna-view ul.link.link::before {
-  content: "링크";
+body div#content section.qna-view div.lock {
+  text-align: center;
+  font-size: 16px;
+  background: #eee;
+  padding: 60px 0;
 }
-body div#content section.qna-view ul.file li a,
-body div#content section.qna-view ul.link li a {
-  color: #1c7cc2;
-  text-decoration: underline;
+body div#content section.qna-view div.lock strong {
+  display: block;
+  font-size: 22px;
+  color: #777;
+}
+body div#content section.qna-view div.no-answer {
+  text-align: center;
+  font-size: 16px;
+  background: #eee;
+  padding: 60px 0;
+}
+body div#content section.qna-view div.no-answer strong {
+  display: block;
+  font-size: 22px;
+  color: #0075bc;
 }
 body div#content section.qna-view div.board-text {
   padding: 20px 0;
   border-bottom: 1px solid #dfdfdf;
+  min-height: 300px;
 }
 @media (min-width: 1200px) {
   body div#content section.qna-view div.board-text {
     padding: 40px;
+    min-height: 400px;
   }
 }
 body div#content section.qna-view div.board-text p {
@@ -4009,8 +4039,45 @@ body div#content section.qna-view div.board-text p {
 body div#content section.qna-view div.board-text p.image {
   text-align: center;
 }
-body div#content section.qna-view div.board-text img {
-  max-width: 100%;
+body div#content section.qna-view div.reply p {
+  margin: 20px 0 0;
+  font-size: 16px;
+}
+body div#content section.qna-view div.reply p span {
+  font-weight: 600;
+  color: #0075bc;
+}
+body div#content section.qna-view div.reply fieldset {
+  border: none;
+  padding: 20px 0;
+  margin: 0;
+  font-size: 0;
+}
+body div#content section.qna-view div.reply fieldset textarea {
+  width: 100%;
+  height: 120px;
+  font-size: 14px;
+  padding: 10px;
+}
+@media (min-width: 1200px) {
+  body div#content section.qna-view div.reply fieldset textarea {
+    width: calc(100% - 110px);
+  }
+}
+body div#content section.qna-view div.reply fieldset button {
+  width: 100%;
+  height: 42px;
+  border: none;
+  background: #0075bc;
+  color: #fff;
+  font-size: 16px;
+}
+@media (min-width: 1200px) {
+  body div#content section.qna-view div.reply fieldset button {
+    width: 110px;
+    vertical-align: top;
+    height: 120px;
+  }
 }
 body div#content section.qna-view div.reply ul {
   list-style: none;

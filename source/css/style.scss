@@ -2318,6 +2318,7 @@ body {
 				}
 
 				h4 {
+					position:relative;
 					font-size: 16px;
 					margin: 0;
 					padding: 14px 0;
@@ -2325,73 +2326,99 @@ body {
 					word-break: keep-all;
 
 					@media (min-width: $screen-size-pc) {
-						padding: 0;
-						line-height: 60px;
-						font-size: 18px;
+						font-size: 26px;
+					}
+	
 
-						&::before {
-							content: "제목";
-							display: inline-block;
-							width: 176px;
-							background: #fafafa;
-							font-size: 17px;
-							text-align: center;
-							border-right: 1px solid #dfdfdf;
-							margin-right: 20px;
+					&::before {
+						content: "Q";
+						display: inline-block;
+						font-size: 16px;
+						width:35px;
+						line-height:35px;
+						background:#0075bc;
+						color:#fff;
+						text-align:center;
+						border-radius:50%;
+						margin-right:10px;
+
+						@media (min-width: $screen-size-pc) {
+							font-size: 20px;
+							width:45px;
+							line-height:45px;
 						}
 
-
-						&.equipment {
-							&::before {
-								content:"장비명";
-							}
-						}
 					}
 				}
 
-				ul.info {
-					margin: 0;
-					padding: 0;
-					font-size: 0;
-					list-style: none;
-					border-bottom: 1px solid #dfdfdf;
+				&.answer {
+					
 
-					li {
+					h4 {
+
+						@media (min-width: $screen-size-pc) {
+							font-size: 20px;
+						}
+
+						&::before {
+							content: "A";
+							background:#555;
+
+							@media (min-width: $screen-size-pc) {
+								font-size: 16px;
+								width:40px;
+								line-height:40px;
+							}
+						}
+
+						button {
+							position:absolute;
+							right:0;
+							top:50%;
+							transform:translateY(-50%);
+							background:#222;
+							border:none;
+							color:#fff;
+							padding:0 10px;
+							height:36px;
+							border-radius:4px;
+							font-size:16px;
+							font-weight:500;
+
+							@media (min-width: $screen-size-pc) {
+								font-size: 18px;
+								height:42px;
+								padding:0 20px;
+							}
+						}
+
+					}
+				}
+
+				div.info {
+					font-size: 0;
+					border-bottom: 1px solid #dfdfdf;
+					padding: 14px 10px 14px 0;
+
+					@media (min-width: $screen-size-pc) {
+						background:#f4f4f4;
+						padding:10px 10px 10px 40px;
+					}
+
+					p {
 						display: inline-block;
-						padding: 14px 10px 14px 0;
+						margin:0 10px 0 0;
 						font-size: 14px;
 
 						@media (min-width: $screen-size-pc) {
 							font-size: 0;
 							padding: 0;
-							border-right: 1px solid #dfdfdf;
-
-							&:last-child {
-								border: none;
-							}
-
-							&:first-child {
-								width: 550px;
-							}
-						}
-
-						&.count {
-							display: none;
-
-							@media (min-width: $screen-size-pc) {
-								display: inline-block;
-							}
+							margin:0;
 						}
 
 						span {
 							@media (min-width: $screen-size-pc) {
-								display: inline-block;
-								width: 176px;
-								background: #fafafa;
 								font-size: 17px;
-								text-align: center;
-								line-height: 60px;
-								font-weight: 600;
 							}
 						}
 
@@ -2408,11 +2435,25 @@ body {
 
 							@media (min-width: $screen-size-pc) {
 								display: inline-block;
-								border-left: 1px solid #dfdfdf;
 								font-size: 16px;
 								padding: 0 40px 0 20px;
-								line-height: 60px;
 								font-weight: 600;
+							}
+						}
+					}
+
+					div.right {
+						display:inline-block;
+
+						@media (min-width: $screen-size-pc) {
+							float:right;
+						}
+
+						p {
+
+							u {
+								font-weight:600;
+								color:#0075bc;
 							}
 						}
 					}
@@ -2423,56 +2464,53 @@ body {
 				display: none;
 			}
 
-			ul.file,
-			ul.link {
-				position: relative;
-				margin: 0;
-				padding: 14px 0;
-				list-style: none;
-				border-bottom: 1px solid #dfdfdf;
+			div.no-answer {
+				text-align:center;
+				font-size:16px;
+				background:#eee;
+				padding:60px 0;
 
-				@media (min-width: $screen-size-pc) {
-					padding: 20px 0 20px 196px;
-					font-size: 16px;
-
-					&::before {
-						content: "첨부파일";
-						display: flex;
-						align-items: center;
-						justify-content: center;
-						position: absolute;
-						font-weight: 600;
-						left: 0;
-						top: 0;
-						bottom: 0;
-						width: 176px;
-						background: #fafafa;
-						font-size: 17px;
-						border-right: 1px solid #dfdfdf;
-						margin-right: 20px;
-					}
+				strong {
+					display:block;
+					font-size:22px;
+					color:#0075bc;
 				}
+			}
 
-				&.link {
-					&::before {
-						content: "링크";
-					}
+			div.lock {
+				text-align:center;
+				font-size:16px;
+				background:#eee;
+				padding:60px 0;
+
+				strong {
+					display:block;
+					font-size:22px;
+					color:#777;
 				}
+			}
 
-				li {
-					a {
-						color: #1c7cc2;
-						text-decoration: underline;
-					}
+			div.no-answer {
+				text-align:center;
+				font-size:16px;
+				background:#eee;
+				padding:60px 0;
+
+				strong {
+					display:block;
+					font-size:22px;
+					color:#0075bc;
 				}
 			}
 
 			div.board-text {
 				padding: 20px 0;
 				border-bottom: 1px solid #dfdfdf;
+				min-height:300px;
 
 				@media (min-width: $screen-size-pc) {
 					padding: 40px;
+					min-height:400px;
 				}
 
 				p {
@@ -2482,13 +2520,53 @@ body {
 						text-align: center;
 					}
 				}
-
-				img {
-					max-width: 100%;
-				}
 			}
 
 			div.reply {
+
+				p {
+					margin:20px 0 0;
+					font-size:16px;
+					
+					span {
+						font-weight:600;
+						color:#0075bc;
+					}
+				}
+
+				fieldset {
+					border:none;
+					padding:20px 0;
+					margin:0;
+					font-size:0;
+
+					textarea {
+						width:100%;
+						height:120px;
+						font-size:14px;
+						padding:10px;
+
+						@media (min-width: $screen-size-pc) {
+							width:calc(100% - 110px);
+						}
+		
+					}
+
+					button {
+						width:100%;
+						height:42px;
+						border:none;
+						background:#0075bc;
+						color:#fff;
+						font-size:16px;
+
+						@media (min-width: $screen-size-pc) {
+							width:110px;
+							vertical-align:top;
+							height:120px;
+						}
+					}
+				}
 				ul {
 					list-style: none;
 					margin: 0 0 20px;
