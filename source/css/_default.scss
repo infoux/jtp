@@ -625,12 +625,73 @@ button {
 				}
 			}
 
+			div.category {
+
+				h3 {
+					margin:0;
+					padding:10px 15px;
+					background:#eee;
+					border:1px solid #ccc;
+					color:#222;
+					font-size:16px;
+					font-weight:500;
+				}
+
+				ul {
+					max-height:0;
+					height:auto;
+					overflow:hidden;
+					list-style:none;
+					margin:0;
+					padding:0;
+					@include ani();
+					
+					li {
+						border-bottom:1px solid #ccc;
+
+						&:last-child {
+							border:none;
+						}
+
+						input {
+							display:none;
+						}
+
+						label {
+							display:block;
+							padding:10px 15px;
+							font-size:16px;
+							color:#555;
+						}
+
+						input:checked + label {
+							font-weight:900;
+							color:#222;
+						}
+					}
+				}
+
+				h3.on + ul {
+					max-height:179px;
+					overflow-y:auto;
+				}
+
+				p.result {
+					margin:20px 0;
+					word-break:keep-all;
+					font-weight:600;
+					color:#222;
+					font-size:16px;
+				}
+			}
+
 			div.btn-set {
 				&.full {
 					margin: 0;
 
 					button {
 						width: 100%;
+						margin:0;
 					}
 				}
 				&.zeus {

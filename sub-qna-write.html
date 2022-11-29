@@ -130,6 +130,74 @@
             </button>
         </aside>
 
+
+
+
+
+
+
+
+
+
+
+
+<!--  Modal category -->
+<div id="modal-category" class="modal on">
+ 
+    <!-- Modal content -->
+    <div class="modal-content">
+              <h2>분야조회<button class="close">닫기</button></h2>
+              <div class="inside">
+
+                <div class="category">
+                    <h3 class="on">대분류</h3>
+                    <ul class="category01">
+                        <li><input id="category0101" name="category01" type="radio"><label for="category0101">광학/전자영상장비</label></li>
+                        <li><input id="category0102" name="category01" type="radio"><label for="category0102">광학/전자영상장비</label></li>
+                        <li><input id="category0103" name="category01" type="radio"><label for="category0103">광학/전자영상장비</label></li>
+                        <li><input id="category0104" name="category01" type="radio"><label for="category0104">광학/전자영상장비</label></li>
+                        <li><input id="category0105" name="category01" type="radio"><label for="category0105">광학/전자영상장비</label></li>
+                        <li><input id="category0106" name="category01" type="radio"><label for="category0106">광학/전자영상장비</label></li>
+                    </ul>
+                    <h3>중분류</h3>
+                    <ul class="category02">
+                        <li><input id="category0201" name="category02" type="radio"><label for="category0201">광학/전자영상장비</label></li>
+                        <li><input id="category0202" name="category02" type="radio"><label for="category0202">광학/전자영상장비</label></li>
+                        <li><input id="category0203" name="category02" type="radio"><label for="category0203">광학/전자영상장비</label></li>
+                        <li><input id="category0204" name="category02" type="radio"><label for="category0204">광학/전자영상장비</label></li>
+                        <li><input id="category0205" name="category02" type="radio"><label for="category0205">광학/전자영상장비</label></li>
+                        <li><input id="category0206" name="category02" type="radio"><label for="category0206">광학/전자영상장비</label></li>
+                    </ul>
+                    <h3>소분류</h3>
+                    <ul class="category03">
+                        <li><input id="category0301" name="category03" type="radio"><label for="category0301">광학/전자영상장비</label></li>
+                        <li><input id="category0302" name="category03" type="radio"><label for="category0302">광학/전자영상장비</label></li>
+                        <li><input id="category0303" name="category03" type="radio"><label for="category0303">광학/전자영상장비</label></li>
+                        <li><input id="category0304" name="category03" type="radio"><label for="category0304">광학/전자영상장비</label></li>
+                        <li><input id="category0305" name="category03" type="radio"><label for="category0305">광학/전자영상장비</label></li>
+                        <li><input id="category0306" name="category03" type="radio"><label for="category0306">광학/전자영상장비</label></li>
+                    </ul>
+
+                    <p class="result">
+                        광학/전자영상장비 > 중분류 > 소분류
+                    </p>
+                </div>
+
+                <div class="btn-set center full">
+                    <button class="btn main">선택완료</button>
+                </div>
+
+              </div>
+
+
+    </div>
+
+  </div>
+<!-- Modal-->
+
+
+
+
         <!-- S:mainContent -->
 
         <div id="content">
@@ -188,12 +256,26 @@
 
 <!--S:SKIN -->
 <div class="inBoard write">
-
+    <div class="attention">
+        <i class='bx bxs-message-alt-error' ></i>개인정보가 포함된 글은 불특정 다수에게 개인정보가 노출되어 악용될 수 있습니다.
+    </div>
     <div class="board-box">
 
         <div class="line">
             <strong><label for="title">문의분야</label></strong>
-            <input id="title" type="text" placeholder="제목을 입력하세요">
+
+            <p class="rows">
+                <button>분야조회</button>
+                <span><input id="none" type="checkbox"><label for="none">분야모름</label></span>
+            </p>
+
+            <!--조회 후 추가되는 코드-->
+            <p class="rows">
+                <u>광학/전자영상장비 > 중분류 > 소분류</u>
+            </p>
+            <!--//-->
+            
+            
         </div>
 
         <div class="line">
@@ -249,6 +331,9 @@
 
         </div>
         <!-- E:mainContent -->
+
+
+
         <footer id="footer">
             <div class="container">
                 

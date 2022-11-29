@@ -167,6 +167,13 @@ $(document).ready(function() {
 
 
 
+    
+    $('.modal-content div.category h3').on("click", function() {
+        $('.modal-content div.category h3').removeClass("on");
+        $(this).addClass("on");
+    });
+
+
 
 
     $('.main-outsite div.slider').slick({

@@ -2597,6 +2597,20 @@ body {
 				display: block;
 			}
 
+			div.attention {
+				background:#FEE5E5;
+				margin:0 0 20px;
+				padding:10px;
+				color:#A63737;
+
+				i {
+					position:relative;
+					top:3px;
+					margin:0 4px 0 0;
+					font-size:18px;
+				}
+			}
+
 			div.board-box {
 				border-top: 2px solid #3d3d3d;
 				
@@ -2644,7 +2658,49 @@ body {
 						}
 					}
 
-					input[type="checkbox"] {
+					p.rows {
+
+						@media (min-width: $screen-size-pc) {
+							margin:0;
+							display:inline-block;
+						}
+
+						span,
+						button {
+							display:inline-block;
+							border:none;
+							background:#eee;
+							padding:5px 10px;
+
+							@media (min-width: $screen-size-pc) {
+								line-height:1.6;
+							}
+
+							label {
+								line-height:inherit;
+							}
+						}
+
+						button {
+							background:#222;
+							color:#fff;
+							margin:0 5px 0 0;
+						}
+
+						u {
+							display:block;
+							font-size: 14px;
+
+							@media (min-width: $screen-size-pc) {
+								font-size: 16px;
+								padding:0 0 0 20px;
+							}
+						}
+
+					}
+
+					input[type=checkbox],
+					input[type=radio] {
 						position: relative;
 						top: 3px;
 						margin: 0 6px 0 0;
@@ -2656,6 +2712,7 @@ body {
 						display: inline-block;
 						line-height: 50px;
 						font-size: 14px;
+						margin:0 10px 0 0;
 
 						@media (min-width: $screen-size-pc) {
 							font-size: 16px;
@@ -2676,97 +2733,6 @@ body {
 						@media (min-width: $screen-size-pc) {
 							width: calc(100% - 201px);
 							font-size: 16px;
-						}
-					}
-
-					p.rows {
-						margin: 0 0 10px;
-
-						@media (min-width: $screen-size-pc) {
-							margin: 0;
-							display: inline-block;
-							line-height: 1.4;
-							vertical-align: middle;
-						}
-
-						input[type="date"] {
-							width: calc(50% - 10px);
-							height: 35px;
-							background: #f5f5f5;
-							border: none;
-							padding: 0 10px;
-
-							@media (min-width: $screen-size-pc) {
-								width: 210px;
-							}
-						}
-
-						u {
-							display: inline-block;
-							vertical-align: top;
-							text-decoration: none;
-							line-height: 35px;
-						}
-
-						span.select-outline {
-							display: inline-block;
-							position: relative;
-							vertical-align: top;
-							width: calc((100% - 100px) / 4);
-
-							@media (min-width: $screen-size-pc) {
-								width: 80px;
-							}
-
-							select {
-								appearance: none;
-								-moz-appearance: none;
-								
-								-webkit-appearance: none;
-
-								&::-ms-expand {
-									display: none;
-								}
-
-								height: 34px;
-								width: 100%;
-								font-size: 14px;
-								display: inline-block;
-								padding: 0 30px 0 10px;
-								border: 1px solid #cccccc;
-							}
-
-							&::before,
-							&::after {
-								content: "";
-								position: absolute;
-								top: 19px;
-								display: block;
-								width: 8px;
-								height: 1px;
-								background: #999999;
-								@include ani(0.2s);
-							}
-
-							&::before {
-								transform: rotate(45deg);
-								right: 12px;
-							}
-
-							&::after {
-								transform: rotate(-45deg);
-								right: 6px;
-							}
-
-							&:focus-within {
-								&::before {
-									transform: rotate(-45deg);
-								}
-
-								&::after {
-									transform: rotate(45deg);
-								}
-							}
 						}
 					}
 				}
