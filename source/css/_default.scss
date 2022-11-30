@@ -2,6 +2,7 @@
 $min-width: 320px;
 $img-url: "../images";
 $screen-size-pc: 1200px;
+$screen-size-mobile: max($screen-size-pc);
 
 .pagenation {
 	display: inline-block;
@@ -460,7 +461,6 @@ button {
 					p {
 						display: block;
 						position: relative;
-						vertical-align: top;
 						font-size: 13px;
 						padding: 0 0 2px;
 						margin: 0;
@@ -532,7 +532,6 @@ button {
 							&::after {
 								content: "|";
 								display: inline-block;
-								float: right;
 								color: #bbb;
 
 								@media (min-width: $screen-size-pc) {

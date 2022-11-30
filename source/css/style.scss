@@ -10,7 +10,7 @@ html {
 
 html,
 body {
-	@media (max-width: $screen-size-pc - 1) {
+	@media (max-width: $screen-size-mobile) {
 		&.lock {
 			height: 100vh;
 			overflow: hidden;
@@ -157,7 +157,7 @@ body {
 
 	aside {
 		//메뉴-모바일
-		@media (max-width: $screen-size-pc - 1px) {
+		@media (max-width: $screen-size-mobile) {
 			font-family: "NanumSquare", sans-serif;
 			min-width: $min-width;
 			position: fixed;
@@ -6711,9 +6711,9 @@ body {
 					li {
 						@media (min-width: $screen-size-pc) {
 							vertical-align: top;
-							width: calc((100% - 120px) / 3);
+							width: calc((100% - 90px) / 4);
 							display: inline-block;
-							margin-right: 60px;
+							margin-right: 30px;
 
 							&:last-child {
 								margin-right: 0;
@@ -6725,10 +6725,10 @@ body {
 							border: 1px solid #ccc;
 							background: #f5f5f5;
 							margin-bottom: 20px;
-							padding: 20px 20px 20px 110px;
+							padding: 20px 10px 20px 110px;
 
 							@media (min-width: $screen-size-pc) {
-								padding: 50px;
+								padding: 50px 30px;
 								text-align: center;
 							}
 
@@ -6785,6 +6785,17 @@ body {
 								}
 							}
 
+							&.qna {
+								&::before {
+									background: url("../images/icon-mypage04.svg") no-repeat #fff
+									center / 44px auto;
+
+									@media (min-width: $screen-size-pc) {
+										background-size: 86px auto;
+									}
+								}
+							}
+
 							h4 {
 								margin: 0 0 6px;
 								font-size: 20px;
@@ -6833,6 +6844,14 @@ body {
 
 									&::before {
 										background-color: #d67622;
+									}
+								}
+
+								&.qna {
+									border-color: #B74FC9;
+
+									&::before {
+										background-color: #B74FC9;
 									}
 								}
 							}
@@ -9205,7 +9224,7 @@ body {
 
 						}
 
-						@media (max-width: $screen-size-pc - 1) {
+						@media (max-width: $screen-size-mobile) {
 
 							&:nth-child(even) {
 								&::after {
@@ -9765,7 +9784,6 @@ body {
 						opacity:.5;
 						font-size:24px;
 						color:#fff;
-						vertical-align:top;
 						margin:0 0 30px;
 					}
 

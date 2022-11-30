@@ -131,7 +131,7 @@
                 -->
 
 				<div class="container">
-					<h2>장비관리</h2>
+					<h2>플랫폼 소개</h2>
 				</div>
 			</section>
 
@@ -167,48 +167,149 @@
 				</div>
 			</section>
 
-			<section class="mypage-main">
+			<section class="qna-list">
 				<div class="container">
-					<h3 class="subtitle">마이페이지</h3>
+					<h3 class="subtitle">문의내역</h3>
 
-					<ul>
-						<li>
-							<a class="member" href="">
-								<h4>회원정보관리</h4>
-								<p>
-									<span>고객님의 회원정보를</span>
-									관리할 수 있습니다.
-								</p>
-							</a>
-						</li>
-						<li>
-							<a class="reservation" href="">
-								<h4>실시간 예약내역</h4>
-								<p>
-									<span>고객님의 예약정보를</span>
-									관리할 수 있습니다.
-								</p>
-							</a>
-						</li>
-						<li>
-							<a class="consulting" href="">
-								<h4>장비상담내역 조회</h4>
-								<p>
-									<span>고객님의 상담내역을</span>
-									관리할 수 있습니다.
-								</p>
-							</a>
-						</li>
-						<li>
-							<a class="qna" href="">
-								<h4>일반문의내역 조회</h4>
-								<p>
-									<span>고객님의 문의내역을</span>
-									관리할 수 있습니다.
-								</p>
-							</a>
-						</li>
-					</ul>
+					<!--S:SKIN -->
+					<div class="inBoard list">
+
+                        <fieldset>
+                            <legend class="sr-only">검색조건</legend>
+    
+                                <label for="div">보유기관</label>
+                                <span class="select-outline">
+                                    <select id="div"">
+                                        <option>제주테크노파크</option>
+                                    </select>
+                                </span>
+    
+                                <label for="way">예약방법</label>
+                                <span class="select-outline">
+                                    <select id="way">
+                                        <option>공동활용허용</option>
+                                    </select>
+                                </span>
+                                <label class="opt" for="search">검색어</label>
+                                <span class="select-outline opt">
+                                    <select id="search"">
+                                        <option>전체</option>
+                                    </select>
+                                </span>
+                                <div class="search-box">
+                                    <input type="text">
+                                    <button>검색</button>
+                                </div>
+
+
+    
+                        </fieldset>
+
+    
+                        <p class="counter">총 문의건수 <strong>43</strong>건</p>
+
+
+
+						<ul class="list">
+							<li>
+								<a href="">
+									<h4>
+										<span>제목</span>무엇을 대여해야할지 모르겠습니다.
+									</h4>
+									<p class="num"><span>번호</span><u>111</u></p>
+									<p class="date"><span>등록일</span><u>2020-11-03</u></p>
+									<p class="count"><span>답변</span><u>0</u></p>
+									<p class="status"><span>상태</span><u class="red">상담신청 </u></p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<h4>
+										<span>제목</span> <u>비밀글 <i class='bx bx-lock' ></i></u>기본 게시판 게시물 제목입니다.
+									</h4>
+									<p class="num"><span>번호</span><u>111</u></p>
+									<p class="date"><span>등록일</span><u>2020-11-03</u></p>
+									<p class="count"><span>답변</span><u>1</u></p>
+									<p class="status"><span>상태</span><u class="green">멘토지정 </u></p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<h4>
+										<span>제목</span>기본 게시판 게시물 제목입니다.
+									</h4>
+									<p class="num"><span>번호</span><u>111</u></p>
+									<p class="date"><span>등록일</span><u>2020-11-03</u></p>
+									<p class="count"><span>답변</span><u>1</u></p>
+									<p class="status"><span>상태</span><u class="blue">답변 </u></p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<h4>
+										<span>제목</span>기본 게시판 게시물 제목입니다.
+									</h4>
+									<p class="num"><span>번호</span><u>111</u></p>
+									<p class="date"><span>등록일</span><u>2020-11-03</u></p>
+									<p class="count"><span>답변</span><u>1</u></p>
+									<p class="status"><span>상태</span><u class="gray">채택완료</u></p>
+								</a>
+							</li>
+						</ul>
+
+
+						<article class="pagenation">
+							<a
+								href="?pageIndex=1"
+								title="처음으로 이동"
+								class="jump"
+								onclick="linkPage(1);return false; "
+								>처음<i class="bx bx-chevrons-left" aria-hidden="true"></i
+							></a>
+							<a
+								href="?pageIndex=1"
+								title="이전 페이지로 이동"
+								class="move"
+								onclick="linkPage(1);return false; "
+								>이전<i class="bx bx-chevron-left" aria-hidden="true"></i
+							></a>
+							<strong>1</strong>
+							<a
+								href="?pageIndex=2"
+								onclick="linkPage(2);return false; "
+								title="2 페이지로 이동"
+								>2</a
+							>
+							<a
+								href="?pageIndex=3"
+								onclick="linkPage(3);return false; "
+								title="3 페이지로 이동"
+								>3</a
+							>
+							<a
+								href="?pageIndex=4"
+								onclick="linkPage(4);return false; "
+								title="4 페이지로 이동"
+								>4</a
+							>
+							<a
+								href="?pageIndex=11"
+								title="다음 페이지로 이동"
+								class="move"
+								onclick="linkPage(6);return false; "
+								>다음<i class="bx bx-chevron-right" aria-hidden="true"></i
+							></a>
+							<a
+								href="?pageIndex=17"
+								title="마지막 페이지로 이동"
+								class="jump"
+								onclick="linkPage(17);return false; "
+								>마지막<i class="bx bx-chevrons-right" aria-hidden="true"></i
+							></a>
+						</article>
+					</div>
+
+					<!--E:SKIN-->
 				</div>
 			</section>
 		</div>
