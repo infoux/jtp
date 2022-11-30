@@ -2352,7 +2352,8 @@ body {
 				}
 
 				&.answer {
-					
+
+					border-top-color:#ccc;
 
 					h4 {
 
@@ -2362,7 +2363,7 @@ body {
 
 						&::before {
 							content: "A";
-							background:#555;
+							background:#aaa;
 
 							@media (min-width: $screen-size-pc) {
 								font-size: 16px;
@@ -2391,6 +2392,28 @@ body {
 								padding:0 20px;
 							}
 						}
+						
+						span {
+							position:absolute;
+							right:0;
+							top:50%;
+							transform:translateY(-50%);
+							background:#0075bc;
+							border:none;
+							color:#fff;
+							padding:0 10px;
+							line-height:36px;
+							border-radius:4px;
+							font-size:16px;
+							font-weight:500;
+
+							@media (min-width: $screen-size-pc) {
+								font-size: 18px;
+								height:42px;
+								padding:0 20px;
+							}
+
+						}
 
 					}
 				}
@@ -2401,9 +2424,12 @@ body {
 					padding: 14px 10px 14px 0;
 
 					@media (min-width: $screen-size-pc) {
-						background:#f4f4f4;
 						padding:10px 10px 10px 40px;
 					}
+
+
+	
+
 
 					&>strong {
 						display:block;
@@ -2472,20 +2498,59 @@ body {
 						}
 					}
 				}
+
+				
+
+				&.choice {
+					border-top-color:#0075bc;
+
+					h4 {
+						&::before {
+							background-color:#0075bc;
+						}
+					}
+				}
+				
 			}
 
 
 			div.qna-category {
 					
 				font-size:14px;
-				background:#efefef;
 				padding:10px;
+				color:#fff;
 
 				@media (min-width: $screen-size-pc) {
 					background:#ccc;
 					padding:10px 40px;
-					color:#222;
 				}
+
+				&.red {
+					background:#D74B4B;
+				}
+
+				&.green {
+					background:#57A819;
+				}
+
+				&.blue {
+					background:#1960A8;
+				}
+
+				&.gray {
+					background:#777;
+				}
+
+				u {
+					text-decoration:none;
+					display:inline-block;
+					font-weight:600;
+					background:rgba(0,0,0,.4);
+					padding:6px 10px;
+					margin-right:10px;
+					border-radius:4px;
+				}
+
 
 				strong {
 					display:inline-block;
@@ -2539,11 +2604,11 @@ body {
 			div.board-text {
 				padding: 20px 0;
 				border-bottom: 1px solid #dfdfdf;
-				min-height:300px;
+				min-height:100px;
 
 				@media (min-width: $screen-size-pc) {
 					padding: 40px;
-					min-height:400px;
+					min-height:200px;
 				}
 
 				p {

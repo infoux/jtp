@@ -3888,6 +3888,9 @@ body div#content section.qna-view div.board-box h4::before {
     line-height: 45px;
   }
 }
+body div#content section.qna-view div.board-box.answer {
+  border-top-color: #ccc;
+}
 @media (min-width: 1200px) {
   body div#content section.qna-view div.board-box.answer h4 {
     font-size: 20px;
@@ -3895,7 +3898,7 @@ body div#content section.qna-view div.board-box h4::before {
 }
 body div#content section.qna-view div.board-box.answer h4::before {
   content: "A";
-  background: #555;
+  background: #aaa;
 }
 @media (min-width: 1200px) {
   body div#content section.qna-view div.board-box.answer h4::before {
@@ -3925,6 +3928,27 @@ body div#content section.qna-view div.board-box.answer h4 button {
     padding: 0 20px;
   }
 }
+body div#content section.qna-view div.board-box.answer h4 span {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #0075bc;
+  border: none;
+  color: #fff;
+  padding: 0 10px;
+  line-height: 36px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+}
+@media (min-width: 1200px) {
+  body div#content section.qna-view div.board-box.answer h4 span {
+    font-size: 18px;
+    height: 42px;
+    padding: 0 20px;
+  }
+}
 body div#content section.qna-view div.board-box div.info {
   font-size: 0;
   border-bottom: 1px solid #dfdfdf;
@@ -3932,7 +3956,6 @@ body div#content section.qna-view div.board-box div.info {
 }
 @media (min-width: 1200px) {
   body div#content section.qna-view div.board-box div.info {
-    background: #f4f4f4;
     padding: 10px 10px 10px 40px;
   }
 }
@@ -3998,17 +4021,43 @@ body div#content section.qna-view div.board-box div.info div.right p u {
   font-weight: 600;
   color: #0075bc;
 }
+body div#content section.qna-view div.board-box.choice {
+  border-top-color: #0075bc;
+}
+body div#content section.qna-view div.board-box.choice h4::before {
+  background-color: #0075bc;
+}
 body div#content section.qna-view div.qna-category {
   font-size: 14px;
-  background: #efefef;
   padding: 10px;
+  color: #fff;
 }
 @media (min-width: 1200px) {
   body div#content section.qna-view div.qna-category {
     background: #ccc;
     padding: 10px 40px;
-    color: #222;
   }
+}
+body div#content section.qna-view div.qna-category.red {
+  background: #D74B4B;
+}
+body div#content section.qna-view div.qna-category.green {
+  background: #57A819;
+}
+body div#content section.qna-view div.qna-category.blue {
+  background: #1960A8;
+}
+body div#content section.qna-view div.qna-category.gray {
+  background: #777;
+}
+body div#content section.qna-view div.qna-category u {
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 6px 10px;
+  margin-right: 10px;
+  border-radius: 4px;
 }
 body div#content section.qna-view div.qna-category strong {
   display: inline-block;
@@ -4053,12 +4102,12 @@ body div#content section.qna-view div.no-answer strong {
 body div#content section.qna-view div.board-text {
   padding: 20px 0;
   border-bottom: 1px solid #dfdfdf;
-  min-height: 300px;
+  min-height: 100px;
 }
 @media (min-width: 1200px) {
   body div#content section.qna-view div.board-text {
     padding: 40px;
-    min-height: 400px;
+    min-height: 200px;
   }
 }
 body div#content section.qna-view div.board-text p {
