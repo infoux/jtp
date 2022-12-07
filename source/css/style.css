@@ -7912,6 +7912,7 @@ body div#content section.mypage-main div.container ul {
   margin: 20px 0;
   padding: 0;
   font-size: 0;
+  width: 100%;
 }
 @media (min-width: 1200px) {
   body div#content section.mypage-main div.container ul {
@@ -7920,8 +7921,7 @@ body div#content section.mypage-main div.container ul {
 }
 @media (min-width: 1200px) {
   body div#content section.mypage-main div.container ul li {
-    vertical-align: top;
-    width: calc((100% - 90px) / 5);
+    flex-grow: 1;
     height: 100%;
   }
 }
