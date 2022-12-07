@@ -6806,16 +6806,15 @@ body {
 					padding: 0;
 					font-size: 0;
 
+					@media (min-width: $screen-size-pc) {
+						display:flex;
+					}
+
 					li {
 						@media (min-width: $screen-size-pc) {
 							vertical-align: top;
-							width: calc((100% - 90px) / 4);
-							display: inline-block;
-							margin-right: 30px;
-
-							&:last-child {
-								margin-right: 0;
-							}
+							width: calc((100% - 90px) / 5);
+							height:100%;
 						}
 						a {
 							display: block;
@@ -6826,8 +6825,9 @@ body {
 							padding: 20px 10px 20px 110px;
 
 							@media (min-width: $screen-size-pc) {
-								padding: 50px 30px;
+								padding: 50px 20px;
 								text-align: center;
+								border-right:none;
 							}
 
 							&::before {
@@ -6894,12 +6894,23 @@ body {
 								}
 							}
 
+							&.education {
+								&::before {
+									background: url("../images/icon-mypage05.svg") no-repeat #fff
+									center / 44px auto;
+
+									@media (min-width: $screen-size-pc) {
+										background-size: 86px auto;
+									}
+								}
+							}
+
 							h4 {
 								margin: 0 0 6px;
 								font-size: 20px;
 
 								@media (min-width: $screen-size-pc) {
-									font-size: 28px;
+									font-size: 22px;
 									margin: 0 0 20px;
 								}
 							}
@@ -6909,7 +6920,7 @@ body {
 								margin: 0;
 
 								@media (min-width: $screen-size-pc) {
-									font-size: 20px;
+									font-size: 16px;
 								}
 
 								span {
@@ -6920,9 +6931,10 @@ body {
 							&:hover {
 								@include drop-shadow(0, 3px, 6px, 0, 0.25);
 								background: #fff;
+								z-index:10;
 
 								&.member {
-									border-color: #1c7cc2;
+									// border-color: #1c7cc2;
 
 									&::before {
 										background-color: #1c7cc2;
@@ -6930,7 +6942,7 @@ body {
 								}
 
 								&.reservation {
-									border-color: #699b00;
+									// border-color: #699b00;
 
 									&::before {
 										background-color: #699b00;
@@ -6938,7 +6950,7 @@ body {
 								}
 
 								&.consulting {
-									border-color: #d67622;
+									// border-color: #d67622;
 
 									&::before {
 										background-color: #d67622;
@@ -6946,11 +6958,27 @@ body {
 								}
 
 								&.qna {
-									border-color: #B74FC9;
+									// border-color: #B74FC9;
 
 									&::before {
 										background-color: #B74FC9;
 									}
+								}
+
+								&.education {
+
+									&::before {
+										background-color: #47C9C9;
+									}
+								}
+							}
+						}
+						@media (min-width: $screen-size-pc) {
+
+							&:last-child {
+								a {
+
+									border-right:1px solid #ccc;
 								}
 							}
 						}

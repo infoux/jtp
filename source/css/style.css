@@ -7914,14 +7914,15 @@ body div#content section.mypage-main div.container ul {
   font-size: 0;
 }
 @media (min-width: 1200px) {
+  body div#content section.mypage-main div.container ul {
+    display: flex;
+  }
+}
+@media (min-width: 1200px) {
   body div#content section.mypage-main div.container ul li {
     vertical-align: top;
-    width: calc((100% - 90px) / 4);
-    display: inline-block;
-    margin-right: 30px;
-  }
-  body div#content section.mypage-main div.container ul li:last-child {
-    margin-right: 0;
+    width: calc((100% - 90px) / 5);
+    height: 100%;
   }
 }
 body div#content section.mypage-main div.container ul li a {
@@ -7934,8 +7935,9 @@ body div#content section.mypage-main div.container ul li a {
 }
 @media (min-width: 1200px) {
   body div#content section.mypage-main div.container ul li a {
-    padding: 50px 30px;
+    padding: 50px 20px;
     text-align: center;
+    border-right: none;
   }
 }
 body div#content section.mypage-main div.container ul li a::before {
@@ -7990,13 +7992,21 @@ body div#content section.mypage-main div.container ul li a.qna::before {
     background-size: 86px auto;
   }
 }
+body div#content section.mypage-main div.container ul li a.education::before {
+  background: url("../images/icon-mypage05.svg") no-repeat #fff center/44px auto;
+}
+@media (min-width: 1200px) {
+  body div#content section.mypage-main div.container ul li a.education::before {
+    background-size: 86px auto;
+  }
+}
 body div#content section.mypage-main div.container ul li a h4 {
   margin: 0 0 6px;
   font-size: 20px;
 }
 @media (min-width: 1200px) {
   body div#content section.mypage-main div.container ul li a h4 {
-    font-size: 28px;
+    font-size: 22px;
     margin: 0 0 20px;
   }
 }
@@ -8006,7 +8016,7 @@ body div#content section.mypage-main div.container ul li a p {
 }
 @media (min-width: 1200px) {
   body div#content section.mypage-main div.container ul li a p {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 body div#content section.mypage-main div.container ul li a p span {
@@ -8015,30 +8025,27 @@ body div#content section.mypage-main div.container ul li a p span {
 body div#content section.mypage-main div.container ul li a:hover {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
   background: #fff;
-}
-body div#content section.mypage-main div.container ul li a:hover.member {
-  border-color: #1c7cc2;
+  z-index: 10;
 }
 body div#content section.mypage-main div.container ul li a:hover.member::before {
   background-color: #1c7cc2;
 }
-body div#content section.mypage-main div.container ul li a:hover.reservation {
-  border-color: #699b00;
-}
 body div#content section.mypage-main div.container ul li a:hover.reservation::before {
   background-color: #699b00;
-}
-body div#content section.mypage-main div.container ul li a:hover.consulting {
-  border-color: #d67622;
 }
 body div#content section.mypage-main div.container ul li a:hover.consulting::before {
   background-color: #d67622;
 }
-body div#content section.mypage-main div.container ul li a:hover.qna {
-  border-color: #B74FC9;
-}
 body div#content section.mypage-main div.container ul li a:hover.qna::before {
   background-color: #B74FC9;
+}
+body div#content section.mypage-main div.container ul li a:hover.education::before {
+  background-color: #47C9C9;
+}
+@media (min-width: 1200px) {
+  body div#content section.mypage-main div.container ul li:last-child a {
+    border-right: 1px solid #ccc;
+  }
 }
 body div#content section.reservation-list div.container fieldset {
   border: 1px solid #bbbbbb;
