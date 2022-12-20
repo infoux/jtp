@@ -9587,7 +9587,7 @@ body div#content section.docs-list div.container ul.list li a.download {
 @media (min-width: 1200px) {
   body div#content section.docs-list div.container ul.list li a.download {
     position: absolute;
-    left: 280px;
+    right: 20px;
     bottom: 20px;
     z-index: auto;
     font-size: 18px;
@@ -9605,12 +9605,6 @@ body div#content section.docs-list div.container ul.list li.no-image {
     text-align: left;
     border: 1px solid #ccc;
     min-height: 280px;
-  }
-}
-@media (min-width: 1200px) {
-  body div#content section.docs-list div.container ul.list li.no-image a.download {
-    left: auto;
-    right: 20px;
   }
 }
 body div#content section.docs-view {

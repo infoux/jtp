@@ -8680,7 +8680,7 @@ body {
 
 							@media (min-width: $screen-size-pc) {
 								position: absolute;
-								left: 280px;
+								right:20px;
 								bottom: 20px;
 								z-index: auto;
 								font-size: 18px;
@@ -8703,14 +8703,6 @@ body {
 								}
 							}
 
-							a.download {
-
-								@media (min-width: $screen-size-pc) {
-									left:auto;
-									right:20px;
-								}
-
-							}
 						}
 					}
 				}
