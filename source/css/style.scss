@@ -8688,6 +8688,30 @@ body {
 								width: 200px;
 							}
 						}
+
+						&.no-image {
+							min-height:auto;
+
+							a.link {
+
+								@media (min-width: $screen-size-pc) {
+									position: relative;
+									padding: 20px;
+									text-align: left;
+									border: 1px solid #ccc;
+									min-height: 280px;
+								}
+							}
+
+							a.download {
+
+								@media (min-width: $screen-size-pc) {
+									left:auto;
+									right:20px;
+								}
+
+							}
+						}
 					}
 				}
 			}

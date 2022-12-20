@@ -9595,6 +9595,24 @@ body div#content section.docs-list div.container ul.list li a.download {
     width: 200px;
   }
 }
+body div#content section.docs-list div.container ul.list li.no-image {
+  min-height: auto;
+}
+@media (min-width: 1200px) {
+  body div#content section.docs-list div.container ul.list li.no-image a.link {
+    position: relative;
+    padding: 20px;
+    text-align: left;
+    border: 1px solid #ccc;
+    min-height: 280px;
+  }
+}
+@media (min-width: 1200px) {
+  body div#content section.docs-list div.container ul.list li.no-image a.download {
+    left: auto;
+    right: 20px;
+  }
+}
 body div#content section.docs-view {
   padding: 0 0 20px;
 }
