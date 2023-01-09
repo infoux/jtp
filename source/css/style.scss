@@ -8513,6 +8513,17 @@ body {
 							width: 794px;
 						}
 
+						&.no-select {
+
+							width:170px;
+							
+							@media (min-width: $screen-size-pc) {
+
+								width: 950px;
+							}
+
+						}
+
 						strong {
 							font-weight: 800;
 							color: #1c7cc2;
@@ -8678,12 +8689,11 @@ body {
 								}
 
 								font-size: 16px;
-								margin: 20px 0 10px;
+								margin: 0 0 4px;
 
 								@media (min-width: $screen-size-pc) {
 									font-size: 22px;
 									font-weight: 400;
-									margin: 0 0 10px;
 								}
 							}
 
@@ -8736,10 +8746,11 @@ body {
 
 								@media (min-width: $screen-size-pc) {
 									position: relative;
-									padding: 20px;
+									padding: 20px 20px 10px;
 									text-align: left;
 									border: 1px solid #ccc;
-									min-height: 280px;
+
+									min-height:auto;
 								}
 							}
 

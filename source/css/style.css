@@ -9433,6 +9433,14 @@ body div#content section.docs-list div.container fieldset.search p.counter {
     width: 794px;
   }
 }
+body div#content section.docs-list div.container fieldset.search p.counter.no-select {
+  width: 170px;
+}
+@media (min-width: 1200px) {
+  body div#content section.docs-list div.container fieldset.search p.counter.no-select {
+    width: 950px;
+  }
+}
 body div#content section.docs-list div.container fieldset.search p.counter strong {
   font-weight: 800;
   color: #1c7cc2;
@@ -9579,7 +9587,7 @@ body div#content section.docs-list div.container ul.list li a.link p.image img {
 }
 body div#content section.docs-list div.container ul.list li a.link h4 {
   font-size: 16px;
-  margin: 20px 0 10px;
+  margin: 0 0 4px;
 }
 body div#content section.docs-list div.container ul.list li a.link h4 span {
   display: none;
@@ -9588,7 +9596,6 @@ body div#content section.docs-list div.container ul.list li a.link h4 span {
   body div#content section.docs-list div.container ul.list li a.link h4 {
     font-size: 22px;
     font-weight: 400;
-    margin: 0 0 10px;
   }
 }
 body div#content section.docs-list div.container ul.list li a.link p.info {
@@ -9638,10 +9645,10 @@ body div#content section.docs-list div.container ul.list li.no-image {
 @media (min-width: 1200px) {
   body div#content section.docs-list div.container ul.list li.no-image a.link {
     position: relative;
-    padding: 20px;
+    padding: 20px 20px 10px;
     text-align: left;
     border: 1px solid #ccc;
-    min-height: 280px;
+    min-height: auto;
   }
 }
 body div#content section.docs-view {
